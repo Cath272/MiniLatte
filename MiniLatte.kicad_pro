@@ -473,6 +473,15 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "+1.05",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 132, 132)",
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -480,7 +489,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "+1.05",
+        "pattern": "+1.05V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -560,12 +574,24 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -613,6 +639,38 @@
     [
       "ffe475c5-d6e9-41b5-8ca1-322659dd88d8",
       "Root"
+    ],
+    [
+      "9db433ce-ea3f-4d40-ac5c-6665012436f8",
+      "USB_3"
+    ],
+    [
+      "5705bc22-e535-41fc-83c9-7f58378ed5fb",
+      "USB_HUB_0"
+    ],
+    [
+      "9d33205d-4c13-4863-a60e-04e158c89c36",
+      "HUB_0_PORTS"
+    ],
+    [
+      "6484ea04-99af-4e32-ab55-1d9f749a34a9",
+      "GL3224"
+    ],
+    [
+      "0b83a0c0-fa35-4171-b0ac-b3d09c000c8e",
+      "PCIE_WIFI_ETH"
+    ],
+    [
+      "e14d51fd-a633-4cd1-a1dc-f8f113110c18",
+      "PCIE_SSD"
+    ],
+    [
+      "cce51ae0-2c3b-49ca-9f0b-7e7c9a938cd2",
+      "SSD_PWR"
+    ],
+    [
+      "b7e0aea6-0e8b-4554-813d-0fd705dfe6dd",
+      "HDMI"
     ]
   ],
   "text_variables": {}
