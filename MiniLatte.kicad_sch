@@ -6126,6 +6126,27 @@
 		)
 		(uuid "546995e6-6668-4c4d-96f4-c7c87ca30055")
 	)
+	(text "HUB0:\n- HSIO0: USB3.2 10Gbps\nHUB1:\n- HSIO1: USB3.2 10Gbps\nETH:\n- HSIO2: PCIe 3.0 x1\nWIFI:\n- HSIO3: PCIe 3.0 x1   \nSSD0:\n- HSIO8: PCIe 3.0 x2 (Lane 0) \n- HSIO9: PCIe 3.0 x2 (Lane 1)\nSSD1:\n- HSIO10: PCIe 3.0 x2 (Lane 0) \n- HSIO11: PCIe 3.0 x2 (Lane 1)\nSSD2:\n- HSIO6: PCIe 3.0 x1"
+		(exclude_from_sim no)
+		(at 18.796 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a04a8bff-6e7e-476f-a9f2-39ac098aed3e")
+	)
+	(text "Video:\n- DDIB: HDMI 2.0\n- TCP0: HDMI 2.0\n- TCP1: USB TypeC DP ALT MODE"
+		(exclude_from_sim no)
+		(at 34.29 280.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e3678ebf-47a7-4a90-968e-7543ce3f87b0")
+	)
 	(junction
 		(at 81.28 38.1)
 		(diameter 0)
@@ -6187,16 +6208,8 @@
 		(uuid "4edf1e6a-0378-4e10-bd87-12cab52fcf5e")
 	)
 	(no_connect
-		(at 95.25 267.97)
-		(uuid "5e160ac3-8d6a-43d1-9b5f-749209b9e8b4")
-	)
-	(no_connect
 		(at 176.53 38.1)
 		(uuid "5f9012c2-36b9-4c65-b6fa-6b37bff182c6")
-	)
-	(no_connect
-		(at 176.53 147.32)
-		(uuid "6236230b-4157-48a7-94ed-fd3cac628531")
 	)
 	(no_connect
 		(at 176.53 243.84)
@@ -6271,10 +6284,6 @@
 		(uuid "d562e9c5-dfc7-40ff-be6b-cfc6053bb945")
 	)
 	(no_connect
-		(at 95.25 265.43)
-		(uuid "d7b815ad-242f-497c-b85a-ef5d1674b65f")
-	)
-	(no_connect
 		(at 176.53 238.76)
 		(uuid "de7637e3-4177-4796-907c-9e356f775c58")
 	)
@@ -6327,6 +6336,26 @@
 			(type default)
 		)
 		(uuid "033652da-9352-4ebe-9725-11ea0d2a964c")
+	)
+	(wire
+		(pts
+			(xy 76.2 267.97) (xy 95.25 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0422a406-4046-4591-b066-7d994a205f30")
+	)
+	(wire
+		(pts
+			(xy 76.2 281.94) (xy 95.25 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08e3c080-1107-47ac-87a9-2164aa3464e5")
 	)
 	(wire
 		(pts
@@ -6390,6 +6419,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 294.64) (xy 95.25 294.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa194c8-61ef-416c-a728-ec2212862ee9")
+	)
+	(wire
+		(pts
 			(xy 91.44 144.78) (xy 95.25 144.78)
 		)
 		(stroke
@@ -6397,6 +6436,16 @@
 			(type default)
 		)
 		(uuid "1b053f49-c3b0-40cb-a497-27c273a95d67")
+	)
+	(wire
+		(pts
+			(xy 76.2 262.89) (xy 86.36 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d192c9a-66d6-48fa-a5d8-afdaa04c99a6")
 	)
 	(wire
 		(pts
@@ -6427,6 +6476,16 @@
 			(type default)
 		)
 		(uuid "2c88cbea-3694-4220-9a7f-bee83f071865")
+	)
+	(wire
+		(pts
+			(xy 86.36 261.62) (xy 95.25 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "348317ba-0cfd-4052-8707-5590e816220d")
 	)
 	(wire
 		(pts
@@ -6610,6 +6669,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 274.32) (xy 95.25 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64dd5f2f-6d05-46e6-ac7e-506d16844c5d")
+	)
+	(wire
+		(pts
 			(xy 69.85 172.72) (xy 95.25 172.72)
 		)
 		(stroke
@@ -6617,6 +6686,16 @@
 			(type default)
 		)
 		(uuid "68f93886-2550-48b6-acda-0486beec97f2")
+	)
+	(wire
+		(pts
+			(xy 76.2 287.02) (xy 95.25 287.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d5f9033-cad2-4897-823d-7436520bf0ab")
 	)
 	(wire
 		(pts
@@ -6640,6 +6719,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 262.89) (xy 86.36 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79b80ce1-3ba5-4d88-9d0f-1a3a21968422")
+	)
+	(wire
+		(pts
 			(xy 76.2 208.28) (xy 95.25 208.28)
 		)
 		(stroke
@@ -6657,6 +6746,46 @@
 			(type default)
 		)
 		(uuid "7cd104ab-012e-46a1-acee-fc339de6603c")
+	)
+	(wire
+		(pts
+			(xy 76.2 265.43) (xy 95.25 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84f86721-e46c-4e21-b60a-f176a3d4cf0f")
+	)
+	(wire
+		(pts
+			(xy 76.2 289.56) (xy 95.25 289.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "894f7b03-bf02-4dce-b8fa-278083e5627e")
+	)
+	(wire
+		(pts
+			(xy 76.2 271.78) (xy 95.25 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a26311a-bae2-4119-9dac-c14692027fb9")
+	)
+	(wire
+		(pts
+			(xy 76.2 279.4) (xy 95.25 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c963bff-7fb9-4c74-846b-0aa1a37b4714")
 	)
 	(wire
 		(pts
@@ -6717,6 +6846,16 @@
 			(type default)
 		)
 		(uuid "999a6ee0-4f70-4918-a1ae-d25c98d8c292")
+	)
+	(wire
+		(pts
+			(xy 76.2 292.1) (xy 95.25 292.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a9de217-037f-4ab1-9866-f3a386701dc6")
 	)
 	(wire
 		(pts
@@ -7040,6 +7179,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 276.86) (xy 95.25 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4d5f1ac-04c9-4e54-9ee5-b24401779ca3")
+	)
+	(wire
+		(pts
 			(xy 69.85 152.4) (xy 95.25 152.4)
 		)
 		(stroke
@@ -7107,6 +7256,16 @@
 			(type default)
 		)
 		(uuid "fd1bfdd0-4db6-496b-a9ba-085cb7bbb19d")
+	)
+	(wire
+		(pts
+			(xy 76.2 284.48) (xy 95.25 284.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fede7edf-b1a6-4b5e-ade8-cd6cd81678cf")
 	)
 	(wire
 		(pts
@@ -7232,29 +7391,6 @@
 		(uuid "178d5f10-21aa-490f-8dbf-270fbc67e0a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 56.8258 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DP_ALT_RX1+"
-		(shape input)
-		(at 95.25 287.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "1ac079e6-ef78-41e6-ad36-927a61cad896")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.4439 287.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7443,29 +7579,6 @@
 			)
 		)
 	)
-	(global_label "DP_ALT_TX1-"
-		(shape input)
-		(at 95.25 294.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "4ff0a794-ee35-4597-a39f-a8bedc753209")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.7463 294.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PCIE_2_CLK-"
 		(shape input)
 		(at 176.53 72.39 0)
@@ -7645,29 +7758,6 @@
 			)
 		)
 	)
-	(global_label "DP_ALT_RX2-"
-		(shape input)
-		(at 95.25 279.4 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "6e5e3828-e3c8-4188-b89b-c5901a78bc65")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.4439 279.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USB2_P8-"
 		(shape input)
 		(at 69.85 180.34 180)
@@ -7727,29 +7817,6 @@
 		(uuid "77f0aa64-e527-4f25-8922-b2a4cc7044d3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.7139 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DP_ALT_AUX-"
-		(shape input)
-		(at 95.25 274.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "7d882cfe-1005-40c0-b734-ee0c118b0b09")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.5043 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8094,52 +8161,6 @@
 			)
 		)
 	)
-	(global_label "DP_ALT_HPD"
-		(shape input)
-		(at 95.25 261.62 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "a96d5b0b-91b1-459c-978e-3563ea3c8c64")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.8348 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DP_ALT_RX2+"
-		(shape input)
-		(at 95.25 276.86 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "b02e5222-7c17-4067-a1f2-38b31ede6a3c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.4439 276.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PCIE_3_CLK+"
 		(shape input)
 		(at 176.53 74.93 0)
@@ -8176,29 +8197,6 @@
 		(uuid "b6e9c311-a40d-460e-8b6d-23c7c1b9b5bf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.0486 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DP_ALT_TX1+"
-		(shape input)
-		(at 95.25 292.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "b965b538-ae8f-4bbe-b318-51e67eca6ba7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.7463 292.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8299,29 +8297,6 @@
 			)
 		)
 	)
-	(global_label "DP_ALT_TX2-"
-		(shape input)
-		(at 95.25 284.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "c1826ffb-3ed3-4303-be62-bd708af5bf88")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.7463 284.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "HDA_SDOUT"
 		(shape input)
 		(at 176.53 260.35 0)
@@ -8362,29 +8337,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DP_ALT_AUX+"
-		(shape input)
-		(at 95.25 271.78 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "d2a34e8c-5707-4fa5-9397-fd42f8d50c9d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.5043 271.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -8431,29 +8383,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DP_ALT_TX2+"
-		(shape input)
-		(at 95.25 281.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify right)
-		)
-		(uuid "da0a68a6-9422-4dd3-9c0a-d21e8e776919")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.7463 281.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -8526,25 +8455,24 @@
 			)
 		)
 	)
-	(global_label "DP_ALT_RX1-"
+	(global_label "GPP_D2"
 		(shape input)
-		(at 95.25 289.56 180)
+		(at 176.53 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 0 255 1)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "e8bb8efb-f5e4-431e-b269-fca1e9eace77")
+		(uuid "e4222ddc-9fb7-4dde-86bf-23d61b7b5af8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.4439 289.56 0)
+			(at 186.7723 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -10349,6 +10277,220 @@
 		)
 	)
 	(sheet
+		(at 250.19 34.29)
+		(size 46.99 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3f07c54d-c68c-4501-9d1d-0870eca96d91")
+		(property "Sheetname" "PD_Power"
+			(at 250.19 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PD_Power.kicad_sch"
+			(at 250.19 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 57.15 261.62)
+		(size 19.05 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "96389c39-f901-4f39-b3da-5c22fdda4b49")
+		(property "Sheetname" "DP_ALT_USB"
+			(at 57.15 260.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DP_ALT_USB.kicad_sch"
+			(at 57.15 297.7646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "TCP1_SCL" input
+			(at 76.2 267.97 0)
+			(uuid "78d09d55-1cf5-4034-a3df-f23c8cc8188d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TCP1_SDA" input
+			(at 76.2 265.43 0)
+			(uuid "58c7baab-21c6-4705-8214-07e46019d4b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_TX1+" input
+			(at 76.2 292.1 0)
+			(uuid "52f5afb4-7c53-49de-baa4-e52a7009cae5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_RX1+" input
+			(at 76.2 287.02 0)
+			(uuid "1fde0eb2-abd5-4eda-9eeb-657e2dee6582")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_TX2-" input
+			(at 76.2 284.48 0)
+			(uuid "e4933e4d-a14c-4d50-9e2a-939373142aa4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_RX2+" input
+			(at 76.2 276.86 0)
+			(uuid "0eb3607e-c657-4461-becc-e2f724626c66")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_RX2-" input
+			(at 76.2 279.4 0)
+			(uuid "c85cbfb2-61c3-4b6e-ad93-12c5e720a552")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_RX1-" input
+			(at 76.2 289.56 0)
+			(uuid "5cf50e46-30b2-42d6-8666-7ab45900efad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_TX2+" input
+			(at 76.2 281.94 0)
+			(uuid "75c55916-e9c6-4505-9e1b-53bf5873be9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_AUX-" input
+			(at 76.2 274.32 0)
+			(uuid "c962b3cf-1822-4f39-a854-bfec6898fd64")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_AUX+" input
+			(at 76.2 271.78 0)
+			(uuid "9a37ee2f-4759-419c-b625-1c17af3d55a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_TX1-" input
+			(at 76.2 294.64 0)
+			(uuid "e595fbdb-9f4c-49f9-9a6d-ab005665b3b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DP_ALT_HPD" input
+			(at 76.2 262.89 0)
+			(uuid "f074fe19-4638-487e-b259-4c7d9c84d316")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 73.66 53.34)
 		(size 17.78 21.59)
 		(exclude_from_sim no)
@@ -10477,7 +10619,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -10496,12 +10637,13 @@
 			)
 		)
 		(property "Sheetfile" "HDMI.kicad_sch"
-			(at 57.15 258.3946 0)
+			(at 36.83 256.286 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(pin "HDMI_0_TX0+" input

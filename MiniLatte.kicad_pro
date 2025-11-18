@@ -671,6 +671,26 @@
     [
       "b7e0aea6-0e8b-4554-813d-0fd705dfe6dd",
       "HDMI"
+    ],
+    [
+      "96389c39-f901-4f39-b3da-5c22fdda4b49",
+      "DP_ALT_USB"
+    ],
+    [
+      "b1fa3c58-3f32-4cbc-9190-eba41745c3ec",
+      "USB_HUB_1"
+    ],
+    [
+      "4509e57d-0183-4215-acb5-5fbfe3b8f915",
+      "HUB_1_PORTS"
+    ],
+    [
+      "3c8f7b6b-2aab-4436-aebe-659df9315597",
+      "ETH_WIFI_PWR"
+    ],
+    [
+      "3f07c54d-c68c-4501-9d1d-0870eca96d91",
+      "PD_Power"
     ]
   ],
   "text_variables": {}

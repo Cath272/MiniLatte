@@ -15488,4 +15488,46 @@
 			)
 		)
 	)
+	(sheet
+		(at 19.05 54.61)
+		(size 24.13 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3c8f7b6b-2aab-4436-aebe-659df9315597")
+		(property "Sheetname" "ETH_WIFI_PWR"
+			(at 19.05 53.8984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ETH_WIFI_PWR.kicad_sch"
+			(at 19.05 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/0b83a0c0-fa35-4171-b0ac-b3d09c000c8e"
+					(page "13")
+				)
+			)
+		)
+	)
 )
