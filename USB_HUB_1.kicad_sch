@@ -2709,7 +2709,7 @@
 		(uuid "8e551f03-0a3b-4e8c-8163-c9ad8593dbaa")
 	)
 	(junction
-		(at 184.15 137.16)
+		(at 190.5 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a09ef9ca-dfc4-4b3f-9c97-9845190449cc")
@@ -2834,6 +2834,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 134.62) (xy 176.53 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "046fdafb-ffab-469b-8bd6-d2bd87ce969a")
+	)
+	(wire
+		(pts
 			(xy 171.45 139.7) (xy 171.45 129.54)
 		)
 		(stroke
@@ -2914,7 +2924,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 124.46) (xy 173.99 137.16)
+			(xy 176.53 124.46) (xy 176.53 127)
 		)
 		(stroke
 			(width 0)
@@ -3644,7 +3654,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 124.46) (xy 173.99 124.46)
+			(xy 157.48 124.46) (xy 176.53 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3825,7 +3835,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 137.16) (xy 184.15 137.16)
+			(xy 176.53 137.16) (xy 190.5 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5102,7 +5112,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 184.15 140.97 180)
+		(at 190.5 140.97 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5110,15 +5120,15 @@
 		(dnp no)
 		(uuid "31334954-3e4d-4058-baba-fd7246c10712")
 		(property "Reference" "R52"
-			(at 179.832 140.97 0)
+			(at 186.182 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100k"
-			(at 180.086 143.002 0)
+		(property "Value" "20k"
+			(at 186.436 143.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5126,7 +5136,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 185.928 140.97 90)
+			(at 192.278 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5135,7 +5145,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 140.97 0)
+			(at 190.5 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5144,7 +5154,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 184.15 140.97 0)
+			(at 190.5 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5362,6 +5372,73 @@
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/9db433ce-ea3f-4d40-ac5c-6665012436f8/b1fa3c58-3f32-4cbc-9190-eba41745c3ec"
 					(reference "#PWR0285")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 176.53 130.81 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c72c676-5c42-455f-af0e-86030f50e484")
+		(property "Reference" "R116"
+			(at 181.102 129.032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 181.356 131.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 178.308 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 176.53 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43ad8a0f-14b8-4e61-a363-427ccbb2297a")
+		)
+		(pin "2"
+			(uuid "7661d79d-d471-4f56-8f4d-807d88b6d7c8")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/9db433ce-ea3f-4d40-ac5c-6665012436f8/b1fa3c58-3f32-4cbc-9190-eba41745c3ec"
+					(reference "R116")
 					(unit 1)
 				)
 			)
@@ -7267,7 +7344,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 184.15 129.54 0)
+		(at 190.5 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7276,7 +7353,7 @@
 		(fields_autoplaced yes)
 		(uuid "a1b47841-65f3-4731-926f-9a0bd6ec0cae")
 		(property "Reference" "#PWR0270"
-			(at 184.15 133.35 0)
+			(at 190.5 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7284,8 +7361,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 184.15 124.46 0)
+		(property "Value" "+5V"
+			(at 190.5 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7293,7 +7370,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 129.54 0)
+			(at 190.5 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7302,7 +7379,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 129.54 0)
+			(at 190.5 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7311,7 +7388,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 184.15 129.54 0)
+			(at 190.5 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7333,7 +7410,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 184.15 133.35 180)
+		(at 190.5 133.35 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7341,15 +7418,15 @@
 		(dnp no)
 		(uuid "a31cbce2-67bc-4f6e-87e0-3fe15017cc42")
 		(property "Reference" "R51"
-			(at 179.832 133.35 0)
+			(at 186.182 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "47k"
-			(at 180.086 135.382 0)
+		(property "Value" "10k"
+			(at 186.436 135.382 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7357,7 +7434,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 185.928 133.35 90)
+			(at 192.278 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7366,7 +7443,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 133.35 0)
+			(at 190.5 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7375,7 +7452,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 184.15 133.35 0)
+			(at 190.5 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7867,7 +7944,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 144.78 0)
+		(at 190.5 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7876,7 +7953,7 @@
 		(fields_autoplaced yes)
 		(uuid "c323ecb8-2d10-42c8-a01b-94a7f98edc96")
 		(property "Reference" "#PWR0271"
-			(at 184.15 151.13 0)
+			(at 190.5 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7885,7 +7962,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 149.86 0)
+			(at 190.5 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7893,7 +7970,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 144.78 0)
+			(at 190.5 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7902,7 +7979,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 144.78 0)
+			(at 190.5 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7911,7 +7988,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 144.78 0)
+			(at 190.5 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
