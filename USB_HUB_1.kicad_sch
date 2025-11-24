@@ -4204,7 +4204,7 @@
 		)
 		(uuid "ffc9b968-d4e6-4c4d-ac3f-dfa0923c2f54")
 	)
-	(global_label "USBPE3"
+	(global_label "H1_USBPE3"
 		(shape input)
 		(at 104.14 91.44 180)
 		(fields_autoplaced yes)
@@ -4216,7 +4216,7 @@
 		)
 		(uuid "074bbe2d-920d-4890-bad8-0b2ea66ecf4d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.7163 91.44 0)
+			(at 90.2087 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4226,7 +4226,7 @@
 			)
 		)
 	)
-	(global_label "USBPE2"
+	(global_label "H1_USBPE2"
 		(shape input)
 		(at 157.48 40.64 0)
 		(fields_autoplaced yes)
@@ -4238,7 +4238,7 @@
 		)
 		(uuid "3f3d5f05-1fd2-482b-84ca-76ee189f0f5b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.9037 40.64 0)
+			(at 171.4113 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +4248,7 @@
 			)
 		)
 	)
-	(global_label "USBOC4"
+	(global_label "H1_USBOC4"
 		(shape input)
 		(at 157.48 132.08 0)
 		(fields_autoplaced yes)
@@ -4260,7 +4260,7 @@
 		)
 		(uuid "7e14ad2d-dc62-4293-817d-c1a08b707d08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.0852 132.08 0)
+			(at 171.5928 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4270,7 +4270,7 @@
 			)
 		)
 	)
-	(global_label "USBPE4"
+	(global_label "H1_USBPE4"
 		(shape input)
 		(at 157.48 134.62 0)
 		(fields_autoplaced yes)
@@ -4282,7 +4282,7 @@
 		)
 		(uuid "87ff6b96-1b92-4758-804a-4d1a6ad2c7a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.9037 134.62 0)
+			(at 171.4113 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4292,7 @@
 			)
 		)
 	)
-	(global_label "USBOC2"
+	(global_label "H1_USBOC2"
 		(shape input)
 		(at 157.48 43.18 0)
 		(fields_autoplaced yes)
@@ -4304,7 +4304,7 @@
 		)
 		(uuid "90d1c362-a960-406f-aaa4-90763aa06289")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.0852 43.18 0)
+			(at 171.5928 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4314,7 +4314,7 @@
 			)
 		)
 	)
-	(global_label "USBOC3"
+	(global_label "H1_USBOC3"
 		(shape input)
 		(at 104.14 88.9 180)
 		(fields_autoplaced yes)
@@ -4326,7 +4326,7 @@
 		)
 		(uuid "99914cfb-6f6f-47ad-a09a-237c4fce898e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.5348 88.9 0)
+			(at 90.0272 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5177,7 +5177,7 @@
 		(dnp no)
 		(uuid "37c588aa-6a40-446d-8e31-1b106a87752b")
 		(property "Reference" "R47"
-			(at 174.752 42.926 90)
+			(at 177.546 42.926 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5185,7 +5185,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 170.434 42.672 90)
+			(at 173.228 42.672 90)
 			(effects
 				(font
 					(size 1.27 1.27)

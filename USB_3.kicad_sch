@@ -7,7 +7,7 @@
 	(lib_symbols)
 	(global_label "USB2_P2-"
 		(shape input)
-		(at 110.49 46.99 180)
+		(at 160.02 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18,7 +18,7 @@
 		)
 		(uuid "0fb94550-cfe5-4349-8b9b-bf4f3730376c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.4658 46.99 0)
+			(at 146.9958 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30,7 +30,7 @@
 	)
 	(global_label "USB2_P1+"
 		(shape input)
-		(at 57.15 43.18 180)
+		(at 106.68 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -41,7 +41,7 @@
 		)
 		(uuid "3ee066a3-b11f-4583-8ca8-108a9b06622a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.1258 43.18 0)
+			(at 93.6558 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53,7 +53,7 @@
 	)
 	(global_label "USB2_P2+"
 		(shape input)
-		(at 110.49 44.45 180)
+		(at 160.02 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -64,7 +64,7 @@
 		)
 		(uuid "9b22b925-657f-4e4e-9870-966185a77de6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.4658 44.45 0)
+			(at 146.9958 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -76,7 +76,7 @@
 	)
 	(global_label "USB2_P1-"
 		(shape input)
-		(at 57.15 45.72 180)
+		(at 106.68 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -87,7 +87,7 @@
 		)
 		(uuid "faa43e4f-4f7a-4d4e-8398-28c774b483db")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.1258 45.72 0)
+			(at 93.6558 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -99,7 +99,7 @@
 	)
 	(hierarchical_label "SS_HUB_0_RX+"
 		(shape input)
-		(at 57.15 36.83 180)
+		(at 106.68 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -110,7 +110,7 @@
 	)
 	(hierarchical_label "SS_HUB_1_RX-"
 		(shape input)
-		(at 110.49 35.56 180)
+		(at 160.02 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -121,7 +121,7 @@
 	)
 	(hierarchical_label "SS_HUB_1_RX+"
 		(shape input)
-		(at 110.49 38.1 180)
+		(at 160.02 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -132,7 +132,7 @@
 	)
 	(hierarchical_label "SS_HUB_1_TX+"
 		(shape input)
-		(at 110.49 30.48 180)
+		(at 160.02 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -143,7 +143,7 @@
 	)
 	(hierarchical_label "SS_HUB_0_TX-"
 		(shape input)
-		(at 57.15 31.75 180)
+		(at 106.68 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -154,7 +154,7 @@
 	)
 	(hierarchical_label "SS_HUB_0_RX-"
 		(shape input)
-		(at 57.15 34.29 180)
+		(at 106.68 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -165,7 +165,7 @@
 	)
 	(hierarchical_label "SS_HUB_0_TX+"
 		(shape input)
-		(at 57.15 29.21 180)
+		(at 106.68 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -176,7 +176,7 @@
 	)
 	(hierarchical_label "SS_HUB_1_TX-"
 		(shape input)
-		(at 110.49 33.02 180)
+		(at 160.02 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -186,7 +186,7 @@
 		(uuid "b5ac183e-de4c-478b-bf63-c0c176aa5658")
 	)
 	(sheet
-		(at 57.15 25.4)
+		(at 106.68 82.55)
 		(size 30.48 29.21)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -202,7 +202,7 @@
 		)
 		(uuid "5705bc22-e535-41fc-83c9-7f58378ed5fb")
 		(property "Sheetname" "USB_HUB_0"
-			(at 57.15 24.6884 0)
+			(at 106.68 81.8384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -211,7 +211,7 @@
 			)
 		)
 		(property "Sheetfile" "USB_HUB_0.kicad_sch"
-			(at 57.15 55.1946 0)
+			(at 106.68 112.3446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -220,7 +220,7 @@
 			)
 		)
 		(pin "SS_HUB_0_TX+" input
-			(at 57.15 29.21 180)
+			(at 106.68 86.36 180)
 			(uuid "2a63060a-00fe-4752-bf68-ece90422b9ab")
 			(effects
 				(font
@@ -230,7 +230,7 @@
 			)
 		)
 		(pin "SS_HUB_0_RX-" input
-			(at 57.15 34.29 180)
+			(at 106.68 91.44 180)
 			(uuid "38cfa45a-ea8e-43c5-ae73-68716d44a0c0")
 			(effects
 				(font
@@ -240,7 +240,7 @@
 			)
 		)
 		(pin "SS_HUB_0_RX+" input
-			(at 57.15 36.83 180)
+			(at 106.68 93.98 180)
 			(uuid "ff2d4e9a-3e55-4df8-9b53-2d0921881828")
 			(effects
 				(font
@@ -250,7 +250,7 @@
 			)
 		)
 		(pin "SS_HUB_0_TX-" input
-			(at 57.15 31.75 180)
+			(at 106.68 88.9 180)
 			(uuid "8850d409-20d9-4f21-8877-94f56d35500f")
 			(effects
 				(font
@@ -260,7 +260,7 @@
 			)
 		)
 		(pin "HUB0_D+" input
-			(at 57.15 43.18 180)
+			(at 106.68 100.33 180)
 			(uuid "7fd78677-a899-470f-9f63-955086945411")
 			(effects
 				(font
@@ -270,7 +270,7 @@
 			)
 		)
 		(pin "HUB0_D-" input
-			(at 57.15 45.72 180)
+			(at 106.68 102.87 180)
 			(uuid "887169e1-3e4c-4125-bc2d-ec69d980be94")
 			(effects
 				(font
@@ -288,7 +288,7 @@
 		)
 	)
 	(sheet
-		(at 110.49 24.13)
+		(at 160.02 81.28)
 		(size 30.48 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -304,7 +304,7 @@
 		)
 		(uuid "b1fa3c58-3f32-4cbc-9190-eba41745c3ec")
 		(property "Sheetname" "USB_HUB_1"
-			(at 110.49 23.4184 0)
+			(at 160.02 80.5684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -313,7 +313,7 @@
 			)
 		)
 		(property "Sheetfile" "USB_HUB_1.kicad_sch"
-			(at 110.49 55.1946 0)
+			(at 160.02 112.3446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -322,7 +322,7 @@
 			)
 		)
 		(pin "SS_HUB_1_TX-" input
-			(at 110.49 33.02 180)
+			(at 160.02 90.17 180)
 			(uuid "29848342-7529-434f-bd43-9e15510e6cf0")
 			(effects
 				(font
@@ -332,7 +332,7 @@
 			)
 		)
 		(pin "SS_HUB_1_TX+" input
-			(at 110.49 30.48 180)
+			(at 160.02 87.63 180)
 			(uuid "d8476462-198e-4079-9f8c-fb9926bb0f5c")
 			(effects
 				(font
@@ -342,7 +342,7 @@
 			)
 		)
 		(pin "HUB1_D+" input
-			(at 110.49 44.45 180)
+			(at 160.02 101.6 180)
 			(uuid "879b99ff-34c3-449c-9a86-aa2cf9251dc4")
 			(effects
 				(font
@@ -352,7 +352,7 @@
 			)
 		)
 		(pin "SS_HUB_1_RX+" input
-			(at 110.49 38.1 180)
+			(at 160.02 95.25 180)
 			(uuid "55abc26f-6144-4e82-b223-b61adacb1d35")
 			(effects
 				(font
@@ -362,7 +362,7 @@
 			)
 		)
 		(pin "HUB1_D-" input
-			(at 110.49 46.99 180)
+			(at 160.02 104.14 180)
 			(uuid "463522e8-64e4-4bb6-ab20-ed1574eb8f81")
 			(effects
 				(font
@@ -372,7 +372,7 @@
 			)
 		)
 		(pin "SS_HUB_1_RX-" input
-			(at 110.49 35.56 180)
+			(at 160.02 92.71 180)
 			(uuid "187b38c1-64c3-4f25-a6a3-2998308d6937")
 			(effects
 				(font

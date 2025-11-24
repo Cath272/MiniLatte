@@ -6773,6 +6773,46 @@
 		)
 		(uuid "ffbf6dc7-716a-4a98-9139-ff64a66acab0")
 	)
+	(label "HSIO+"
+		(at 228.6 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "270947b2-3017-4b76-ad27-216210163dbb")
+	)
+	(label "HSIN+"
+		(at 228.6 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f890ef8-6567-4c0b-8956-7e19c0b087d0")
+	)
+	(label "HSIN-"
+		(at 228.6 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59b39df2-f00e-4996-a1ae-74c75443d6d5")
+	)
+	(label "HSON-"
+		(at 228.6 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d48b987c-2eae-4b7a-89fb-2f9bf526f488")
+	)
 	(global_label "MD3+"
 		(shape input)
 		(at 130.81 179.07 180)
@@ -9673,7 +9713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
+		(property "Value" "+3.3V"
 			(at 218.948 63.6536 0)
 			(effects
 				(font
@@ -9939,7 +9979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
+		(property "Value" "+3.3V"
 			(at 121.92 61.976 0)
 			(effects
 				(font
@@ -11231,7 +11271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
+		(property "Value" "+3.3V"
 			(at 232.41 36.576 0)
 			(effects
 				(font
@@ -12438,7 +12478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
+		(property "Value" "+3.3V"
 			(at 122.682 72.644 0)
 			(effects
 				(font
@@ -13933,7 +13973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
+		(property "Value" "+3.3V"
 			(at 177.292 129.286 0)
 			(effects
 				(font
@@ -14572,7 +14612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
+		(property "Value" "+3.3V"
 			(at 218.948 74.93 0)
 			(effects
 				(font
@@ -15484,48 +15524,6 @@
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/0b83a0c0-fa35-4171-b0ac-b3d09c000c8e"
 					(reference "C60")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 19.05 54.61)
-		(size 24.13 16.51)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "3c8f7b6b-2aab-4436-aebe-659df9315597")
-		(property "Sheetname" "ETH_WIFI_PWR"
-			(at 19.05 53.8984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "ETH_WIFI_PWR.kicad_sch"
-			(at 19.05 71.7046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "MiniLatte"
-				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/0b83a0c0-fa35-4171-b0ac-b3d09c000c8e"
-					(page "13")
 				)
 			)
 		)
