@@ -9320,8 +9320,8 @@
 		)
 	)
 	(sheet
-		(at 38.1 41.91)
-		(size 12.7 22.86)
+		(at 38.1 115.57)
+		(size 12.7 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -9333,9 +9333,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "6484ea04-99af-4e32-ab55-1d9f749a34a9")
+		(uuid "0a0fac55-1a42-47a5-801f-0a8546982bea")
 		(property "Sheetname" "GL3224"
-			(at 38.1 41.1984 0)
+			(at 37.592 115.316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9344,7 +9344,7 @@
 			)
 		)
 		(property "Sheetfile" "GL3224.kicad_sch"
-			(at 25.654 61.722 0)
+			(at 25.654 135.382 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9353,9 +9353,9 @@
 				(hide yes)
 			)
 		)
-		(pin "DFP1_TX+" input
-			(at 50.8 45.72 0)
-			(uuid "10bd9420-f4c2-4b25-b515-1e7b69ec6625")
+		(pin "DFP4_RX+" input
+			(at 50.8 124.46 0)
+			(uuid "ab23234f-63dd-470b-8f0a-8a7d2c9b1edb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9363,9 +9363,9 @@
 				(justify right)
 			)
 		)
-		(pin "DFP1_D-" input
-			(at 50.8 63.5 0)
-			(uuid "8dd9f0cb-5046-4298-9c2a-41dc349e83f6")
+		(pin "DFP4_TX-" input
+			(at 50.8 119.38 0)
+			(uuid "c13cc057-2353-4aba-8604-031b867482e3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9373,9 +9373,9 @@
 				(justify right)
 			)
 		)
-		(pin "DFP1_TX-" input
-			(at 50.8 48.26 0)
-			(uuid "414dd1f0-57b7-4e95-b544-9f23ee397496")
+		(pin "DFP4_D+" input
+			(at 50.8 132.08 0)
+			(uuid "812d76dc-03a5-461d-89d1-31ff972b0a0d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9383,9 +9383,9 @@
 				(justify right)
 			)
 		)
-		(pin "DFP1_RX+" input
-			(at 50.8 53.34 0)
-			(uuid "4346af42-9378-4192-b129-b607db3d3a80")
+		(pin "DFP4_TX+" input
+			(at 50.8 116.84 0)
+			(uuid "2fac6a61-8d13-4b48-b252-22723be02bc0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9393,9 +9393,9 @@
 				(justify right)
 			)
 		)
-		(pin "DFP1_D+" input
-			(at 50.8 60.96 0)
-			(uuid "26446a02-faba-4f2a-b2bf-615ee52a9fc5")
+		(pin "DFP4_D-" input
+			(at 50.8 134.62 0)
+			(uuid "987f43cc-5b3e-4711-bc5b-b3fd58d47419")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9403,9 +9403,9 @@
 				(justify right)
 			)
 		)
-		(pin "DFP1_RX-" input
-			(at 50.8 55.88 0)
-			(uuid "0c37046c-9af3-40b0-8eed-723ee48fe51a")
+		(pin "DFP4_RX-" input
+			(at 50.8 127 0)
+			(uuid "ba8bbc64-93fb-4256-ad52-7417fc4f89dd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9422,8 +9422,8 @@
 		)
 	)
 	(sheet
-		(at 38.1 67.31)
-		(size 12.7 72.39)
+		(at 38.1 43.18)
+		(size 12.7 69.85)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -9437,7 +9437,7 @@
 		)
 		(uuid "9d33205d-4c13-4863-a60e-04e158c89c36")
 		(property "Sheetname" "HUB_0_PORTS"
-			(at 37.338 66.802 0)
+			(at 37.338 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9446,12 +9446,13 @@
 			)
 		)
 		(property "Sheetfile" "HUB_0_PORTS.kicad_sch"
-			(at 38.1 141.5546 0)
+			(at 6.604 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(pin "DFP2_D+" input
@@ -9514,46 +9515,6 @@
 				(justify right)
 			)
 		)
-		(pin "DFP4_RX+" input
-			(at 50.8 124.46 0)
-			(uuid "00c945cf-9a7a-48c0-9f2a-f1f9f0dace8b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "DFP4_TX+" input
-			(at 50.8 116.84 0)
-			(uuid "5db626da-b258-446c-834a-a1d5a351e8f6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "DFP4_RX-" input
-			(at 50.8 127 0)
-			(uuid "84e647b1-4c41-4fc6-bceb-bb0b4c17d2e1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "DFP4_TX-" input
-			(at 50.8 119.38 0)
-			(uuid "f217c1dd-00eb-4660-bdd1-1beabbce4755")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "DFP3_D+" input
 			(at 50.8 93.98 0)
 			(uuid "a50792e7-0200-42a5-aeef-743dbe35a22e")
@@ -9584,26 +9545,6 @@
 				(justify right)
 			)
 		)
-		(pin "DFP4_D+" input
-			(at 50.8 132.08 0)
-			(uuid "5973a3d4-431e-446c-8cf0-506744e763f8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "DFP4_D-" input
-			(at 50.8 134.62 0)
-			(uuid "202f4e05-576d-4c70-891c-19b0c35ca9e8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "DFP2_TX+" input
 			(at 50.8 68.58 0)
 			(uuid "8f4a6c78-079b-41ae-a8a3-10d2e17e4381")
@@ -9627,6 +9568,66 @@
 		(pin "DFP2_RX+" input
 			(at 50.8 76.2 0)
 			(uuid "0dfa4a82-5010-476e-a60b-ecf40363ffbb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DFP1_TX-" input
+			(at 50.8 48.26 0)
+			(uuid "17e7a452-9b63-4fa7-a48e-b5b44122aa34")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DFP1_D-" input
+			(at 50.8 63.5 0)
+			(uuid "da9d2861-db7a-4a77-a205-0d48493e20b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DFP1_D+" input
+			(at 50.8 60.96 0)
+			(uuid "8cc44fe2-e8c2-477f-bb7f-af18dcaa3015")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DFP1_RX+" input
+			(at 50.8 53.34 0)
+			(uuid "359026ff-1ce4-481e-8c31-281c18ff64ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DFP1_TX+" input
+			(at 50.8 45.72 0)
+			(uuid "e1b88ec0-1ed9-45e8-9207-c09b27145c5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DFP1_RX-" input
+			(at 50.8 55.88 0)
+			(uuid "5c5cad6c-11b1-4e48-875e-21d2b5b2026e")
 			(effects
 				(font
 					(size 1.27 1.27)

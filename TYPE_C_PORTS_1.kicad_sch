@@ -3727,7 +3727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V_DFP2"
+		(property "Value" "+5V_H1_DFP3"
 			(at 129.54 39.37 0)
 			(effects
 				(font
@@ -5241,13 +5241,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V_DFP1"
-			(at 130.81 105.4099 0)
+		(property "Value" "+5V_H1_DFP4"
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""

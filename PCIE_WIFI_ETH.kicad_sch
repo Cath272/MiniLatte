@@ -6767,7 +6767,7 @@
 		)
 		(uuid "ffbf6dc7-716a-4a98-9139-ff64a66acab0")
 	)
-	(label "HSIO+"
+	(label "HSO+"
 		(at 228.6 55.88 0)
 		(effects
 			(font
@@ -6777,7 +6777,7 @@
 		)
 		(uuid "270947b2-3017-4b76-ad27-216210163dbb")
 	)
-	(label "HSIN+"
+	(label "HSI+"
 		(at 228.6 48.26 0)
 		(effects
 			(font
@@ -6787,7 +6787,7 @@
 		)
 		(uuid "2f890ef8-6567-4c0b-8956-7e19c0b087d0")
 	)
-	(label "HSIN-"
+	(label "HSI-"
 		(at 228.6 45.72 0)
 		(effects
 			(font
@@ -6817,7 +6817,7 @@
 		)
 		(uuid "c6f0f9d1-fb02-43e5-9946-4e244f15d233")
 	)
-	(label "HSON-"
+	(label "HSO-"
 		(at 228.6 53.34 0)
 		(effects
 			(font
