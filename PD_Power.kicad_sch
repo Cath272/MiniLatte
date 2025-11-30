@@ -6562,7 +6562,7 @@
 				)
 			)
 		)
-		(property "Value" "220nF"
+		(property "Value" "220uF"
 			(at 229.616 105.664 0)
 			(effects
 				(font
@@ -6570,7 +6570,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
 			(at 224.79 101.6 0)
 			(effects
 				(font
@@ -7031,7 +7031,7 @@
 				)
 			)
 		)
-		(property "Value" "220nF"
+		(property "Value" "220uF"
 			(at 100.076 96.52 0)
 			(effects
 				(font
@@ -7039,7 +7039,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
 			(at 104.14 100.33 0)
 			(effects
 				(font
@@ -7504,7 +7504,7 @@
 				)
 			)
 		)
-		(property "Value" "220nF"
+		(property "Value" "220uF"
 			(at 238.506 105.664 0)
 			(effects
 				(font
@@ -7512,7 +7512,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
 			(at 233.68 101.6 0)
 			(effects
 				(font
@@ -7906,7 +7906,7 @@
 				)
 			)
 		)
-		(property "Value" "220nF"
+		(property "Value" "220uF"
 			(at 91.186 96.52 0)
 			(effects
 				(font
@@ -7914,7 +7914,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x7.7"
 			(at 95.25 100.33 0)
 			(effects
 				(font

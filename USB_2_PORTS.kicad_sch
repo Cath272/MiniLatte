@@ -934,6 +934,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "tps2561!!!!!!!! needs logic high "
+		(exclude_from_sim no)
+		(at 184.658 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "348d9835-ee7a-4465-a50b-8e5f9404c578")
+	)
 	(junction
 		(at 151.13 41.91)
 		(diameter 0)

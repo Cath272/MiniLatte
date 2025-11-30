@@ -584,11 +584,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "da:BS-02-A1AJ010"
+		(symbol "da:BS-06-B4AK001"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "B"
+			(property "Reference" "BT"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -596,7 +596,7 @@
 					)
 				)
 			)
-			(property "Value" "BS-02-A1AJ010"
+			(property "Value" "BS-06-B4AK001"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -604,7 +604,7 @@
 					)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:BAT-TH_BS-02-A1AJ010"
+			(property "Footprint" "easyeda2kicad:BAT-SMD_BS-06-B4AA012"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -631,7 +631,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part" "C5239862"
+			(property "LCSC Part" "C964760"
 				(at 0 -10.16 0)
 				(effects
 					(font
@@ -640,10 +640,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "BS-02-A1AJ010_0_1"
+			(symbol "BS-06-B4AK001_0_1"
 				(polyline
 					(pts
-						(xy -1.02 -1.27) (xy -1.02 1.02)
+						(xy -1.27 2.29) (xy -1.27 -1.78)
 					)
 					(stroke
 						(width 0)
@@ -655,7 +655,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.25 -2.29) (xy -0.25 1.78)
+						(xy -0.51 1.27) (xy -0.51 -1.02)
 					)
 					(stroke
 						(width 0)
@@ -667,7 +667,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.51 -1.27) (xy 0.51 1.02)
+						(xy 0.25 2.29) (xy 0.25 -1.78)
 					)
 					(stroke
 						(width 0)
@@ -679,7 +679,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.29) (xy 1.27 1.78)
+						(xy 1.02 1.27) (xy 1.02 -1.02)
 					)
 					(stroke
 						(width 0)
@@ -11197,83 +11197,6 @@
 		)
 	)
 	(symbol
-		(lib_id "da:BS-02-A1AJ010")
-		(at 148.59 25.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "637c87e3-acb3-422b-87e9-eb303300b76c")
-		(property "Reference" "B1"
-			(at 148.59 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BS-02-A1AJ010"
-			(at 148.59 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:BAT-TH_BS-02-A1AJ010"
-			(at 148.59 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 148.59 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C5239862"
-			(at 148.59 15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "792ec329-65bd-4e82-8306-8e55fea01a1a")
-		)
-		(pin "2"
-			(uuid "b575917b-7aaa-45e6-aea3-289039052972")
-		)
-		(instances
-			(project ""
-				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
-					(reference "B1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 280.67 106.68 270)
 		(unit 1)
@@ -12066,7 +11989,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ae59fffa-df80-4af0-95b5-7af3b06b915e")
 		(property "Reference" "#PWR04"
 			(at 134.62 34.29 0)
@@ -12077,8 +11999,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VBUS"
-			(at 134.62 25.4 0)
+		(property "Value" "PD_VBUS_GATE"
+			(at 131.826 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13944,6 +13866,83 @@
 			(project ""
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "da:BS-06-B4AK001")
+		(at 148.59 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb38c83d-e698-4aa9-9935-f8e5a173bf88")
+		(property "Reference" "BT1"
+			(at 148.59 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BS-06-B4AK001"
+			(at 148.59 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:BAT-SMD_BS-06-B4AA012"
+			(at 148.59 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C964760"
+			(at 148.59 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2c12cd6-896b-4bcb-999d-44d0842429a3")
+		)
+		(pin "1"
+			(uuid "883c299e-83d6-4be9-8688-d5164c41d899")
+		)
+		(instances
+			(project ""
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
+					(reference "BT1")
 					(unit 1)
 				)
 			)

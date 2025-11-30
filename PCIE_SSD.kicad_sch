@@ -2051,6 +2051,10 @@
 		(uuid "539685f8-814e-4f93-a779-68577468a8fc")
 	)
 	(no_connect
+		(at 72.39 74.93)
+		(uuid "557c5459-b7fa-43d1-9e86-1f80274bef1d")
+	)
+	(no_connect
 		(at 255.27 78.74)
 		(uuid "5739521a-7d43-47d5-aecf-f877c4d8598d")
 	)
@@ -2065,6 +2069,10 @@
 	(no_connect
 		(at 146.05 35.56)
 		(uuid "5efdc469-94d7-4c66-bacb-8f16a332d44d")
+	)
+	(no_connect
+		(at 255.27 104.14)
+		(uuid "61eb8e03-0bad-456c-983e-69a5cf0a42da")
 	)
 	(no_connect
 		(at 240.03 71.12)
@@ -2131,6 +2139,10 @@
 		(uuid "88412259-a6e3-4473-9ec4-3646b725e65c")
 	)
 	(no_connect
+		(at 161.29 76.2)
+		(uuid "8c714681-e868-41cd-899f-3578de089fce")
+	)
+	(no_connect
 		(at 72.39 100.33)
 		(uuid "8ed6c310-0892-44ae-b5e1-3b49689bf042")
 	)
@@ -2169,6 +2181,10 @@
 	(no_connect
 		(at 72.39 82.55)
 		(uuid "a1bd1a62-b858-4d3f-9a00-ce0d9fbf6770")
+	)
+	(no_connect
+		(at 72.39 105.41)
+		(uuid "a5052aba-d1d3-4143-baaf-57a2aba52986")
 	)
 	(no_connect
 		(at 72.39 64.77)
@@ -2239,12 +2255,20 @@
 		(uuid "d9d7b7cf-23ea-4a92-8cde-dcaf026057c3")
 	)
 	(no_connect
+		(at 161.29 106.68)
+		(uuid "e02580d5-1d0a-46df-8c1c-25e207f98abc")
+	)
+	(no_connect
 		(at 161.29 83.82)
 		(uuid "e21b018c-83c3-4197-bcd3-3305b6275bc3")
 	)
 	(no_connect
 		(at 240.03 35.56)
 		(uuid "e4b50bd4-2801-48d4-aac7-57a496396b30")
+	)
+	(no_connect
+		(at 255.27 73.66)
+		(uuid "e6081fbf-9289-4362-9940-7972ae3a52af")
 	)
 	(no_connect
 		(at 57.15 36.83)
@@ -3416,50 +3440,6 @@
 			)
 		)
 	)
-	(global_label "SUSCLK_WIFI"
-		(shape input)
-		(at 255.27 104.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "831d00bc-ee48-452f-ae7a-e5c2ad2b7163")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 270.29 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUSCLK_WIFI"
-		(shape input)
-		(at 161.29 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "83c363a6-0bbf-431c-b923-2e353c18b972")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.31 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PCIE_RST"
 		(shape input)
 		(at 255.27 88.9 0)
@@ -3563,28 +3543,6 @@
 		(uuid "b1078861-1b9f-4a87-9b87-e83e2a0b06d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 174.4956 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUSCLK_WIFI"
-		(shape input)
-		(at 72.39 105.41 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ee7dc827-462f-4c9b-8e40-7b315c1d1cfa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.41 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)

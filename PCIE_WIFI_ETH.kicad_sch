@@ -5026,6 +5026,10 @@
 		(uuid "9b2c350f-515a-4e44-99a6-00235b3971d2")
 	)
 	(no_connect
+		(at 72.39 153.67)
+		(uuid "9b5bbbd1-801f-4d00-b43e-95360db05fba")
+	)
+	(no_connect
 		(at 72.39 171.45)
 		(uuid "9e1f4308-01e2-4683-b3e7-9460a7c2b345")
 	)
@@ -5516,16 +5520,6 @@
 			(type default)
 		)
 		(uuid "4955d76a-25a7-4c80-a89e-df7e59f326b8")
-	)
-	(wire
-		(pts
-			(xy 76.2 153.67) (xy 72.39 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49915c7e-117b-4831-8244-f66a4012d136")
 	)
 	(wire
 		(pts
@@ -6956,28 +6950,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUSCLK_WIFI"
-		(shape input)
-		(at 76.2 153.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "23073137-0af9-47a9-8797-379228d023fb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.22 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)

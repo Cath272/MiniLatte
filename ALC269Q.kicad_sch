@@ -1943,6 +1943,12 @@
 		(uuid "808a6ddd-fc69-4daf-bd72-9f87e5302ad4")
 	)
 	(junction
+		(at 43.18 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1baadd47-54cf-48a8-9c37-f82af092c207")
+	)
+	(junction
 		(at 48.26 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1953,12 +1959,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27f20aff-8926-48cf-9b28-843fae2cdb56")
-	)
-	(junction
-		(at 43.18 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c0f29d3-7e5c-47cd-a137-9df62251eb43")
 	)
 	(junction
 		(at 222.25 68.58)
@@ -2550,28 +2550,6 @@
 		)
 		(uuid "f478bff1-59a3-4cf2-9e40-bf7098c10036")
 	)
-	(global_label "AUDIO_R"
-		(shape input)
-		(at 43.18 132.08 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0a257ebc-fd46-4e41-89b4-223d5f81ff2d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.0272 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MIC"
 		(shape input)
 		(at 80.01 96.52 180)
@@ -2594,9 +2572,9 @@
 			)
 		)
 	)
-	(global_label "AUDIO_L"
+	(global_label "AUDIO_R"
 		(shape input)
-		(at 43.18 127 0)
+		(at 43.18 142.24 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2604,9 +2582,9 @@
 			)
 			(justify left)
 		)
-		(uuid "7ae10e35-c834-415f-a17a-deb3d6699a61")
+		(uuid "8820b65e-1210-49e6-a363-f2a79218d260")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.7853 127 0)
+			(at 54.0272 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,6 +2618,28 @@
 	)
 	(global_label "AUDIO_L"
 		(shape input)
+		(at 43.18 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a738c2c6-8c54-4026-9a11-0783e6ef6ffc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.7853 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AUDIO_L"
+		(shape input)
 		(at 146.05 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2662,7 +2662,7 @@
 	)
 	(global_label "MIC"
 		(shape input)
-		(at 43.18 142.24 0)
+		(at 43.18 132.08 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2670,9 +2670,9 @@
 			)
 			(justify left)
 		)
-		(uuid "fbc89c32-ad49-41bf-915e-41dcc6451894")
+		(uuid "f0aa4cf7-693f-4ab3-889b-6e3093613cb1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.4914 142.24 0)
+			(at 49.4914 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -3119,7 +3119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V_DFP1"
+		(property "Value" "+5V_H1_DFP4"
 			(at 44.45 117.856 0)
 			(effects
 				(font
@@ -4683,7 +4683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V_DFP2"
+		(property "Value" "+5V_H1_DFP3"
 			(at 45.72 55.626 0)
 			(effects
 				(font
