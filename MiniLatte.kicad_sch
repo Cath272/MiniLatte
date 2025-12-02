@@ -6731,12 +6731,6 @@
 		(uuid "0b63a3c8-0d1a-4e5f-9fc9-947d67220a62")
 	)
 	(junction
-		(at 238.76 218.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6735879d-3e2d-477e-b1e7-ef2ec2915410")
-	)
-	(junction
 		(at 293.37 200.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6992,6 +6986,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 219.71) (xy 223.52 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d62028-f3ef-476e-9c48-4c2c7739e1b0")
+	)
+	(wire
+		(pts
 			(xy 76.2 281.94) (xy 95.25 281.94)
 		)
 		(stroke
@@ -7089,16 +7093,6 @@
 			(type default)
 		)
 		(uuid "1d192c9a-66d6-48fa-a5d8-afdaa04c99a6")
-	)
-	(wire
-		(pts
-			(xy 231.14 218.44) (xy 238.76 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "229235bd-0170-4765-a92d-31d8248ec4a7")
 	)
 	(wire
 		(pts
@@ -7319,6 +7313,16 @@
 			(type default)
 		)
 		(uuid "57266e88-94c8-4348-a410-d620c3fe2180")
+	)
+	(wire
+		(pts
+			(xy 231.14 218.44) (xy 231.14 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "572853f1-67c8-4d01-8440-ba6e195a022c")
 	)
 	(wire
 		(pts
@@ -10028,6 +10032,72 @@
 			(project ""
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
 					(reference "CN8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 223.52 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f33aca4-8117-4ff5-9853-acdd688910eb")
+		(property "Reference" "#PWR0527"
+			(at 223.52 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 223.52 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 223.52 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50772dce-ce54-468d-a912-4f095ca133c1")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
+					(reference "#PWR0527")
 					(unit 1)
 				)
 			)
