@@ -10315,4 +10315,46 @@
 			)
 		)
 	)
+	(sheet
+		(at 100.33 167.64)
+		(size 30.48 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7bd99a80-fb36-45f7-b59d-1a7a6d3dcaf0")
+		(property "Sheetname" "MU_PWR"
+			(at 100.33 166.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MU_PWR.kicad_sch"
+			(at 100.33 194.8946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/3f07c54d-c68c-4501-9d1d-0870eca96d91"
+					(page "18")
+				)
+			)
+		)
+	)
 )

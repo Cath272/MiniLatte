@@ -10258,7 +10258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PD_VBUS_GATE"
+		(property "Value" "VBUS_MU"
 			(at 131.826 25.146 0)
 			(effects
 				(font
