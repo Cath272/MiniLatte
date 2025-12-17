@@ -3593,7 +3593,7 @@
 		(dnp no)
 		(uuid "227a42c0-da22-408c-82f9-b48819e9e87c")
 		(property "Reference" "C182"
-			(at 218.44 71.1199 0)
+			(at 230.632 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3602,7 +3602,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 218.694 73.914 0)
+			(at 230.886 74.1681 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4028,21 +4028,21 @@
 		(fields_autoplaced yes)
 		(uuid "3e43e551-32f9-4d67-8da5-677c592b1241")
 		(property "Reference" "C179"
-			(at 205.74 101.5999 0)
+			(at 213.36 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 205.74 104.1399 0)
+		(property "Value" "22uF"
+			(at 213.36 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -4310,7 +4310,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 52.07 71.1199 0)
 			(effects
 				(font
@@ -4793,18 +4793,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6b9c3337-3aa0-43ce-831a-26284d6652cb")
 		(property "Reference" "C191"
-			(at 172.72 139.7 90)
+			(at 173.482 136.652 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "10uF"
-			(at 172.72 137.16 90)
+		(property "Value" "22uF"
+			(at 173.482 139.192 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4865,21 +4864,21 @@
 		(fields_autoplaced yes)
 		(uuid "71ce5b66-5040-4f8f-afa1-109f9c99ad05")
 		(property "Reference" "C183"
-			(at 229.87 71.1199 0)
+			(at 237.49 71.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 229.87 73.6599 0)
+		(property "Value" "22uF"
+			(at 237.49 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -4936,21 +4935,21 @@
 		(fields_autoplaced yes)
 		(uuid "72b21a4d-290a-475c-9499-1b299c71408e")
 		(property "Reference" "C101"
-			(at 177.8 106.6799 0)
+			(at 185.42 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 177.8 109.2199 0)
+		(property "Value" "22uF"
+			(at 185.42 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -5148,7 +5147,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 30.48 50.7999 0)
 			(effects
 				(font
@@ -5277,21 +5276,21 @@
 		(fields_autoplaced yes)
 		(uuid "86254f89-3df9-40fe-a086-8677a87e3a2d")
 		(property "Reference" "C181"
-			(at 200.66 77.4699 0)
+			(at 208.28 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 200.66 80.0099 0)
+		(property "Value" "22uF"
+			(at 208.28 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -5422,7 +5421,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 58.42 104.14 90)
 			(effects
 				(font
@@ -6223,7 +6222,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 52.07 91.44 90)
 			(effects
 				(font
@@ -6687,21 +6686,21 @@
 		(fields_autoplaced yes)
 		(uuid "c81eb234-c8d2-4fa3-8677-7d1b5ddf4a9d")
 		(property "Reference" "C185"
-			(at 229.87 53.3399 0)
+			(at 237.49 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 229.87 55.8799 0)
+		(property "Value" "22uF"
+			(at 237.49 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -6830,7 +6829,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 166.37 124.46 90)
 			(effects
 				(font
@@ -6955,10 +6954,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "db7f425d-5cc6-4c24-80d1-8e6ad97d8cce")
 		(property "Reference" "C180"
-			(at 189.23 77.4699 0)
+			(at 201.422 77.724 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6967,7 +6965,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 189.23 80.0099 0)
+			(at 201.422 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)

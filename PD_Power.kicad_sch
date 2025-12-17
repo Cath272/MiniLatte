@@ -3061,7 +3061,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "15V@3A\nConfiguration"
+	(text "20V@3A.25\nConfiguration"
 		(exclude_from_sim no)
 		(at 183.642 55.88 0)
 		(effects
@@ -3082,6 +3082,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "02fb1c97-0f84-4903-ab42-b67c06f911f6")
+	)
+	(junction
+		(at 100.33 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12be9b3b-0e89-4305-b00d-5adb7a2669ec")
 	)
 	(junction
 		(at 95.25 43.18)
@@ -3318,6 +3324,12 @@
 		(uuid "c376cbfc-a137-49bd-8999-a879ff22de60")
 	)
 	(junction
+		(at 233.68 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6ca848f-51e9-4f27-bc8c-a3974df1ff31")
+	)
+	(junction
 		(at 81.28 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3346,12 +3358,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d566b6d4-4f05-41c9-bb05-9885d1ec8fc1")
-	)
-	(junction
-		(at 219.71 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de3275a3-4bcd-4976-b978-a9b228d49ac1")
 	)
 	(junction
 		(at 49.53 114.3)
@@ -4030,16 +4036,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 147.32) (xy 219.71 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65d96330-45cb-446d-bdad-ce14a06002ad")
-	)
-	(wire
-		(pts
 			(xy 236.22 144.78) (xy 236.22 127)
 		)
 		(stroke
@@ -4267,6 +4263,16 @@
 			(type default)
 		)
 		(uuid "84ac08fd-bc5e-42ef-9d6c-c22e9ca8996c")
+	)
+	(wire
+		(pts
+			(xy 100.33 93.98) (xy 95.25 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84ce27e5-c490-4996-bb4d-2405b1716bf4")
 	)
 	(wire
 		(pts
@@ -4501,7 +4507,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 93.98) (xy 95.25 93.98)
+			(xy 104.14 93.98) (xy 100.33 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5710,7 +5716,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0268af7f-b2fa-4564-81ed-cdf0ddac565d")
 		(property "Reference" "R95"
 			(at 175.768 59.944 0)
@@ -7216,6 +7222,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 233.68 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53984322-270d-4af3-9db9-b5a432d3c274")
+		(property "Reference" "TP3"
+			(at 236.22 94.4879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+3.3V TestPoint"
+			(at 236.22 97.0279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 238.76 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 233.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b331f6a6-340a-4a52-81f7-01787c512dca")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/3f07c54d-c68c-4501-9d1d-0870eca96d91"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 278.13 134.62 0)
 		(mirror y)
@@ -7224,24 +7297,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "53ffc180-9b1c-4abd-9cf1-851a183869a4")
 		(property "Reference" "C169"
-			(at 274.32 133.3499 0)
+			(at 270.256 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 274.32 135.8899 0)
+		(property "Value" "22uF"
+			(at 270.256 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -7838,7 +7910,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 41.91 123.1899 0)
 			(effects
 				(font
@@ -8758,6 +8830,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 100.33 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2491298-7700-4942-bfa3-7207fb99abdb")
+		(property "Reference" "TP2"
+			(at 102.87 89.4079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V TestPoint"
+			(at 102.87 91.9479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 105.41 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 100.33 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3382a990-ffa6-4ad8-9c75-ba0f7fd5beb5")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/3f07c54d-c68c-4501-9d1d-0870eca96d91"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 26.67 127 0)
 		(unit 1)
@@ -9278,7 +9417,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "beaf94fe-db0e-4570-9905-090e0bac531a")
 		(property "Reference" "R94"
 			(at 162.052 59.944 0)
@@ -9481,24 +9620,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c43aec25-8ed1-41c2-8301-c7f81ede6047")
 		(property "Reference" "C170"
-			(at 262.89 133.3499 0)
+			(at 258.318 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 262.89 135.8899 0)
+		(property "Value" "22uF"
+			(at 258.318 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -9864,7 +10002,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 30.48 123.1899 0)
 			(effects
 				(font
@@ -9943,7 +10081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 69.85 43.18 0)
 			(effects
 				(font

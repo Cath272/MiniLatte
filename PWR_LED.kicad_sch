@@ -1368,16 +1368,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 60.96) (xy 67.31 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b41af307-06fb-4a0a-b4a4-477af9d3fc68")
-	)
-	(wire
-		(pts
 			(xy 115.57 76.2) (xy 123.19 76.2)
 		)
 		(stroke
@@ -1710,15 +1700,15 @@
 		(dnp no)
 		(uuid "26620772-5900-4777-b0d4-29226229d0e4")
 		(property "Reference" "R127"
-			(at 58.674 87.376 90)
+			(at 56.388 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 58.674 90.932 90)
+		(property "Value" "10k"
+			(at 57.15 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2025,8 +2015,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 124.46 68.834 90)
+		(property "Value" "40R"
+			(at 123.698 69.088 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,15 +2423,15 @@
 		(dnp no)
 		(uuid "907c08c3-c7f8-42ef-acd7-b86cc3700b7a")
 		(property "Reference" "R126"
-			(at 57.404 68.326 90)
+			(at 55.118 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 57.404 71.882 90)
+		(property "Value" "10k"
+			(at 56.134 74.422 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2507,8 +2497,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 124.968 73.914 90)
+		(property "Value" "10R"
+			(at 123.698 73.914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,8 +2913,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 124.46 62.738 90)
+		(property "Value" "65R"
+			(at 123.952 62.738 90)
 			(effects
 				(font
 					(size 1.27 1.27)

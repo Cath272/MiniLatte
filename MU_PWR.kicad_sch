@@ -5,6 +5,113 @@
 	(uuid "abc0a57c-a550-4e39-9dff-816f5cc0fb5d")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1264,6 +1371,12 @@
 		(color 0 0 0 0)
 		(uuid "e98943ee-f8f2-4a29-85fc-36b097d884ed")
 	)
+	(junction
+		(at 201.93 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f79643d7-b515-45df-9084-83f65448410e")
+	)
 	(wire
 		(pts
 			(xy 92.71 80.01) (xy 92.71 71.12)
@@ -1323,6 +1436,16 @@
 			(type default)
 		)
 		(uuid "3d48c82b-0881-4817-8436-37df6cb511fb")
+	)
+	(wire
+		(pts
+			(xy 201.93 66.04) (xy 210.82 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3db742c7-eda6-4a5c-b3f2-dcbcd27d8405")
 	)
 	(wire
 		(pts
@@ -1456,7 +1579,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 66.04) (xy 210.82 66.04)
+			(xy 196.85 66.04) (xy 201.93 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1603,7 +1726,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20uF"
+		(property "Value" "22uF"
 			(at 83.82 71.1199 0)
 			(effects
 				(font
@@ -2424,7 +2547,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20uF"
+		(property "Value" "22uF"
 			(at 200.66 71.1199 0)
 			(effects
 				(font
@@ -3139,7 +3262,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20uF"
+		(property "Value" "22uF"
 			(at 214.63 71.1199 0)
 			(effects
 				(font
@@ -3389,6 +3512,73 @@
 			(project ""
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/3f07c54d-c68c-4501-9d1d-0870eca96d91/7bd99a80-fb36-45f7-b59d-1a7a6d3dcaf0"
 					(reference "#PWR0531")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 201.93 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db96e4b4-61a7-4458-a95f-c9a4ce4249dd")
+		(property "Reference" "TP10"
+			(at 204.47 61.4679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+17V TestPoint"
+			(at 204.47 64.0079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 207.01 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 201.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f77ddfea-ddf0-4d96-a20b-8bf5dca8e1ae")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/3f07c54d-c68c-4501-9d1d-0870eca96d91/7bd99a80-fb36-45f7-b59d-1a7a6d3dcaf0"
+					(reference "TP10")
 					(unit 1)
 				)
 			)

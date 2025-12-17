@@ -30,3 +30,6 @@ fp-info-cache
 *.xml
 *.csv
 ~$Book1.xlsx
+design/MiniLatte.SLDASM
+design/~$MiniLatte.SLDASM
+MiniLatte.stl

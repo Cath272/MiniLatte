@@ -5448,7 +5448,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 91.44 151.1299 0)
 			(effects
 				(font
@@ -7794,7 +7794,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 22.86 139.6999 0)
 			(effects
 				(font
@@ -9613,21 +9613,21 @@
 		(fields_autoplaced yes)
 		(uuid "c7831e35-d0de-4257-97a5-bee863c0dab4")
 		(property "Reference" "C130"
-			(at 217.17 156.2101 0)
+			(at 224.79 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 217.17 153.6701 0)
+		(property "Value" "22uF"
+			(at 224.79 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -10084,21 +10084,21 @@
 		(fields_autoplaced yes)
 		(uuid "d7360348-4b5e-4de5-874f-ad94850e0c92")
 		(property "Reference" "C135"
-			(at 252.73 142.2401 0)
+			(at 260.35 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 252.73 139.7001 0)
+		(property "Value" "22uF"
+			(at 260.35 142.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
