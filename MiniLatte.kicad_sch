@@ -866,7 +866,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "da:ZX-HY2.0-4PLT"
+		(symbol "da:WAFER-PH2.0-4PLB"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -878,7 +878,7 @@
 					)
 				)
 			)
-			(property "Value" "ZX-HY2.0-4PLT"
+			(property "Value" "WAFER-PH2.0-4PLB"
 				(at 0 -13.97 0)
 				(effects
 					(font
@@ -886,7 +886,7 @@
 					)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:CONN-SMD_4P-P2.00_HY2.0-4P"
+			(property "Footprint" "easyeda2kicad:CONN-SMD_4P-P2.00_WAFER-200L-4A"
 				(at 0 -16.51 0)
 				(effects
 					(font
@@ -913,7 +913,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part" "C7429562"
+			(property "LCSC Part" "C3029433"
 				(at 0 -19.05 0)
 				(effects
 					(font
@@ -922,10 +922,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "ZX-HY2.0-4PLT_0_1"
+			(symbol "WAFER-PH2.0-4PLB_0_1"
 				(rectangle
 					(start -2.54 6.35)
-					(end 3.81 -6.35)
+					(end 5.08 -6.35)
 					(stroke
 						(width 0)
 						(type default)
@@ -1020,14 +1020,14 @@
 				(pin unspecified line
 					(at 2.54 8.89 270)
 					(length 2.54)
-					(name "5"
+					(name "6"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1038,14 +1038,14 @@
 				(pin unspecified line
 					(at 2.54 -8.89 90)
 					(length 2.54)
-					(name "6"
+					(name "5"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9536,97 +9536,6 @@
 		)
 	)
 	(symbol
-		(lib_id "da:ZX-HY2.0-4PLT")
-		(at 283.21 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01cfa36f-a0cc-42fd-b970-0d1333363f15")
-		(property "Reference" "CN6"
-			(at 288.29 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ZX-HY2.0-4PLT"
-			(at 288.29 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:CONN-SMD_4P-P2.00_HY2.0-4P"
-			(at 283.21 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 283.21 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 283.21 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C7429562"
-			(at 283.21 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "58bc2be5-686c-40fe-aeb2-37a49839d506")
-		)
-		(pin "3"
-			(uuid "d39537e7-04c5-4efd-9c25-e65ba9ca293b")
-		)
-		(pin "6"
-			(uuid "113b74bd-ae51-4778-af25-6698b16156fb")
-		)
-		(pin "1"
-			(uuid "ea845102-72e8-4861-9e6a-8445bd0ff890")
-		)
-		(pin "5"
-			(uuid "06a6d38a-e3ce-4569-b788-5c721e854727")
-		)
-		(pin "2"
-			(uuid "36b76794-7b33-43e8-bfd8-c4e0bfc9a3d8")
-		)
-		(instances
-			(project ""
-				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
-					(reference "CN6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 273.05 168.91 0)
 		(unit 1)
@@ -11558,6 +11467,97 @@
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
 					(reference "#PWR0465")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "da:WAFER-PH2.0-4PLB")
+		(at 283.21 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0997584-a927-4552-8948-e3675b0e1a48")
+		(property "Reference" "CN5"
+			(at 289.56 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "WAFER-PH2.0-4PLB"
+			(at 289.56 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-SMD_4P-P2.00_WAFER-200L-4A"
+			(at 283.21 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 283.21 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 283.21 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C3029433"
+			(at 283.21 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "e63748f1-5dd9-47a8-a897-1b5bd4c4f1ed")
+		)
+		(pin "2"
+			(uuid "0cb580d7-4d43-4739-9fd2-26138623bee4")
+		)
+		(pin "6"
+			(uuid "1c08331a-9aa1-4143-9467-8cd595e23823")
+		)
+		(pin "1"
+			(uuid "160b408a-b8bd-4f93-ab52-b489f7ea3f92")
+		)
+		(pin "5"
+			(uuid "dd3a035e-e307-4d52-bdac-da51bbfbd3a4")
+		)
+		(pin "3"
+			(uuid "1161361f-805b-4360-b093-5d0a50e13c84")
+		)
+		(instances
+			(project ""
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8"
+					(reference "CN5")
 					(unit 1)
 				)
 			)

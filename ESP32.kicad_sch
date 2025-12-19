@@ -2858,6 +2858,12 @@
 			(uuid "42aa1745-2f8c-473f-960f-d4e5712cbe5f")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C206")
@@ -2923,6 +2929,12 @@
 			(uuid "4e30f046-d630-4b5c-aa5e-e5c6b3e93cc3")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0494")
@@ -2989,6 +3001,12 @@
 			(uuid "26422068-2920-4734-8eb9-436156327f2c")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0562")
@@ -3055,6 +3073,12 @@
 			(uuid "b5f97c4d-5c54-4523-88e4-2083f28b52b6")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0554")
@@ -3122,6 +3146,12 @@
 			(uuid "ee3d4b72-674b-4038-bf89-f67a2ccce69a")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0557")
@@ -3187,6 +3217,12 @@
 			(uuid "0fef9248-ea79-4bb3-9f9f-13055da76921")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0501")
@@ -3255,6 +3291,12 @@
 			(uuid "084c2066-ab14-43ab-b011-06be9dad38c1")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C202")
@@ -3321,6 +3363,12 @@
 			(uuid "cf3a821d-ef3a-4b73-8e27-78da6e1c8c38")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0496")
@@ -3347,7 +3395,7 @@
 				)
 			)
 		)
-		(property "Value" "25Mhz"
+		(property "Value" "40Mhz"
 			(at 54.356 143.002 0)
 			(effects
 				(font
@@ -3395,6 +3443,12 @@
 			(uuid "f3d0d72c-0d45-4338-bdf8-2dcda21a7283")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "Y?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "Y5")
@@ -3461,6 +3515,12 @@
 			(uuid "b9717976-9133-4daa-af66-0d86e3f317b8")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0552")
@@ -3528,6 +3588,12 @@
 			(uuid "3927c326-3813-4f43-8c9b-a9df237ded6d")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0499")
@@ -3595,6 +3661,12 @@
 			(uuid "940d2526-cb9c-474c-900f-3f4db9f63c4a")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "R113")
@@ -3661,6 +3733,12 @@
 			(uuid "865facc0-3d4d-4212-8a5c-4468137a5608")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0548")
@@ -3752,6 +3830,12 @@
 			(uuid "517c8e6b-71d9-4d9e-8f42-4fc8fb4ec5ef")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "U20")
@@ -3819,6 +3903,12 @@
 			(uuid "3ec4306b-d0de-4f2b-b2fb-bdf5e44ede94")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0551")
@@ -3887,6 +3977,12 @@
 			(uuid "a9b816fd-c4fb-498c-8cc9-22d3efbe4f97")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C208")
@@ -3953,6 +4049,12 @@
 			(uuid "7d351f44-ed0b-49ce-8f46-27bcc2f9f800")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0498")
@@ -4023,6 +4125,12 @@
 			(uuid "16e99162-e2c6-4b07-ac88-b6e36aacb755")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C203")
@@ -4092,6 +4200,12 @@
 			(uuid "fd63ee84-da6d-45b7-987f-a32744249617")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C205")
@@ -4159,6 +4273,12 @@
 			(uuid "4b8b51d0-ad90-47aa-b710-cb3ea339b6ee")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "R140")
@@ -4225,6 +4345,12 @@
 			(uuid "24308316-2fa5-4b64-89d6-104b12528a7e")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0547")
@@ -4291,6 +4417,12 @@
 			(uuid "4e72a696-4e3a-4c39-b62d-b7f453e536fa")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0497")
@@ -4357,6 +4489,12 @@
 			(uuid "1d5cd949-32b6-4801-9d95-d59660924351")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0555")
@@ -4428,6 +4566,12 @@
 			(uuid "7d774294-bf88-4d9b-b4f3-9f0963586d29")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C201")
@@ -4494,6 +4638,12 @@
 			(uuid "51e46e5c-56f8-4844-86f7-3ee5e38833e8")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0549")
@@ -4560,6 +4710,12 @@
 			(uuid "98200039-b9ab-4e98-ae52-d89c76924827")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0500")
@@ -4627,6 +4783,12 @@
 			(uuid "5b8c5853-d242-4da3-8a78-84b4f532564f")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0563")
@@ -4710,6 +4872,12 @@
 			(uuid "a48866ab-3073-4df9-98f3-160569816ac9")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "SW?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "SW2")
@@ -4777,6 +4945,12 @@
 			(uuid "ea6b48f1-f05e-44b2-bb3b-3d7742bc96df")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "R110")
@@ -4843,6 +5017,12 @@
 			(uuid "3c84c9a9-efdf-4ca7-8d40-db55219b69fb")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0559")
@@ -4910,6 +5090,12 @@
 			(uuid "52af1854-4749-48ad-a024-db1775c45379")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0558")
@@ -4976,6 +5162,12 @@
 			(uuid "b469cb7e-d106-4249-a607-002eb9f48673")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0561")
@@ -5044,6 +5236,12 @@
 			(uuid "bc232a74-fdd2-4642-aa84-de1164bd45b1")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C207")
@@ -5114,6 +5312,12 @@
 			(uuid "d05f3c5d-99b3-410e-96ba-3b059bc702c8")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C200")
@@ -5277,6 +5481,12 @@
 			(uuid "2dc865ff-7f60-4a46-8562-bf77b0cc53c0")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "U21")
@@ -5342,6 +5552,12 @@
 			(uuid "dc9a7785-5d21-4ec7-a3ca-aa7916189827")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0560")
@@ -5409,6 +5625,12 @@
 			(uuid "3ab4f5bf-a514-46d4-9f8b-f09978109a45")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0550")
@@ -5492,6 +5714,12 @@
 			(uuid "5fcc505f-295e-445f-813a-936ab2549e83")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "SW?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "SW1")
@@ -5560,6 +5788,12 @@
 			(uuid "6b8fbe54-ad55-4f8d-9ef3-c83940a554c5")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "L?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "L8")
@@ -5626,6 +5860,12 @@
 			(uuid "d5809529-5f67-4222-9907-e161b2a52a11")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0556")
@@ -5696,6 +5936,12 @@
 			(uuid "45689679-aee6-4ad7-a9ed-2c9b1868913d")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "AE?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "AE2")
@@ -5763,6 +6009,12 @@
 			(uuid "4da8769b-3ff6-490f-ba60-e33764bd2451")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0495")
@@ -5829,6 +6081,12 @@
 			(uuid "572c74c0-82ba-4b01-8171-1beb48fc8a10")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "#PWR0553")
@@ -5899,6 +6157,12 @@
 			(uuid "b936d829-6e9d-4505-8b7f-35fdd45ac932")
 		)
 		(instances
+			(project "ESP32"
+				(path "/aec5e119-285c-4d8f-92a5-39d14ff8d280"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/a10b1c88-4a2a-4cb1-b64e-7f54dd4fde08"
 					(reference "C204")
@@ -5907,4 +6171,10 @@
 			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

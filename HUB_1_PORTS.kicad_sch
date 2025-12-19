@@ -2752,16 +2752,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TO ADD CAPS ON TX LINES + TO ADD TVS DIODE\n"
-		(exclude_from_sim no)
-		(at 93.472 69.088 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a4c38166-a03b-48e1-b72e-89284454af75")
-	)
 	(junction
 		(at 151.13 34.29)
 		(diameter 0)
