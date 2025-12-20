@@ -2650,6 +2650,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -3061,6 +3186,12 @@
 		(uuid "652aa3a8-2d1f-405d-b309-219676e8978c")
 	)
 	(junction
+		(at 114.3 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66ff28cd-d42a-4756-956a-9874b6c0ec34")
+	)
+	(junction
 		(at 100.33 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3196,6 +3327,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 78.74) (xy 114.3 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "046d14c9-4722-4c07-bc90-708b07d25853")
+	)
+	(wire
+		(pts
 			(xy 220.98 140.97) (xy 220.98 139.7)
 		)
 		(stroke
@@ -3223,6 +3364,16 @@
 			(type default)
 		)
 		(uuid "0f2c822f-8ba8-4423-99e6-4dd4ed073c28")
+	)
+	(wire
+		(pts
+			(xy 114.3 73.66) (xy 114.3 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13c6a7bb-81ea-4d0c-adb5-f0e4e566bd26")
 	)
 	(wire
 		(pts
@@ -3636,7 +3787,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 46.99) (xy 63.5 46.99)
+			(xy 60.96 46.99) (xy 63.5 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3673,6 +3824,16 @@
 			(type default)
 		)
 		(uuid "592ac4a4-57c5-4d69-8328-ee608b65e85b")
+	)
+	(wire
+		(pts
+			(xy 124.46 82.55) (xy 124.46 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59c2faf6-4f39-4b2b-97f6-fc119a8af6e6")
 	)
 	(wire
 		(pts
@@ -4486,6 +4647,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 78.74) (xy 124.46 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ca2645-31eb-45ab-b787-217123a2ff66")
+	)
+	(wire
+		(pts
 			(xy 87.63 146.05) (xy 87.63 144.78)
 		)
 		(stroke
@@ -4865,7 +5036,7 @@
 		(uuid "bcdde344-6e40-4026-a56e-37c5723a43d7")
 	)
 	(label "SBU1"
-		(at 62.23 46.99 180)
+		(at 60.96 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4996,6 +5167,28 @@
 			)
 		)
 	)
+	(global_label "I2C2_SDA"
+		(shape input)
+		(at 114.3 90.17 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "36ac6438-ca2f-401e-a957-beafd03707b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.3 101.9847 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GPP_D2"
 		(shape input)
 		(at 107.95 114.3 180)
@@ -5076,6 +5269,28 @@
 		(uuid "60e4e75a-5965-4c67-ad23-1d2af1f5d5e3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 49.1453 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C2_SCL"
+		(shape input)
+		(at 124.46 90.17 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60fcb3a8-0269-4dfe-b316-04ec14b46e4e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.46 101.9242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,6 +5645,73 @@
 		(uuid "fddd047e-c0a7-4c1e-9923-725b42e69078")
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 124.46 86.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00672756-5abc-485c-ae38-53019f4a81ed")
+		(property "Reference" "R150"
+			(at 120.904 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2K"
+			(at 119.634 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 126.238 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 124.46 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07966447-e985-4b4f-98e0-dca289996fc4")
+		)
+		(pin "2"
+			(uuid "3a6e27c1-8192-4d57-9a4e-7d20edd3bc86")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/96389c39-f901-4f39-b3da-5c22fdda4b49"
+					(reference "R150")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 87.63 149.86 0)
 		(unit 1)
@@ -5561,6 +5843,72 @@
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/96389c39-f901-4f39-b3da-5c22fdda4b49"
 					(reference "R87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 114.3 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09135d85-227e-4e12-bd95-9e288841718b")
+		(property "Reference" "#PWR0579"
+			(at 114.3 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 114.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 114.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52c3dacb-444e-47ca-993f-d866d28fac35")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/96389c39-f901-4f39-b3da-5c22fdda4b49"
+					(reference "#PWR0579")
 					(unit 1)
 				)
 			)
@@ -8993,6 +9341,73 @@
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/96389c39-f901-4f39-b3da-5c22fdda4b49"
 					(reference "#PWR0323")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 114.3 86.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b536c14a-8a51-469d-b1ab-81ae1c275a6a")
+		(property "Reference" "R149"
+			(at 110.744 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2K"
+			(at 109.474 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 116.078 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 114.3 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb6aeea7-0bfa-45c9-b267-bd80c26fe3b4")
+		)
+		(pin "2"
+			(uuid "fd5c9ebe-cc8d-4342-b297-3a522a4f4606")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/96389c39-f901-4f39-b3da-5c22fdda4b49"
+					(reference "R149")
 					(unit 1)
 				)
 			)
