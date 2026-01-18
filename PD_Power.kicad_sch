@@ -3061,7 +3061,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "20V@3A.25\nConfiguration"
+	(text "20V@3.25A\nConfiguration"
 		(exclude_from_sim no)
 		(at 183.642 55.88 0)
 		(effects
@@ -6229,7 +6229,7 @@
 				)
 			)
 		)
-		(property "Value" "13k"
+		(property "Value" "15k"
 			(at 191.77 95.25 0)
 			(effects
 				(font
@@ -9699,7 +9699,7 @@
 				)
 			)
 		)
-		(property "Value" "20k"
+		(property "Value" "10k"
 			(at 191.77 102.87 0)
 			(effects
 				(font
