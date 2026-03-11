@@ -5159,10 +5159,6 @@
 		(uuid "c6ae515f-bd3b-4353-8315-5ead667ba558")
 	)
 	(no_connect
-		(at 212.09 83.82)
-		(uuid "c86f9de4-55a7-4ef8-996b-c2b96bb65b2c")
-	)
-	(no_connect
 		(at 57.15 113.03)
 		(uuid "cd66890f-7424-430c-b9da-56e625c299b3")
 	)
@@ -5821,6 +5817,16 @@
 			(type default)
 		)
 		(uuid "60b114a6-49de-4183-96b8-aa2c42e0c763")
+	)
+	(wire
+		(pts
+			(xy 231.14 85.09) (xy 242.57 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "615cce4c-c2b5-4ca5-b653-98f76c6f3b4e")
 	)
 	(wire
 		(pts
@@ -6684,6 +6690,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 83.82) (xy 223.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e476188e-33a7-45cd-ae06-82551a680803")
+	)
+	(wire
+		(pts
 			(xy 167.64 135.89) (xy 179.07 135.89)
 		)
 		(stroke
@@ -6801,6 +6817,16 @@
 			(type default)
 		)
 		(uuid "fabb87b6-ad5b-4982-9c0c-ff668a535865")
+	)
+	(wire
+		(pts
+			(xy 223.52 83.82) (xy 223.52 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf53d3f-d119-4a5b-8e6d-b6af9ae0d6b5")
 	)
 	(wire
 		(pts
@@ -11723,6 +11749,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 227.33 85.09 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7cafd20a-4787-4fb7-857d-806928b85a04")
+		(property "Reference" "R151"
+			(at 225.298 87.884 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 230.378 87.884 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 227.33 86.868 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "675eea44-1638-4f72-a871-c0789186896e")
+		)
+		(pin "2"
+			(uuid "0f43f9a9-0e14-4b2f-a5cb-73be02ce71b4")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/0b83a0c0-fa35-4171-b0ac-b3d09c000c8e"
+					(reference "R151")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 64.77 193.04 0)
 		(mirror y)
@@ -13685,6 +13778,71 @@
 			(project "MiniLatte"
 				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/0b83a0c0-fa35-4171-b0ac-b3d09c000c8e"
 					(reference "#PWR0154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 242.57 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b154a6e9-0a52-4184-b70d-015360ea6dd6")
+		(property "Reference" "#PWR0580"
+			(at 242.57 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 234.188 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bcf01be-0651-4518-b8f7-05f81f7d403e")
+		)
+		(instances
+			(project "MiniLatte"
+				(path "/ffe475c5-d6e9-41b5-8ca1-322659dd88d8/0b83a0c0-fa35-4171-b0ac-b3d09c000c8e"
+					(reference "#PWR0580")
 					(unit 1)
 				)
 			)

@@ -398,18 +398,18 @@
 			)
 		)
 	)
-	(hierarchical_label "SS_HUB_1_RX-"
+	(hierarchical_label "SS_HUB_1_TX+"
 		(shape input)
-		(at 35.56 90.17 180)
+		(at 35.56 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "5f34b2ac-90fc-4146-9029-307907a57d5f")
+		(uuid "0e0fcf8d-6cd7-4743-b0aa-60d1f12afc6d")
 	)
-	(hierarchical_label "SS_HUB_1_TX+"
+	(hierarchical_label "SS_HUB_1_RX+"
 		(shape input)
 		(at 35.56 85.09 180)
 		(effects
@@ -418,11 +418,22 @@
 			)
 			(justify right)
 		)
-		(uuid "80f87849-64a8-4836-aa15-7ffbe7b7a12d")
+		(uuid "29923c44-2298-4973-9025-10987da42669")
+	)
+	(hierarchical_label "SS_HUB_1_TX-"
+		(shape input)
+		(at 35.56 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d9fd8b0-14df-4d88-8b8c-62db2562bf8b")
 	)
 	(hierarchical_label "SS_HUB_0_TX+"
 		(shape input)
-		(at 133.35 87.63 180)
+		(at 133.35 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -433,7 +444,7 @@
 	)
 	(hierarchical_label "SS_HUB_0_RX+"
 		(shape input)
-		(at 133.35 95.25 180)
+		(at 133.35 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -442,7 +453,7 @@
 		)
 		(uuid "88953eca-6aa9-4cf1-aaa8-aedaf5fcd3d2")
 	)
-	(hierarchical_label "SS_HUB_1_TX-"
+	(hierarchical_label "SS_HUB_1_RX-"
 		(shape input)
 		(at 35.56 87.63 180)
 		(effects
@@ -451,11 +462,11 @@
 			)
 			(justify right)
 		)
-		(uuid "9bf8862f-7b2b-472d-b1ae-1bed88b2e8bd")
+		(uuid "a989b970-c065-49b4-9443-507b3757304a")
 	)
 	(hierarchical_label "SS_HUB_0_TX-"
 		(shape input)
-		(at 133.35 90.17 180)
+		(at 133.35 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -466,7 +477,7 @@
 	)
 	(hierarchical_label "SS_HUB_0_RX-"
 		(shape input)
-		(at 133.35 92.71 180)
+		(at 133.35 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -474,17 +485,6 @@
 			(justify right)
 		)
 		(uuid "bccd2f84-5119-4413-876d-728e989e0598")
-	)
-	(hierarchical_label "SS_HUB_1_RX+"
-		(shape input)
-		(at 35.56 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d3482518-4bca-4917-81d7-c81f78a511f1")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
