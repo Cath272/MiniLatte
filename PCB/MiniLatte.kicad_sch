@@ -7783,16 +7783,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 109.22) (xy 240.03 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "348d2019-bbb4-4c7a-897f-827090feb419")
-	)
-	(wire
-		(pts
 			(xy 73.66 43.18) (xy 95.25 43.18)
 		)
 		(stroke
@@ -8000,6 +7990,16 @@
 			(type default)
 		)
 		(uuid "59aa56ba-f82a-4d65-9b77-31060b458c44")
+	)
+	(wire
+		(pts
+			(xy 229.87 109.22) (xy 246.38 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59aa9f00-9968-4a99-a16a-0be6c07d8357")
 	)
 	(wire
 		(pts
@@ -8880,6 +8880,16 @@
 			(type default)
 		)
 		(uuid "ffe63738-eb5c-4f24-acd9-db2c7ae77c61")
+	)
+	(label "S0_PWR"
+		(at 229.87 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e932e76-6bc1-4930-98e9-d96231e43a65")
 	)
 	(label "S0_PWR"
 		(at 78.74 43.18 0)
@@ -10098,17 +10108,6 @@
 				(hide yes)
 			)
 		)
-	)
-	(hierarchical_label "S0_PWR_IND"
-		(shape input)
-		(at 240.03 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "68569db8-0e5d-4f85-8ed9-05497b517bad")
 	)
 	(symbol
 		(lib_id "power:GND")

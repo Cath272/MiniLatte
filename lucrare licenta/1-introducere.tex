@@ -1,17 +1,65 @@
-\section{Introducere}
+\chapter{Introducere}
+\label{ch:introducere}
 
-\section{Lorem ipsum}
+În acest capitol se prezintă contextul proiectului, obiectivele urmărite și motivația alegerii platformei hardware. Lucrarea vizează dezvoltarea unui sistem compact și performant, capabil să ruleze aplicații complexe într-un format redus, utilizând arhitectura x86 modernă pentru a asigura compatibilitatea cu o gamă largă de soluții software.
 
-Lorem ipsum dolor sit amet , consectetur adipiscing elit. Nam convallis dapibus ante in interdum. Aliquam vitae elit eu elit gravida facilisis. Proin tincidunt sodales elit vitae ornare. Suspendisse quis rutrum ipsum, eget tempor felis. Nulla facilisi. Vivamus mollis quam a est aliquam congue. Nulla risus turpis, rutrum ac lacus molestie, vestibulum ultricies enim. Suspendisse a urna ultrices quam pulvinar finibus ac vitae felis. Ut sit amet interdum lacus. Sed in cursus arcu. Vivamus quis eros efficitur, ullamcorper dui ut, blandit nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc interdum venenatis mi, sed placerat elit feugiat in. Praesent dignissim ante nec rutrum tempus.
+\chapter{Componenta Hardware}
+\label{ch:hardware}
 
-Aenean accumsan nunc nunc, nec maximus ex ultricies et. In porta sollicitudin augue. Curabitur consectetur elit nec eros laoreet fermentum. Vivamus nec nisl a lectus scelerisque viverra at id tortor. Fusce et erat dictum, dictum odio nec, aliquam orci. Vestibulum gravida feugiat purus. Mauris non neque est. Sed commodo vel enim vel tincidunt. Sed faucibus dolor id dui dictum pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris interdum tempor purus ut tempor. Maecenas ac suscipit ex. Sed vitae diam nec neque ultricies faucibus. In at purus elit. Nunc placerat nunc tortor.
+\section{LattePanda Mu}
 
-Fusce fermentum quis tellus vitae congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin convallis congue sapien semper volutpat. Curabitur rhoncus et nunc quis tempor. Quisque sollicitudin dolor id varius luctus. Donec sapien dolor, eleifend quis justo id, euismod ultrices nulla. Suspendisse leo quam, luctus in velit ac, venenatis molestie odio. Aliquam vitae feugiat elit. Sed auctor gravida leo, ut dictum enim tempus non. Suspendisse in dapibus urna, vitae pretium ligula. Morbi ut diam laoreet, convallis leo non, semper arcu. Sed vel lorem tortor. In auctor a diam sit amet convallis. Etiam ipsum ligula, luctus quis interdum ac, consequat vitae orci. Maecenas hendrerit turpis tristique, tincidunt nisi ut, mattis augue.
+LattePanda Mu reprezintă un modul de calcul de înaltă performanță, cu dimensiuni comparabile cu cele ale unui card bancar, proiectat de compania DFRobot. Conceptul principal al acestui modul este de a facilita integrarea în produse hardware customizate, fiind pretabil atât pentru proiecte de tip hobby, cât și pentru aplicații industriale.
 
-\section{Dolor sit amet}
+Seria actuală cuprinde modele cu diferite configurații de procesoare și memorie, acestea menținând intercompatibilitatea la nivel de pinout. Modulul este proiectat pentru a fi inserat într-o placă de bază (carrier board) folosind un slot standard SO-DIMM DDR4. Această alegere constructivă este justificată de densitatea mare de pini, necesară pentru a expune numeroasele interfețe de comunicare către placa purtătoare.
 
-Fusce fermentum quis tellus vitae congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin convallis congue sapien semper volutpat. Curabitur rhoncus et nunc quis tempor. Quisque sollicitudin dolor id varius luctus. Donec sapien dolor, eleifend quis justo id, euismod ultrices nulla. Suspendisse leo quam, luctus in velit ac, venenatis molestie odio. Aliquam vitae feugiat elit. Sed auctor gravida leo, ut dictum enim tempus non. Suspendisse in dapibus urna, vitae pretium ligula. Morbi ut diam laoreet, convallis leo non, semper arcu. Sed vel lorem tortor. In auctor a diam sit amet convallis. Etiam ipsum ligula, luctus quis interdum ac, consequat vitae orci. Maecenas hendrerit turpis tristique, tincidunt nisi ut, mattis augue.
+Flexibilitatea platformei este sporită de posibilitatea modificării BIOS-ului, permițând utilizatorului să configureze alocarea liniilor de date pentru a prioritiza, după caz, numărul de sloturi PCIe sau porturile USB disponibile. Specificațiile tehnice ale unității utilizate în prezenta lucrare sunt următoarele:
 
-\subsection{Quis tellus vitae}
+\begin{itemize}
+    \item \textbf{Procesor:} Intel N100 Quad-Core, cu o frecvență de până la 3.4 GHz;
+    \item \textbf{Memorie RAM:} 8 GB LPDDR5, operând la o viteză de 4800 MT/s;
+    \item \textbf{Stocare internă:} 64 GB eMMC 5.1.
+\end{itemize}
 
-Aenean accumsan nunc nunc, nec maximus ex ultricies et. In porta sollicitudin augue. Curabitur consectetur elit nec eros laoreet fermentum. Vivamus nec nisl a lectus scelerisque viverra at id tortor. Fusce et erat dictum, dictum odio nec, aliquam orci. Vestibulum gravida feugiat purus. Mauris non neque est. Sed commodo vel enim vel tincidunt. Sed faucibus dolor id dui dictum pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris interdum tempor purus ut tempor. Maecenas ac suscipit ex. Sed vitae diam nec neque ultricies faucibus. In at purus elit. Nunc placerat nunc tortor.
+În ceea ce privește conectivitatea, configurația aleasă pentru acest sistem include:
+\begin{itemize}
+    \item 2 porturi USB 3.2 Gen 2 (10 Gbps);
+    \item 2 ieșiri video HDMI 2.0;
+    \item DisplayPort 1.4 prin interfața USB-C;
+    \item 7 linii PCIe Gen 3.
+\end{itemize}
+
+\section{Conexiuni - Diagramă Bloc}
+
+Sistemul utilizează standardul \textit{USB Power Delivery} (PD) pentru alimentare. Această soluție a fost aleasă datorită costului redus și a disponibilității ridicate pe piață a surselor compatibile. Fiind un standard universal și nu unul proprietar, acesta oferă flexibilitate maximă în alegerea alimentatorului și facilitează înlocuirea rapidă a acestuia în caz de necesitate. Toate conexiunile critice sunt realizate intern, la nivelul plăcii de bază, pentru a reduce latențele și a crește fiabilitatea.
+
+Pentru extinderea capacităților de conectare a perifericelor, au fost integrate două hub-uri USB care pun la dispoziție 4 porturi USB 3.2 Gen 2. În ceea ce privește conectivitatea la rețea, sistemul oferă două posibilități distincte, ambele bazate pe magistrala PCIe Gen 3:
+\begin{enumerate}
+    \item \textbf{Wireless:} prin intermediul unui modul Wi-Fi instalat în slotul dedicat de pe placa de bază;
+    \item \textbf{Ethernet:} utilizând controlerul \textit{Realtek RTL8125} integrat, care suportă viteze de transfer de până la 2.5 Gbps via PCIe Gen 3.
+\end{enumerate}
+
+Capacitatea de stocare poate fi extinsă considerabil prin cele trei sloturi destinate unităților SSD M.2 NVMe. Suplimentar, la unul dintre hub-urile USB este conectat un cititor de carduri dual SD, utilizând lățimea de bandă oferită de interfața USB 3.2 Gen 2.
+
+Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce comunică prin protocolul \textit{HDAudio}. Semnalul video este distribuit prin trei porturi digitale: două HDMI 2.0 și un DisplayPort 1.4 (via USB-C).
+
+\includegraphics[width=\linewidth]{MiniLatte_block.png}
+
+\section{Design}
+
+Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de circuit integrat imprimat (PCB).
+
+\subsection{Consum de curent}
+Din cauza numarului mare de conectivitate, un lucru important in acest design a fost proiectarea in jurul consumuli de curent atât a modulului LattePanda Mu dar și componentelor de pe placa și a diverserlor dispozitive conectate.
+Cum am menționat anterior, modulul este alimentat printr-un port USB Type C prin protocolul USB Power Delivery, am folosit un chip HUSB238 pentru a comunica prin acest procol cu incărcătorul conectat și pentru a cere 20v 3,25A (65W) care este o valoare standard pentru acest protocol.
+Aceasta tensiune este coborâtă la 17,5V pentru modulul LattePanda Mu folosind regulatorul TPS54561, consumul modulului fiind de 10-15W.
+De asemenea tensiunea mai este coborâtă la 3,3V respectiv 5V folosind chip-ul TPS51275.
+Planele de alimentare sunt foarte late, fiind nevoie de zone foarte late pentru a conduce curentul necesar. Acestea sunt 7-7,5mm dupa iesirea din regulatorul de tensiunea si dupa se ingusteaza din ce in ce mai tare, dupa ce trec de componentele cu consum mai mare. Pentru tensiunea de 3,3v acestea sunt cele 3 ssd-uri iar pentru cea de 5v sunt porturile usb care pot consuma până la 0,5A pentru porturile USB 2.0 și 0,9A pentru Porturile USB 3.0 și Type C, acesea fiind monitorizate constant de mai multe chip-uri TPS2561  care pot sa întrerupă curent către portul USB dacă detecteaza un consum prea mare de curent.  
+
+
+
+
+\subsection{Magistrale Diferențiale}
+Magistralele diferețiale de comunicare sunt principala metoda in care sunt transmise date la viteze mari, marea majoritate a protocoalelor de comunicare moderne cum ar fi HDMI, USB, PCIExpress folosesc acest mod de transmitere de date.
+In proiectare de PCB-uri, magistralele diferețiale sunt  
+
+
