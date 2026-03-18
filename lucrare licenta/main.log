@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.3.13)  16 MAR 2026 16:21
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.3.17)  17 MAR 2026 19:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex"
-(c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex
+**"c:/Users/Cath/Desktop/pcb projects/MiniLatte/lucrare licenta/main.tex"
+(c:/Users/Cath/Desktop/pcb projects/MiniLatte/lucrare licenta/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -366,7 +366,7 @@ Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 )) (C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+Package: geometry 2026/03/07 v6.0 Page Geometry
  (C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
