@@ -96,6 +96,12 @@
 
 % Stiluri diferite de headere și footere
 \usepackage{fancyhdr}
+\usepackage{acronym}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{changepage}
+\usepackage{float}
+
 
 % Metadate
 \title{MiniLatte}
@@ -130,6 +136,31 @@
 \include{0-abstract}
 
 \tableofcontents
+\listoffigures
+
+
+\chapter*{Lista de abrevieri}
+\begin{acronym}
+    \acro{USB}{Universal Serial Bus}
+    \acro{PCIe}{Peripheral Component Interconnect Express}
+    \acro{HDMI}{High-Definition Multimedia Interface}
+    \acro{HDAudio}{High Definition Audio}
+    \acro{NVMe}{Non-Volatile Memory Express}
+    \acro{SSD}{Solid State Drive}
+    \acro{BIOS}{Basic Input/Output System}
+    \acro{Wi-Fi}{Wireless Fidelity}
+    \acro{LAN}{Local area network}
+    \acro{PCB}{Printed Circuit Board}
+    \acro{SD}{Secure Digital}
+    \acro{DDR}{Double Data Rate}
+    \acro{PD}{Power Delivery}
+    \acro{PLA}{Polylactide}
+    \acro{PETG}{polyethylene terephthalate glycol-modified}
+
+
+
+
+\end{acronym}
 
 % Main matter
 \cleardoublepage
@@ -137,7 +168,7 @@
 \let\ps@plain\ps@main
 
 \include{1-introducere}
-\include{2-preliminarii}
+\include{2-hardware}
 \include{3-concluzii}
 
 \printbibliography[heading=bibintoc]

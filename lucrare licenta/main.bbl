@@ -16,5 +16,40 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{Layout_Guidelines}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{%
+           family={Instruments},
+           familyi={I\bibinitperiod},
+           given={Texas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{bibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorbibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 24.03.2026)}
+      \field{title}{High-Speed Layout Guidelines for Signal Conditioners and USB Hubs}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.ti.com/lit/an/slla414a/slla414a.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/lit/an/slla414a/slla414a.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

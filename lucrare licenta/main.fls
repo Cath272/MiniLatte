@@ -1,6 +1,6 @@
-PWD c:\Users\Cath\Desktop\pcb projects\MiniLatte\lucrare licenta
+PWD c:\Users\Cath\Desktop\PCB Projects\MiniLatte\lucrare licenta
 INPUT C:\Users\Cath\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
-INPUT c:\Users\Cath\Desktop\pcb projects\MiniLatte\lucrare licenta\main.tex
+INPUT c:\Users\Cath\Desktop\PCB Projects\MiniLatte\lucrare licenta\main.tex
 OUTPUT main.log
 INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -191,6 +191,23 @@ INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\appendix\appendix.st
 INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\appendix\appendix.sty
 INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\acronym\acronym.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\acronym\acronym.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\bigfoot\suffix.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\bigfoot\suffix.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\generic\xstring\xstring.tex
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\changepage\changepage.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\changepage\changepage.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT .\main.aux
 INPUT .\main.aux
 INPUT main.aux
@@ -203,9 +220,9 @@ INPUT 0-abstract.aux
 INPUT .\1-introducere.aux
 INPUT .\1-introducere.aux
 INPUT 1-introducere.aux
-INPUT .\2-preliminarii.aux
-INPUT .\2-preliminarii.aux
-INPUT 2-preliminarii.aux
+INPUT .\2-hardware.aux
+INPUT .\2-hardware.aux
+INPUT 2-hardware.aux
 INPUT .\3-concluzii.aux
 INPUT .\3-concluzii.aux
 INPUT 3-concluzii.aux
@@ -267,20 +284,40 @@ INPUT .\main.toc
 INPUT .\main.toc
 INPUT main.toc
 OUTPUT main.toc
+INPUT .\main.lof
+INPUT .\main.lof
+INPUT main.lof
+OUTPUT main.lof
 INPUT .\1-introducere.tex
 INPUT .\1-introducere.tex
 OUTPUT 1-introducere.aux
 INPUT .\1-introducere.tex
 INPUT .\1-introducere.tex
 INPUT 1-introducere.tex
+INPUT .\images\pcb-top-front.jpg
+INPUT .\images\pcb-top-front.jpg
+INPUT .\2-hardware.tex
+INPUT .\2-hardware.tex
+OUTPUT 2-hardware.aux
+INPUT .\2-hardware.tex
+INPUT .\2-hardware.tex
+INPUT 2-hardware.tex
+INPUT .\images\ports-front.jpg
+INPUT .\images\ports-front.jpg
+INPUT .\images\ports-back.jpg
+INPUT .\images\ports-back.jpg
+INPUT .\images\pcb-bottom.jpg
+INPUT .\images\pcb-bottom.jpg
 INPUT .\images\MiniLatte_block.png
 INPUT .\images\MiniLatte_block.png
-INPUT .\2-preliminarii.tex
-INPUT .\2-preliminarii.tex
-OUTPUT 2-preliminarii.aux
-INPUT .\2-preliminarii.tex
-INPUT .\2-preliminarii.tex
-INPUT 2-preliminarii.tex
+INPUT .\images\Latime plan curent.png
+INPUT .\images\Latime plan curent.png
+INPUT .\images\Intra-pair-skew.png
+INPUT .\images\Intra-pair-skew.png
+INPUT .\images\Inter-pair-skew.png
+INPUT .\images\Inter-pair-skew.png
+INPUT .\images\Latime plan curent.png
+INPUT .\images\Latime plan curent.png
 INPUT .\3-concluzii.tex
 INPUT .\3-concluzii.tex
 OUTPUT 3-concluzii.aux
@@ -297,9 +334,9 @@ INPUT 0-abstract.aux
 INPUT .\1-introducere.aux
 INPUT .\1-introducere.aux
 INPUT 1-introducere.aux
-INPUT .\2-preliminarii.aux
-INPUT .\2-preliminarii.aux
-INPUT 2-preliminarii.aux
+INPUT .\2-hardware.aux
+INPUT .\2-hardware.aux
+INPUT 2-hardware.aux
 INPUT .\3-concluzii.aux
 INPUT .\3-concluzii.aux
 INPUT 3-concluzii.aux
