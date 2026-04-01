@@ -9,7 +9,7 @@ MiniLatte is a Mini Pc made using the LattePanda Mu compute module
 The device is a x86 desktop comuter with lots of IO ports like USB, PCIe, Ethernet and more. 
 
 ### Block diagram
-[block diagram](lucrare%20licenta/images/MiniLatte_block.png)
+![block diagram](lucrare%20licenta/images/MiniLatte_block.png)
 
 ## Hardware Design
 ### LattePanda Mu 
@@ -18,6 +18,7 @@ The module is Avaliable with 8 or 16gb of LPDDR5 ram, and an Intel N100 or Intel
 
 ## ICs 
 The board uses a lot of ics, so to avoid a long section about ics you can find the complete list of ICs in an spreadsheet [here]()
+!NOT CURRENTLY CREATED
 
 Some of the chips are not available on components sourcing sites like DigiKey or LCSC but can be easliy found of Aliexpress.
 Some notable Ics used by the board:
@@ -42,11 +43,11 @@ USB Type-C 2:4 differential channels mux switch and integrated CC logic function
 PCIe to 2.5Gbps Ethernet controller
 
 ## Schematic
-[Schematic]()
+[Schematic](PCB/MiniLatte.pdf)
 
 ## Bill of Materials
 As previosly said, the list is long so you can find it [here]()
-
+!NOT CURRENTLY CREATED
 ## PCB
 
 
