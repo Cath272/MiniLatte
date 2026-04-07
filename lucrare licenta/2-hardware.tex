@@ -7,29 +7,29 @@ LattePanda Mu reprezintă un modul de calcul de înaltă performanță, cu dimen
 
 Seria actuală cuprinde modele cu diferite configurații de procesoare și memorie, acestea menținând intercompatibilitatea la nivel de pinout. Modulul este proiectat pentru a fi inserat într-o placă de bază (carrier board) folosind un slot standard SO-DIMM \ac{DDR}4. Această alegere constructivă este justificată de densitatea mare de pini, necesară pentru a expune numeroasele interfețe de comunicare către placa purtătoare.
 
-Flexibilitatea platformei este sporită de posibilitatea modificării \ac{BIOS}-ului, permițând utilizatorului să configureze alocarea liniilor de date pentru a prioritiza, după caz, numărul de sloturi \ac{PCIe} sau porturile \ac{USB} disponibile. Specificațiile tehnice ale unității utilizate în prezenta lucrare sunt următoarele:
+Flexibilitatea platformei este sporită de posibilitatea modificării BIOS-ului, permițând utilizatorului să configureze alocarea liniilor de date pentru a prioritiza, după caz, numărul de sloturi \ac{PCIe} sau porturile USB disponibile. Specificațiile tehnice ale unității utilizate în prezenta lucrare sunt următoarele:
 
 
 
 
 În ceea ce privește conectivitatea, configurația aleasă pentru acest sistem include:
 \begin{itemize}
-    \item 2 porturi \ac{USB} 3.2 Gen 2 (10 Gbps);
+    \item 2 porturi USB 3.2 Gen 2 (10 Gbps);
     \item 2 ieșiri video \ac{HDMI} 2.0;
-    \item DisplayPort 1.4 prin interfața \ac{USB}-C;
+    \item DisplayPort 1.4 prin interfața USB-C;
     \item 7 linii \ac{PCIe} Gen 3.
 \end{itemize}
 
 \section{Conexiuni - Diagramă Bloc}
 
 În această secțiune sunt descrise conexiunile și este explicată diagrama bloc din Figura ~\ref{fig:diagrama-bloc}.
-Sistemul utilizează standardul \textit{\ac{USB} \ac{PD}}  pentru alimentare.
+Sistemul utilizează standardul \textit{USB \ac{PD}}  pentru alimentare.
 Această soluție a fost aleasă datorită costului redus și a disponibilității ridicate pe piață a surselor compatibile.
 Fiind un standard universal și nu unul proprietar, acesta oferă flexibilitate maximă în alegerea alimentatorului și facilitează înlocuirea rapidă a acestuia în caz de necesitate.
 Toate conexiunile sunt realizate intern, la nivelul plăcii de bază, pentru a reduce latențele și a crește fiabilitatea.
 
 
-\begin{figure}[H]
+\begin{figure}
   \centering
   \begin{subfigure}[b]{1\linewidth}
     \includegraphics[width=\linewidth]{ports-front.jpg}
@@ -49,21 +49,21 @@ Toate conexiunile sunt realizate intern, la nivelul plăcii de bază, pentru a r
 
 
 
-\begin{figure}[h!]
+\begin{figure}
     \makebox[\textwidth][c]{\includegraphics[width=1.15\textwidth]{MiniLatte_block.png}}
     \caption{Diagramă bloc a sistemului MiniLatte. Prezintă interconexiunile între modulul LattePanda Mu și componentele periferice.}
     \label{fig:diagrama-bloc}
 \end{figure}
 
-Pentru extinderea capacităților de conectare a perifericelor, au fost integrate două hub-uri \ac{USB} care pun la dispoziție 4 porturi \ac{USB} 3.2 Gen 2. În ceea ce privește conectivitatea la rețea, sistemul oferă două posibilități distincte, ambele bazate pe magistrala \ac{PCIe} Gen 3:
+Pentru extinderea capacităților de conectare a perifericelor, au fost integrate două hub-uri USB care pun la dispoziție 4 porturi USB 3.2 Gen 2. În ceea ce privește conectivitatea la rețea, sistemul oferă două posibilități distincte, ambele bazate pe magistrala \ac{PCIe} Gen 3:
 \begin{enumerate}
-    \item \textbf{Wireless:} prin intermediul unui modul \ac{Wi-Fi} instalat în slotul dedicat de pe placa de bază;
+    \item \textbf{Wireless:} prin intermediul unui modul Wi-Fi instalat în slotul dedicat de pe placa de bază;
     \item \textbf{Ethernet:} utilizând controlerul \textit{Realtek RTL8125}, care suportă viteze de transfer de până la 2.5 Gbps via \ac{PCIe} Gen 3.
 \end{enumerate}
 
-Capacitatea de stocare poate fi extinsă considerabil prin cele trei sloturi destinate unităților \ac{SSD} M.2 \ac{NVMe}. Suplimentar, la unul dintre hub-urile \ac{USB} este conectat un cititor de carduri dual \ac{SD}, utilizând lățimea de bandă oferită de interfața \ac{USB} 3.2 Gen 2.
+Capacitatea de stocare poate fi extinsă considerabil prin cele trei sloturi destinate unităților \ac{SSD} M.2 \ac{NVMe}. Suplimentar, la unul dintre hub-urile USB este conectat un cititor de carduri dual \ac{SD}, utilizând lățimea de bandă oferită de interfața USB 3.2 Gen 2.
 
-Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce comunică prin protocolul \textit{\ac{HDAudio}}. Semnalul video este distribuit prin trei porturi digitale: două \ac{HDMI} 2.0 și un DisplayPort 1.4 (via \ac{USB}-C).
+Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce comunică prin protocolul \textit{\ac{HDAudio}}. Semnalul video este distribuit prin trei porturi digitale: două \ac{HDMI} 2.0 și un DisplayPort 1.4 (via USB-C).
 
 
 
@@ -73,12 +73,12 @@ Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind 
 
 \subsection{Consum de curent}
 Din cauza conectivității bogate, un lucru important in acest design a fost proiectarea in jurul consumuli de curent atât a modulului LattePanda Mu dar și componentelor de pe placa și a diverserlor dispozitive conectate.
-Cum am menționat anterior, modulul este alimentat printr-un port \ac{USB} Type C prin protocolul \ac{USB} \ac{PD}, am folosit un chip HUSB238 pentru a comunica prin acest procol cu incărcătorul conectat și pentru a cere 20v 3,25A (65W) care este o valoare standard pentru acest protocol.
+Cum am menționat anterior, modulul este alimentat printr-un port USB Type C prin protocolul USB \ac{PD}, am folosit un chip HUSB238 pentru a comunica prin acest procol cu incărcătorul conectat și pentru a cere 20v 3,25A (65W) care este o valoare standard pentru acest protocol.
 Aceasta tensiune este coborâtă la 17,5V pentru modulul LattePanda Mu folosind regulatorul TPS54561, consumul modulului fiind de 10-15W.
 De asemenea tensiunea mai este coborâtă la 3,3V respectiv 5V folosind chip-ul TPS51275.
-Planele de alimentare sunt foarte late, fiind nevoie de zone foarte late pentru a conduce curentul necesar. Acestea sunt 7-7,5mm dupa iesirea din regulatorul de tensiunea si dupa se ingusteaza din ce in ce mai tare, dupa ce trec de componentele cu consum mai mare. Pentru tensiunea de 3,3v acestea sunt cele 3 \ac{SD}-uri iar pentru cea de 5v sunt porturile \ac{USB} care pot consuma până la 0,5A pentru porturile \ac{USB} 2.0 și 0,9A pentru Porturile \ac{USB} 3.0 și Type C, acesea fiind monitorizate constant de mai multe chip-uri TPS2561  care pot sa întrerupă curent către portul \ac{USB} dacă detecteaza un consum prea mare de curent.  
+Planele de alimentare sunt foarte late, fiind nevoie de zone foarte late pentru a conduce curentul necesar. Acestea sunt 7-7,5mm \ref{fig:power-plane} dupa iesirea din regulatorul de tensiune si dupa se ingusteaza din ce in ce mai tare, dupa ce trec de componentele cu consum mai mare. Pentru tensiunea de 3,3v acestea sunt cele 3 SSD-uri iar pentru cea de 5v sunt porturile USB care pot consuma până la 0,5A pentru porturile USB 2.0 și 0,9A pentru Porturile USB 3.0 și Type C, acesea fiind monitorizate constant de mai multe chip-uri TPS2561  care pot sa întrerupă curent către portul USB dacă detecteaza un consum prea mare de curent.  
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Latime plan curent.png}
     \caption{Plan de curent cu o lățime de 7,3mm.}
@@ -86,20 +86,22 @@ Planele de alimentare sunt foarte late, fiind nevoie de zone foarte late pentru 
 \end{figure}
 
 
-\subsection{Magistrale Diferențiale}
-Magistralele diferețiale de comunicare sunt principala metoda in care sunt transmise date la viteze mari, marea majoritate a protocoalelor de comunicare moderne cum ar fi \ac{HDMI}, \ac{USB}, \ac{PCIe} folosesc acest mod de transmitere de date.
-In proiectare de \ac{PCB}-uri, magistralele diferețiale reprezintă două linii paralele cu o lungime egală și cu o distanță foarte mică între ele, exista o toleranță între diferența de lungime a acestor linii (Intra-pair skew)  , acesta este de exemplu 0.125mm pentru USB 3.0 \cite{Layout_Guidelines}. Unele protocoale precum HDMI si DisplayPort care folosesc mai multe linii pentru output video trimit date sincron pe toate liniile, iar toate perechiile de linii trebuie sa fie egale ca lungime (Inter-Pair Skew)
+\subsection{Perechi Diferențiale}
+Perechile diferețiale  sunt principala metoda in care sunt transmise date la viteze mari, marea majoritate a protocoalelor de comunicare moderne cum ar fi HDMI, USB, \ac{PCIe} folosesc acest mod de transmitere de date.
+In proiectare de \ac{PCB}-uri, magistralele diferețiale reprezintă două linii paralele cu o lungime egală și cu o distanță foarte mică între ele, exista o toleranță între diferența de lungime a acestor linii (Intra-pair Skew \ref{fig:Intra-Pair Skew})  , acesta este de exemplu 0.125mm pentru USB 3.0 \cite{Layout_Guidelines}. Unele protocoale precum HDMI si DisplayPort care folosesc mai multe linii pentru output video trimit date sincron pe toate liniile, iar toate perechiile de linii trebuie sa fie egale ca lungime (Inter-Pair Skew \ref{fig:Inter-Pair Skew})
 
-\begin{figure}[H]
+\begin{figure}
   \centering
   \begin{subfigure}[b]{0.3\linewidth}
     \includegraphics[width=\linewidth]{Intra-pair-skew.png}
-     \caption{Corecție a Intra Pair Skew pe o Magistrală diferețială PCIe}
+     \caption{Corecție a Intra Pair Skew pe o Perechi diferețială PCIe}
+     \label{fig:Intra-Pair Skew}
   \end{subfigure}
   \hspace{1cm}
   \begin{subfigure}[b]{0.6\linewidth}
     \includegraphics[width=\linewidth]{Inter-pair-skew.png}
-    \caption{Corecție a Inter Pair Skew pe cele 4 magistrale diferețiale ale unui port HDMI}
+    \caption{Corecție a Inter Pair Skew pe cele 4 Perechi diferețiale ale unui port HDMI}
+    \label{fig:Inter-Pair Skew}
   \end{subfigure}
   
   \caption{Corecții ale Intra si Inter Pair Skew}
@@ -109,21 +111,99 @@ In proiectare de \ac{PCB}-uri, magistralele diferețiale reprezintă două linii
 
 \section{Matrice LED}
 
-Mini PC-ul vine echipat cu o matrice LED compusa din 220 LED-uri adresabile RGB cu driver WS2812C, acestea au nevoie doar de un pin de input și sunt legate în serie, acestea formând o matrice 44x5.
+Mini PC-ul vine echipat cu o matrice LED \ref{fig:LED-Matrix} compusa din 220 LED-uri adresabile RGB cu driver WS2812C, acestea au nevoie doar de un pin de input și sunt legate în serie, acestea formând o matrice 44x5.
 Acestea sunt controlate de un Microcontroller ESP32-C3 care comunica cu modulul LattePanda prin usb, iar microcontrollerul fiind plasat direct pe Placa de bază.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{Latime plan curent.png}
-    \caption{Matrice Led. TO ADD PHOTO}
+    \includegraphics[width=\linewidth]{led-matrix.png}
+    \caption{Matrice Led.}
     \label{fig:LED-Matrix}
 \end{figure}
 
 
 \section{Carcasa}
-Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD, aceasta este formată din 2 piese principale printate 3d folosinf filament \ac{PLA}, un schelet ce include partea din față, lateralele și partea superioară, apoi un capac pentru partea inferioară și spate. Cele 2 \ac{PCB}-uri sunt montate pe schelet, acesta incluzand și un panou de difuzie printat cu filament translucid \ac{PETG}.
+Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD, aceasta este formată din 2 piese principale printate 3d folosinf filament PLA, un schelet ce include partea din față, lateralele și partea superioară \ref{fig:Front-case}, apoi un capac pentru partea inferioară și spate \ref{fig:back-case}. Cele 2 \ac{PCB}-uri sunt montate pe schelet, acesta incluzand și un panou de difuzie printat cu filament translucid PETG.
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=\linewidth]{case-front.png}
+     \caption{Partea frontală a carcasei}
+     \label{fig:Front-case}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=\linewidth]{case-back.png}
+    \caption{Partea din spate a carcasei}
+    \label{fig:back-case}
+  \end{subfigure}
+  
+  \caption{Cele 2 părți ale carcasei}
+  \label{fig:Case}
+
+\end{figure}
+
+\section{Asamblare}
+Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxidabil, taiate la laser, aceasta fiind produsă odată cu PCB-ul, cu aceste șabloane am aplicat o pastă de fludor și am plasat fiecare componentă pe placă, începând cu matricea LED \ref{fig:LED-Matrix-Assembly} care are 220 LED-uri, apoi continuând cu PCB-ul principal \ref{fig:Main-PCB-Assembly}, acesta avand în jur de 500 de componente, dintre care TODO
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{led-matrix-asembly.png}
+    \caption{Matrice Led în timpul asamblării.}
+    \label{fig:LED-Matrix-Assembly}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{pcb-assembly.jpg}
+    \caption{PCB-ul principal în timpul asambării în timpul asamblării.}
+    \label{fig:Main-PCB-Assembly}
+\end{figure}
+
+\section{Testare și depanare}
+Toate defectele care o să fie menționate au fost remediate în progamul de proiectare a pcb-ului, dar din cauza costului acesta nu a fost trimis în producție. 
+După asamblarea plăcii am început testarea ei, prima problemă fiind că regulatorul de la 20v la 5v/3,3v nu pornea (acesta porneste și regulatorul de 17,5v care este folosit de modulul principal așa că nici el nu a pornit). Problema fiind lipsa unor condesatoare pe LDO (Linear DropOut Regulator) folosite de chip în faza sa inițială, până pornește convertorul DC-DC, pentru a lipii un condesator a trebui sa trag un fir de pe pin-ul chipului la un condesator plasat ulterior pe placă \Ref{fig:TPS-fix}.
+Ulterior placa a pornit și a intrat în windows, după câteva teste am observat alte probleme, un slot NVME nu functiona ( avea un pin care nu era lipit bine), chip-ul de internet nu pornea (avea nevoie de un pull up pe unul dintre pini și a trebuit să leg de asemenea un fir), de asemenea am observat un timp lung pentru a calculatorului de a trece de BIOS, am observat ca acest lucru era pentru că legasem liniile de usb 3.2 gen 2 către hub-ul USB invers, acestea trebuiau legate RX-TX, TX-RX dar eu le-am legat RX-RX, TX-TX, fiind obsinuit cu topologia intre un chip si un port, nu cea intre chip-uri. Aceasta problema a fost de asemenea rezolvată prin legarea unor fire \Ref{fig:USB-fix}.
+Altă problemă pe care am întâmpinat-o a fost LED-ul RGB din partea din față a plăcii care luminează în funcție de starea calculatorului: Roșu - Oprit, Galben - StandBy, Alb - Aprins. Acesta luminând roșu mereu după conectarea la curent a plăcii, și luminând Galben și Alb folosind 2 semnale primite de la modul, eroarea de proiectare fiind modul în care am folosit tranzistorii pentru a aprinde respectivele culori, am folosit un MOSFET de tip N pentru high side switching atunci când tensiunea în poartă era similară sau chiar mai mică decât tensiunea de Drenă-Sursa, pentru acest lucru se folosește Low Side Switching unde tensiunea de poartă în acest caz este 3,3v și tensiunea drena- poarta este în jur intre 0,5-1V reprezentand tensiunea de după LED.  
 
 
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=\linewidth]{TPS-FIX.jpg}
+    \caption{Firul ce leaga unul dintre LDO-uri de un condesator. TODO BETTER PICTURE}
+    \label{fig:TPS-fix}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=\linewidth]{USB-FIX.jpg}
+    \caption{Firul USB RX-TX TX-RX. TODO BETTER PICTURE}
+    \label{fig:USB-fix}
+  \end{subfigure}
+  
+  \caption{Cele 2 părți ale carcasei}
+  \label{fig:GG}
+
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=\linewidth]{Low vs High Side switching.png}
+    \caption{Low Side vs High Side Switching}
+    \label{fig:TPS-fix}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=\linewidth]{USB-FIX.jpg}
+    \caption{Firul USB RX-TX TX-RX. TODO BETTER PICTURE}
+    \label{fig:USB-fix}
+  \end{subfigure}
+  
+  \caption{Cele 2 părți ale carcasei}
+  \label{fig:2}
+
+\end{figure}
 
 
 %$$
