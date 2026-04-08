@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.13)  7 APR 2026 22:10
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.13)  7 APR 2026 22:15
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex"
@@ -1112,20 +1112,7 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'romanian'.
 
 (./main.aux (./0-title.aux) (./0-abstract.aux) (./1-introducere.aux)
-(./2-hardware.aux
-
-LaTeX Warning: Label `fig:TPS-fix' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:TPS-fix' multiply defined.
-
-
-LaTeX Warning: Label `fig:USB-fix' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:USB-fix' multiply defined.
-
-) (./3-concluzii.aux))
+(./2-hardware.aux) (./3-concluzii.aux))
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
@@ -1642,15 +1629,15 @@ File: ./images/Low vs High Side switching.png Graphic file (type png)
 Package luatex.def Info: ./images/Low vs High Side switching.png  used on input
  line 193.
 (luatex.def)             Requested size: 204.85846pt x 106.12796pt.
-File: ./images/USB-FIX.jpg Graphic file (type jpg)
-<use ./images/USB-FIX.jpg>
-Package luatex.def Info: ./images/USB-FIX.jpg  used on input line 198.
-(luatex.def)             Requested size: 204.85846pt x 161.58374pt.
+<./images/Low-side-fix.png, id=263, 1070.49937pt x 429.10312pt>
+File: ./images/Low-side-fix.png Graphic file (type png)
+<use ./images/Low-side-fix.png>
+Package luatex.def Info: ./images/Low-side-fix.png  used on input line 198.
+(luatex.def)             Requested size: 204.85846pt x 82.11317pt.
 ) [15] [16<./images/TPS-FIX.jpg><./images/USB-FIX.jpg><./images/Low vs High Side
- switching.png>]
+ switching.png><./images/Low-side-fix.png>]
 \openout2 = 3-concluzii.aux
-
-(./3-concluzii.tex
+ (./3-concluzii.tex
 Capitolul 3.
 ) [17
 
@@ -1667,10 +1654,6 @@ dware.aux) (./3-concluzii.aux))
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EF470E8F5315D585340C3B6A45F04351;1605.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1679,21 +1662,21 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30213 strings out of 476076
+ 30226 strings out of 476076
  125081,1648299 words of node,token memory allocated
  594 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 72 glue_spec,
  7 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:2,2:530,3:205,4:119,5:139,6:58,7:5657,8:47,9:346,10:22,11:733
- 51989 multiletter control sequences out of 65536+600000
- 53 fonts using 25688999 bytes
- 86i,11n,92p,883b,3530s stack positions out of 10000i,1000n,20000p,200000b,200000s
+   avail lists: 1:2,2:530,3:205,4:119,5:135,6:58,7:5657,8:47,9:346,10:22,11:733
+ 52002 multiletter control sequences out of 65536+600000
+ 53 fonts using 25689079 bytes
+ 86i,11n,92p,893b,3530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/cath/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-r
 egular.otf><C:/WINDOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/times.ttf><C:/WINDOWS/
 Fonts/timesbd.ttf>
-Output written on main.pdf (18 pages, 20583935 bytes).
+Output written on main.pdf (18 pages, 20601172 bytes).
 
-PDF statistics: 316 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 318 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 1048576)
  105 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -433,11 +433,14 @@ INPUT .\images\Low vs High Side switching.png
 INPUT .\images\Low vs High Side switching.png
 INPUT .\images\Low vs High Side switching.png
 INPUT .\images\Low vs High Side switching.png
-INPUT .\images\USB-FIX.jpg
-INPUT .\images\USB-FIX.jpg
+INPUT .\images\Low-side-fix.png
+INPUT .\images\Low-side-fix.png
+INPUT .\images\Low-side-fix.png
+INPUT .\images\Low-side-fix.png
 INPUT .\images\TPS-FIX.jpg
 INPUT .\images\USB-FIX.jpg
 INPUT .\images\Low vs High Side switching.png
+INPUT .\images\Low-side-fix.png
 OUTPUT 3-concluzii.aux
 OUTPUT 3-concluzii.aux
 INPUT .\3-concluzii.tex

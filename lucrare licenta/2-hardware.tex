@@ -164,7 +164,7 @@ Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxida
 Toate defectele care o să fie menționate au fost remediate în progamul de proiectare a pcb-ului, dar din cauza costului acesta nu a fost trimis în producție. 
 După asamblarea plăcii am început testarea ei, prima problemă fiind că regulatorul de la 20v la 5v/3,3v nu pornea (acesta porneste și regulatorul de 17,5v care este folosit de modulul principal așa că nici el nu a pornit). Problema fiind lipsa unor condesatoare pe LDO (Linear DropOut Regulator) folosite de chip în faza sa inițială, până pornește convertorul DC-DC, pentru a lipii un condesator a trebui sa trag un fir de pe pin-ul chipului la un condesator plasat ulterior pe placă \Ref{fig:TPS-fix}.
 Ulterior placa a pornit și a intrat în windows, după câteva teste am observat alte probleme, un slot NVME nu functiona ( avea un pin care nu era lipit bine), chip-ul de internet nu pornea (avea nevoie de un pull up pe unul dintre pini și a trebuit să leg de asemenea un fir), de asemenea am observat un timp lung pentru a calculatorului de a trece de BIOS, am observat ca acest lucru era pentru că legasem liniile de usb 3.2 gen 2 către hub-ul USB invers, acestea trebuiau legate RX-TX, TX-RX dar eu le-am legat RX-RX, TX-TX, fiind obsinuit cu topologia intre un chip si un port, nu cea intre chip-uri. Aceasta problema a fost de asemenea rezolvată prin legarea unor fire \Ref{fig:USB-fix}.
-Altă problemă pe care am întâmpinat-o a fost LED-ul RGB din partea din față a plăcii care luminează în funcție de starea calculatorului: Roșu - Oprit, Galben - StandBy, Alb - Aprins. Acesta luminând roșu mereu după conectarea la curent a plăcii, și luminând Galben și Alb folosind 2 semnale primite de la modul, eroarea de proiectare fiind modul în care am folosit tranzistorii pentru a aprinde respectivele culori, am folosit un MOSFET de tip N pentru high side switching atunci când tensiunea în poartă era similară sau chiar mai mică decât tensiunea de Drenă-Sursa, pentru acest lucru se folosește Low Side Switching unde tensiunea de poartă în acest caz este 3,3v și tensiunea drena- poarta este în jur intre 0,5-1V reprezentand tensiunea de după LED.  
+Altă problemă pe care am întâmpinat-o a fost LED-ul RGB din partea din față a plăcii care luminează în funcție de starea calculatorului: Roșu - Oprit, Galben - StandBy, Alb - Aprins. Acesta luminând roșu mereu după conectarea la curent a plăcii, și luminând Galben și Alb folosind 2 semnale primite de la modul, eroarea de proiectare fiind modul în care am folosit tranzistorii pentru a aprinde respectivele culori, am folosit un MOSFET de tip N pentru high side switching atunci când tensiunea în poartă era similară sau chiar mai mică decât tensiunea de Drenă-Sursa, pentru acest lucru se folosește Low Side Switching unde tensiunea de poartă în acest caz este 3,3v și tensiunea drena- poarta este 0v reprezentand tensiunea de intre rezistorul de după led și GND.  
 
 
 
@@ -192,15 +192,15 @@ Altă problemă pe care am întâmpinat-o a fost LED-ul RGB din partea din faț�
   \begin{subfigure}[b]{0.45\linewidth}
     \includegraphics[width=\linewidth]{Low vs High Side switching.png}
     \caption{Low Side vs High Side Switching}
-    \label{fig:TPS-fix}
+    \label{fig:Low-high}
   \end{subfigure}
   \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics[width=\linewidth]{USB-FIX.jpg}
+    \includegraphics[width=\linewidth]{Low-side-fix.png}
     \caption{Firul USB RX-TX TX-RX. TODO BETTER PICTURE}
-    \label{fig:USB-fix}
+    \label{fig:low-side-fix}
   \end{subfigure}
   
-  \caption{Cele 2 părți ale carcasei}
+  \caption{fix MOSFETS}
   \label{fig:2}
 
 \end{figure}
