@@ -1,14 +1,16 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Formă finală. PCB-ul asamblat.}}{6}{figure.caption.5}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Port-urile PCB-ului}}{8}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Diagramă bloc a sistemului MiniLatte. Prezintă interconexiunile între modulul LattePanda Mu și componentele periferice.}}{9}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Plan de curent cu o lățime de 7,3mm.}}{11}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Corecții ale Intra si Inter Pair Skew}}{12}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Matrice Led.}}{12}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Cele 2 părți ale carcasei}}{13}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Matrice Led în timpul asamblării.}}{13}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces PCB-ul principal în timpul asambării în timpul asamblării.}}{14}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Cele 2 părți ale carcasei}}{16}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces fix MOSFETS}}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Modulul LattePanda Mu}}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Port-urile PCB-ului}}{9}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Diagramă bloc a sistemului MiniLatte. Prezintă interconexiunile între modulul LattePanda Mu și componentele periferice.}}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Plan de curent cu o lățime de 7,3mm.}}{12}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Corecții ale Intra si Inter Pair Skew}}{13}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Matrice Led.}}{14}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Cele 2 părți ale carcasei}}{15}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Matrice Led în timpul asamblării.}}{15}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces PCB-ul principal în timpul asambării în timpul asamblării.}}{16}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces Cele 2 părți ale carcasei}}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \xpg@aux {}{romanian}\ignorespaces fix MOSFETS}}{18}{figure.caption.26}%
 \addvspace {10\p@ }

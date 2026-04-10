@@ -1,13 +1,21 @@
-\chapter{Componenta Hardware}
+\chapter{Design}
 \label{ch:hardware}
 
 \section{LattePanda Mu}
 
-LattePanda Mu reprezintă un modul de calcul de înaltă performanță, cu dimensiuni comparabile cu cele ale unui card bancar, proiectat de compania DFRobot. Conceptul principal al acestui modul este de a facilita integrarea în produse hardware customizate, fiind pretabil atât pentru proiecte de tip hobby, cât și pentru aplicații industriale.
+LattePanda Mu \ref{fig:LattePanda-Mu} este un modul de calcul performant, cu dimensiuni comparabile unui card bancar, proiectat de compania DFRobot. Acesta este conceput pentru integrare în produse hardware personalizate, fiind potrivit atât pentru proiecte de tip hobby, cât și pentru aplicații industriale.
 
 Seria actuală cuprinde modele cu diferite configurații de procesoare și memorie, acestea menținând intercompatibilitatea la nivel de pinout. Modulul este proiectat pentru a fi inserat într-o placă de bază (carrier board) folosind un slot standard SO-DIMM \ac{DDR}4. Această alegere constructivă este justificată de densitatea mare de pini, necesară pentru a expune numeroasele interfețe de comunicare către placa purtătoare.
 
 Flexibilitatea platformei este sporită de posibilitatea modificării BIOS-ului, permițând utilizatorului să configureze alocarea liniilor de date pentru a prioritiza, după caz, numărul de sloturi \ac{PCIe} sau porturile USB disponibile. Specificațiile tehnice ale unității utilizate în prezenta lucrare sunt următoarele:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{LattePanda Mu1.png}
+    \caption{Modulul LattePanda Mu}
+    \label{fig:LattePanda-Mu}
+\end{figure}
+
 
 
 
@@ -23,10 +31,11 @@ Flexibilitatea platformei este sporită de posibilitatea modificării BIOS-ului,
 \section{Conexiuni - Diagramă Bloc}
 
 În această secțiune sunt descrise conexiunile și este explicată diagrama bloc din Figura ~\ref{fig:diagrama-bloc}.
-Sistemul utilizează standardul \textit{USB \ac{PD}}  pentru alimentare.
-Această soluție a fost aleasă datorită costului redus și a disponibilității ridicate pe piață a surselor compatibile.
+Sistemul utilizează standardul \textit{USB \ac{PD}}  pentru alimentare, alegere motivată datorită costului redus și a disponibilității ridicate pe piață a surselor compatibile.
 Fiind un standard universal și nu unul proprietar, acesta oferă flexibilitate maximă în alegerea alimentatorului și facilitează înlocuirea rapidă a acestuia în caz de necesitate.
 Toate conexiunile sunt realizate intern, la nivelul plăcii de bază, pentru a reduce latențele și a crește fiabilitatea.
+
+
 
 
 \begin{figure}
@@ -69,26 +78,37 @@ Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce co
 
 \section{Design}
 
-Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de circuit integrat imprimat (\ac{PCB}).
+Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de circuit\ac{PCB}.
+
+\subsection{Alegerea componentelor}
+Pornind de la diagrama bloc construită am început să caut componentele, ca criterii de selecția am avut costul, familiaritatea, disponibilitatea și documentația cipurilor, cu o singură excepție, acesta fiind cipul IT8851FN-128 acesta find destul de greu de găsit dar fiind singurul cu paote fi programat cu firmware-ul celor de la LattePanda nu exista o alta optiune. 
+Pentru controllerul de HUB USB opțiunea a fost evindetă: VIA Labs VL822-Q7, acesta având o viteză maximă de transmisie de 10Gbps, dar la fel de important un preț foarte bun de doar 2€. 
+
+\subsection{Schematic}
+
+\subsection{Rutare Trasee}
+
+
 
 \subsection{Consum de curent}
-Din cauza conectivității bogate, un lucru important in acest design a fost proiectarea in jurul consumuli de curent atât a modulului LattePanda Mu dar și componentelor de pe placa și a diverserlor dispozitive conectate.
-Cum am menționat anterior, modulul este alimentat printr-un port USB Type C prin protocolul USB \ac{PD}, am folosit un chip HUSB238 pentru a comunica prin acest procol cu incărcătorul conectat și pentru a cere 20v 3,25A (65W) care este o valoare standard pentru acest protocol.
-Aceasta tensiune este coborâtă la 17,5V pentru modulul LattePanda Mu folosind regulatorul TPS54561, consumul modulului fiind de 10-15W.
-De asemenea tensiunea mai este coborâtă la 3,3V respectiv 5V folosind chip-ul TPS51275.
-Planele de alimentare sunt foarte late, fiind nevoie de zone foarte late pentru a conduce curentul necesar. Acestea sunt 7-7,5mm \ref{fig:power-plane} dupa iesirea din regulatorul de tensiune si dupa se ingusteaza din ce in ce mai tare, dupa ce trec de componentele cu consum mai mare. Pentru tensiunea de 3,3v acestea sunt cele 3 SSD-uri iar pentru cea de 5v sunt porturile USB care pot consuma până la 0,5A pentru porturile USB 2.0 și 0,9A pentru Porturile USB 3.0 și Type C, acesea fiind monitorizate constant de mai multe chip-uri TPS2561  care pot sa întrerupă curent către portul USB dacă detecteaza un consum prea mare de curent.  
+Datorită numărului mare de interfețe disponibile, un lucru important in acest design a fost proiectarea in jurul consumului de curent, atât a modulului LattePanda Mu dar și componentelor de pe placa și a diverselor dispozitive conectate.
+Modulul este alimentat printr-un port USB Type C utilizând protocolul USB \ac{PD}, a fost utilizat un cip HUSB238, responsabil de negocierea tensiunii cu sursa de alimentare, solicitând un profil de 20 V și 3,25 A (65 W), valoare standard pentru acest protocol.
+Tensiunea este coborâtă la 17,5V pentru modulul LattePanda Mu folosind regulatorul TPS54561, consumul modulului fiind de 10-15W, de asemenea sunt generate tensiuni auxiliare de 3,3V și 5V folosind cipul TPS51275.
+Traseele de alimentare au fost dimensionate corespunzător curenților implicați, având lățimi de până la 7–7,5 mm imediat după regulatoarele de tensiune (Figura \ref{fig:power-plane}), urmând ca acestea să se reducă progresiv după alimentarea consumatorilor principali. Pentru linia de 3,3 V, principalii consumatori sunt cele trei unități SSD, iar pentru linia de 5 V, porturile USB, care pot furniza până la 0,5 A (USB 2.0) și 0,9 A (USB 3.0 și USB Type-C). Protecția la supracurent este asigurată de cipuri TPS2561, care monitorizează fiecare port USB și pot întrerupe alimentarea în cazul depășirii limitelor admise.
 
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{Latime plan curent.png}
+    \includegraphics[width=0.6\linewidth]{Latime plan curent.png}
     \caption{Plan de curent cu o lățime de 7,3mm.}
     \label{fig:power-plane}
 \end{figure}
 
 
-\subsection{Perechi Diferențiale}
-Perechile diferețiale  sunt principala metoda in care sunt transmise date la viteze mari, marea majoritate a protocoalelor de comunicare moderne cum ar fi HDMI, USB, \ac{PCIe} folosesc acest mod de transmitere de date.
-In proiectare de \ac{PCB}-uri, magistralele diferețiale reprezintă două linii paralele cu o lungime egală și cu o distanță foarte mică între ele, exista o toleranță între diferența de lungime a acestor linii (Intra-pair Skew \ref{fig:Intra-Pair Skew})  , acesta este de exemplu 0.125mm pentru USB 3.0 \cite{Layout_Guidelines}. Unele protocoale precum HDMI si DisplayPort care folosesc mai multe linii pentru output video trimit date sincron pe toate liniile, iar toate perechiile de linii trebuie sa fie egale ca lungime (Inter-Pair Skew \ref{fig:Inter-Pair Skew})
+\subsection{Perechi diferențiale}
+Perechile diferențiale reprezintă principala metodă de transmitere a datelor la viteze ridicate, fiind folosite în majoritatea protocoalelor de comunicare moderne cum ar fi HDMI, USB și \ac{PCIe}
+În proiectarea \ac{PCB}-urilor, perechile diferențiale reprezintă două trasee paralele, cu lungimi egale și cu o distanță controlată între ele.
+Diferența de lungime dintre cele două trasee (Intra Pair Skew \ref{fig:Intra-Pair Skew}) trebuie să se încadreze într-o toleranță strictă — de exemplu, 0,125 mm pentru USB 3.0 \cite{Layout_Guidelines}. 
+În cazul protocoalelor care utilizează mai multe perechi diferențiale în paralel (precum HDMI sau DisplayPort), este necesară și egalizarea lungimii între perechi (Inter Pair skew \ref{fig:Inter-Pair Skew}), pentru a asigura sincronizarea semnalelor.
 
 \begin{figure}
   \centering
@@ -109,10 +129,13 @@ In proiectare de \ac{PCB}-uri, magistralele diferețiale reprezintă două linii
 
 \end{figure}
 
+\chapter{Asamblare}
+
+
 \section{Matrice LED}
 
-Mini PC-ul vine echipat cu o matrice LED \ref{fig:LED-Matrix} compusa din 220 LED-uri adresabile RGB cu driver WS2812C, acestea au nevoie doar de un pin de input și sunt legate în serie, acestea formând o matrice 44x5.
-Acestea sunt controlate de un Microcontroller ESP32-C3 care comunica cu modulul LattePanda prin usb, iar microcontrollerul fiind plasat direct pe Placa de bază.
+Mini PC-ul vine echipat cu o matrice LED \ref{fig:LED-Matrix} compusă din 220 LED-uri adresabile RGB cu driver WS2812C, acestea au nevoie doar de un pin de input și sunt legate în serie, acestea formând o matrice 44x5.
+Acestea sunt controlate de un Microcontroller ESP32-C3 care comunică cu modulul LattePanda prin USB, iar microcontrollerul fiind integrat direct pe \ac{PCB}-ul principal.
 
 \begin{figure}
     \centering
@@ -123,7 +146,7 @@ Acestea sunt controlate de un Microcontroller ESP32-C3 care comunica cu modulul 
 
 
 \section{Carcasa}
-Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD, aceasta este formată din 2 piese principale printate 3d folosinf filament PLA, un schelet ce include partea din față, lateralele și partea superioară \ref{fig:Front-case}, apoi un capac pentru partea inferioară și spate \ref{fig:back-case}. Cele 2 \ac{PCB}-uri sunt montate pe schelet, acesta incluzand și un panou de difuzie printat cu filament translucid PETG.
+Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD, aceasta este formată din 2 piese principale printate 3d folosind filament PLA, un schelet ce include partea din față, lateralele și partea superioară \ref{fig:Front-case}, apoi un capac pentru partea inferioară și spate \ref{fig:back-case}. Cele 2 \ac{PCB}-uri sunt montate pe schelet, acesta incluzand și un panou de difuzie printat cu filament translucid PETG.
 
 \begin{figure}
   \centering
@@ -144,7 +167,7 @@ Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD,
 \end{figure}
 
 \section{Asamblare}
-Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxidabil, taiate la laser, aceasta fiind produsă odată cu PCB-ul, cu aceste șabloane am aplicat o pastă de fludor și am plasat fiecare componentă pe placă, începând cu matricea LED \ref{fig:LED-Matrix-Assembly} care are 220 LED-uri, apoi continuând cu PCB-ul principal \ref{fig:Main-PCB-Assembly}, acesta avand în jur de 500 de componente, dintre care TODO
+Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxidabil, tăiate la laser, aceasta fiind produsă odată cu \ac{PCB}-ul, cu aceste șabloane am aplicat o pastă de fludor și am plasat fiecare componentă pe placă, începând cu matricea LED \ref{fig:LED-Matrix-Assembly} care are 220 LED-uri, apoi continuând cu \ac{PCB}-ul principal \ref{fig:Main-PCB-Assembly}, acesta având în jur de 500 de componente, dintre care TODO
 
 \begin{figure}
     \centering
@@ -160,19 +183,20 @@ Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxida
     \label{fig:Main-PCB-Assembly}
 \end{figure}
 
+
 \section{Testare și depanare}
-Toate defectele care o să fie menționate au fost remediate în progamul de proiectare a pcb-ului, dar din cauza costului acesta nu a fost trimis în producție. 
-După asamblarea plăcii am început testarea ei, prima problemă fiind că regulatorul de la 20v la 5v/3,3v nu pornea (acesta porneste și regulatorul de 17,5v care este folosit de modulul principal așa că nici el nu a pornit). Problema fiind lipsa unor condesatoare pe LDO (Linear DropOut Regulator) folosite de chip în faza sa inițială, până pornește convertorul DC-DC, pentru a lipii un condesator a trebui sa trag un fir de pe pin-ul chipului la un condesator plasat ulterior pe placă \Ref{fig:TPS-fix}.
-Ulterior placa a pornit și a intrat în windows, după câteva teste am observat alte probleme, un slot NVME nu functiona ( avea un pin care nu era lipit bine), chip-ul de internet nu pornea (avea nevoie de un pull up pe unul dintre pini și a trebuit să leg de asemenea un fir), de asemenea am observat un timp lung pentru a calculatorului de a trece de BIOS, am observat ca acest lucru era pentru că legasem liniile de usb 3.2 gen 2 către hub-ul USB invers, acestea trebuiau legate RX-TX, TX-RX dar eu le-am legat RX-RX, TX-TX, fiind obsinuit cu topologia intre un chip si un port, nu cea intre chip-uri. Aceasta problema a fost de asemenea rezolvată prin legarea unor fire \Ref{fig:USB-fix}.
-Altă problemă pe care am întâmpinat-o a fost LED-ul RGB din partea din față a plăcii care luminează în funcție de starea calculatorului: Roșu - Oprit, Galben - StandBy, Alb - Aprins. Acesta luminând roșu mereu după conectarea la curent a plăcii, și luminând Galben și Alb folosind 2 semnale primite de la modul, eroarea de proiectare fiind modul în care am folosit tranzistorii pentru a aprinde respectivele culori, am folosit un MOSFET de tip N pentru high side switching atunci când tensiunea în poartă era similară sau chiar mai mică decât tensiunea de Drenă-Sursa, pentru acest lucru se folosește Low Side Switching unde tensiunea de poartă în acest caz este 3,3v și tensiunea drena- poarta este 0v reprezentand tensiunea de intre rezistorul de după led și GND.  
 
+Toate defectele prezentate în această secțiune au fost identificate în urma testării prototipului și ulterior corectate în proiectul \ac{PCB}. Din considerente de cost, varianta revizuită nu a mai fost trimisă în producție.
 
+După asamblarea plăcii, procesul de testare a evidențiat inițial o problemă majoră: regulatorul de tensiune care convertește 20V la 5V și 3,3V nu pornea. Deoarece acesta asigură și alimentarea regulatorului de 17,5 V utilizat de modulul principal, nici acesta nu devenea operațional.
+
+Cauza problemei a fost identificată ca fiind absența unor condensatoare necesare pentru funcționarea corectă a regulatorului \ac{LDO}, utilizat în faza inițială de pornire a circuitului intern al cipului, până la activarea convertorului DC-DC. Remedierea a constat în adăugarea unui condensator, realizată printr-o conexiune suplimentară între pinul circuitului integrat și un condensator montat ulterior pe placă (Figura \ref{fig:TPS-fix}).
 
 \begin{figure}
   \centering
   \begin{subfigure}[b]{0.45\linewidth}
     \includegraphics[width=\linewidth]{TPS-FIX.jpg}
-    \caption{Firul ce leaga unul dintre LDO-uri de un condesator. TODO BETTER PICTURE}
+    \caption{Firul ce leaga unul dintre LDO-uri de un condensator. TODO BETTER PICTURE}
     \label{fig:TPS-fix}
   \end{subfigure}
   \begin{subfigure}[b]{0.45\linewidth}
@@ -186,17 +210,36 @@ Altă problemă pe care am întâmpinat-o a fost LED-ul RGB din partea din faț�
 
 \end{figure}
 
+După implementarea acestei corecții, sistemul a pornit corespunzător și a permis încărcarea sistemului de operare. Testele ulterioare au evidențiat însă și alte deficiențe:
+\begin{itemize}
+    \item Un slot \ac{NVMe} nu funcționa, cauza fiind o lipire defectuoasă a unui pin;
+    \item Controlerul Ethernet \textit{Realtek RTL8125} nu pornea, fiind necesară adăugarea unui rezistor de tip pull-up pe unul dintre pini;
+    \item Timpul de inițializare în BIOS era neobișnuit de mare.
+\end{itemize}
+
+Investigațiile au arătat că problema legată de BIOS era cauzată de conectarea incorectă a liniilor USB 3.2 Gen 2 către hub-ul USB. Perechile diferențiale au fost conectate eronat (RX-RX și TX-TX), în loc de configurația corectă RX-TX și TX-RX. Această eroare a apărut din utilizarea unei topologii specifice conexiunilor între cip și port, în locul celei necesare pentru interconectarea a două cipuri. Corecția a fost realizată prin refacerea conexiunilor folosind fire (Figura \ref{fig:USB-fix}).
+
+O altă problemă identificată a fost funcționarea incorectă a LED-ului RGB frontal, utilizat pentru indicarea stării sistemului (roșu – oprit, galben – standby, alb – pornit). LED-ul rămânea aprins în culoarea roșie imediat după alimentare, iar celelalte culori nu funcționau.
+
+Cauza acestei deficiențe a fost utilizarea incorectă a tranzistoarelor MOSFET de tip N într-o configurație de tip high-side switching, în condițiile în care tensiunea de comandă pe poartă era comparabilă sau mai mică decât tensiunea drenă-sursă. În această situație, tranzistorul nu putea comuta corect.
+
+Soluția corectă constă în utilizarea unei configurații de tip low-side switching, în care tensiunea de comandă (3,3 V) este aplicată între poartă și masă, asigurând funcționarea corespunzătoare a tranzistorului și controlul corect al LED-ului.
+
+
+
+
+
 
 \begin{figure}
   \centering
-  \begin{subfigure}[b]{0.45\linewidth}
+  \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{Low vs High Side switching.png}
-    \caption{Low Side vs High Side Switching}
+    \caption{Low Side vs High Side Switch}
     \label{fig:Low-high}
   \end{subfigure}
-  \begin{subfigure}[b]{0.45\linewidth}
+  \begin{subfigure}[b]{0.55\linewidth}
     \includegraphics[width=\linewidth]{Low-side-fix.png}
-    \caption{Firul USB RX-TX TX-RX. TODO BETTER PICTURE}
+    \caption{Diagrama reparată folosind low side switch}
     \label{fig:low-side-fix}
   \end{subfigure}
   
