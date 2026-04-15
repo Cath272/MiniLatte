@@ -1,9 +1,9 @@
 \chapter{Design}
-\label{ch:hardware}
+\label{ch:Design}
 
 \section{LattePanda Mu}
 
-LattePanda Mu \ref{fig:LattePanda-Mu} este un modul de calcul performant, cu dimensiuni comparabile unui card bancar, proiectat de compania DFRobot. Acesta este conceput pentru integrare în produse hardware personalizate, fiind potrivit atât pentru proiecte de tip hobby, cât și pentru aplicații industriale.
+LattePanda Mu (vezi Figura \ref{fig:LattePanda-Mu}) este un modul de calcul performant, cu dimensiuni comparabile unui card bancar, proiectat de compania DFRobot. Acesta este conceput pentru integrare în produse hardware personalizate, fiind potrivit atât pentru proiecte de tip hobby, cât și pentru aplicații industriale.
 
 Seria actuală cuprinde modele cu diferite configurații de procesoare și memorie, acestea menținând intercompatibilitatea la nivel de pinout. Modulul este proiectat pentru a fi inserat într-o placă de bază (carrier board) folosind un slot standard SO-DIMM \ac{DDR}4. Această alegere constructivă este justificată de densitatea mare de pini, necesară pentru a expune numeroasele interfețe de comunicare către placa purtătoare.
 
@@ -78,30 +78,25 @@ Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce co
 
 \section{Design}
 
-Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de circuit\ac{PCB}.
+Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de circuit imprimat\ac{PCB}.
 
 \subsection{Alegerea componentelor}
-Pornind de la diagrama bloc construită am început să caut componentele, ca criterii de selecția am avut costul, familiaritatea, disponibilitatea și documentația cipurilor, cu o singură excepție, acesta fiind cipul IT8851FN-128 acesta find destul de greu de găsit dar fiind singurul cu paote fi programat cu firmware-ul celor de la LattePanda nu exista o alta optiune. 
-Pentru controllerul de HUB USB opțiunea a fost evindetă: VIA Labs VL822-Q7, acesta având o viteză maximă de transmisie de 10Gbps, dar la fel de important un preț foarte bun de doar 2€. 
+Pornind de la diagrama bloc,procesul de selecție a componentelor s-a bazat pe mai multe criterii, precum costul, disponibilitatea pe piață, familiaritatea cu producătorul și calitatea documentației tehnice. O excepție notabilă o reprezintă cipul IT8851FN-128, care, deși este dificil de procurat, a fost ales datorită compatibilității cu firmware-ul furnizat de LattePanda, neexistând alternative viabile. 
+Pentru controllerul de HUB USB a fost ales integratul datorită suportului pentru viteze de până la 10 Gbps și a costului redus. Acesta a fost utilizat împreună cu VIA Labs VL162, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
+În ceea ce privește conectivitatea Ethernet, a fost selectat controlerul Realtek RTL8125, care oferă suport pentru viteze de până la 2.5 Gbps, menținând totodată un cost competitiv. 
+Pentru conversia tensiunilor au fost utilizate circuite integrate de la Texas Instruments (TPS51275, TPS54561, TPS62590), iar pentru protecția la supracurent au fost alese cipurile TPS2553 și TPS2561. Alegerea acestor componente s-a bazat pe eficiența ridicată, documentația detaliată și disponibilitatea acestora.
 
-\subsection{Schematic}
+\section{Diagrama electrică}
 
-\subsection{Rutare Trasee}
+Diagrama electrică reprezintă etapa inițială esențială în procesul de proiectare. în cazul sistemului MiniLatte, aceasta este structurată pe 19 pagini și descrie în detaliu toate conexiunile dintre modulul LattePanda Mu, circuite integrate și conectori utilizați. Schema a fost organizată pe blocuri funcționale, precum „USB3”, „HDMI” și „PCIe\_SSD”, pentru a facilita înțelegerea și verificarea conexiunilor.
+
+Pentru realizarea acesteia au fost utilizate în principal fișele de date ale componentelor, specificațiile protocoalelor de comunicație, precum și documentația oficială DFRobot \cite{lattepanda_github} \cite{lattepanda_docs}. Aceasta din urmă a oferit informații esențiale despre modul de interconectare al modulului LattePanda Mu, servind drept referință pentru integrarea componentelor externe.
 
 
-
-\subsection{Consum de curent}
-Datorită numărului mare de interfețe disponibile, un lucru important in acest design a fost proiectarea in jurul consumului de curent, atât a modulului LattePanda Mu dar și componentelor de pe placa și a diverselor dispozitive conectate.
-Modulul este alimentat printr-un port USB Type C utilizând protocolul USB \ac{PD}, a fost utilizat un cip HUSB238, responsabil de negocierea tensiunii cu sursa de alimentare, solicitând un profil de 20 V și 3,25 A (65 W), valoare standard pentru acest protocol.
-Tensiunea este coborâtă la 17,5V pentru modulul LattePanda Mu folosind regulatorul TPS54561, consumul modulului fiind de 10-15W, de asemenea sunt generate tensiuni auxiliare de 3,3V și 5V folosind cipul TPS51275.
-Traseele de alimentare au fost dimensionate corespunzător curenților implicați, având lățimi de până la 7–7,5 mm imediat după regulatoarele de tensiune (Figura \ref{fig:power-plane}), urmând ca acestea să se reducă progresiv după alimentarea consumatorilor principali. Pentru linia de 3,3 V, principalii consumatori sunt cele trei unități SSD, iar pentru linia de 5 V, porturile USB, care pot furniza până la 0,5 A (USB 2.0) și 0,9 A (USB 3.0 și USB Type-C). Protecția la supracurent este asigurată de cipuri TPS2561, care monitorizează fiecare port USB și pot întrerupe alimentarea în cazul depășirii limitelor admise.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\linewidth]{Latime plan curent.png}
-    \caption{Plan de curent cu o lățime de 7,3mm.}
-    \label{fig:power-plane}
-\end{figure}
+\section{Rutare Trasee}
+Etapa de rutare a traseelor pe \ac{PCB} a avut un rol critic în asigurarea funcționării corecte a sistemului, în special datorită prezenței interfețelor de mare viteză, precum USB 3.2, \ac{PCIe} și HDMI.
+Placa este realizată pe 4 straturi, aspect esențial pentru menținerea impedanței controlate a traseelor. Aceasta este asigurată prin distanța redusă dintre straturile de semnal și planurile de referință, reprezentate de straturi solide de masă (GND).  Din acest motiv, traseele de semnal sunt rutate pe cele două straturi exterioare, în timp ce cele două straturi interioare sunt utilizate ca planuri continue de masă.
+Prima etapă a rutării este plasearea preliminară a componentelor. în acest caz, s-a pornit de la poziționarea slotului pentru modulul LattePanda Mu și a conectorilor externi, în funcție de distribuția pinilor modulului. Având în vedere că primii pini sunt dedicați alimentării, s-a ales poziționarea circuitelor de alimentare în proximitatea conectorului de intrare, definind astfel zona stângă a plăcii ca zonă principală de alimentare. Următoarele semnale sunt cele video, începând cu portul USB-C (care transmite semnal DisplayPort), urmat de cele două porturi HDMI. Ulterior, au fost poziționate porturile USB, conectate la pinii din extremitatea dreaptă a modulului, necesitând spațiu suplimentar pentru integrarea hub-ului USB. În final, a fost amplasat portul Ethernet. Dimensiunile plăcii au fost determinate de amplasarea conectorilor: lățimea este de 190 mm, stabilită de porturile din partea posterioară, iar lungimea de 130 mm, determinată de porturile din partea frontală. 
 
 
 \subsection{Perechi diferențiale}
@@ -129,124 +124,22 @@ Diferența de lungime dintre cele două trasee (Intra Pair Skew \ref{fig:Intra-P
 
 \end{figure}
 
-\chapter{Asamblare}
-
-
-\section{Matrice LED}
-
-Mini PC-ul vine echipat cu o matrice LED \ref{fig:LED-Matrix} compusă din 220 LED-uri adresabile RGB cu driver WS2812C, acestea au nevoie doar de un pin de input și sunt legate în serie, acestea formând o matrice 44x5.
-Acestea sunt controlate de un Microcontroller ESP32-C3 care comunică cu modulul LattePanda prin USB, iar microcontrollerul fiind integrat direct pe \ac{PCB}-ul principal.
+\section{Consum de curent}
+Datorită numărului mare de interfețe disponibile, un lucru important in acest design a fost proiectarea in jurul consumului de curent, atât a modulului LattePanda Mu dar și componentelor de pe placa și a diverselor dispozitive conectate.
+Modulul este alimentat printr-un port USB Type C utilizând protocolul USB \ac{PD}, a fost utilizat un cip HUSB238, responsabil de negocierea tensiunii cu sursa de alimentare, solicitând un profil de 20 V și 3,25 A (65 W), valoare standard pentru acest protocol.
+Tensiunea este coborâtă la 17,5V pentru modulul LattePanda Mu folosind regulatorul TPS54561, consumul modulului fiind de 10-15W, de asemenea sunt generate tensiuni auxiliare de 3,3V și 5V folosind cipul TPS51275.
+Traseele de alimentare au fost dimensionate corespunzător curenților implicați, având lățimi de până la 7–7,5 mm imediat după regulatoarele de tensiune (Figura \ref{fig:power-plane}), urmând ca acestea să se reducă progresiv după alimentarea consumatorilor principali. Pentru linia de 3,3 V, principalii consumatori sunt cele trei unități SSD, iar pentru linia de 5 V, porturile USB, care pot furniza până la 0,5 A (USB 2.0) și 0,9 A (USB 3.0 și USB Type-C). Protecția la supracurent este asigurată de cipuri TPS2561, care monitorizează fiecare port USB și pot întrerupe alimentarea în cazul depășirii limitelor admise.
 
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{led-matrix.png}
-    \caption{Matrice Led.}
-    \label{fig:LED-Matrix}
+    \includegraphics[width=0.6\linewidth]{Latime plan curent.png}
+    \caption{Plan de curent cu o lățime de 7,3mm.}
+    \label{fig:power-plane}
 \end{figure}
 
 
-\section{Carcasa}
-Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD, aceasta este formată din 2 piese principale printate 3d folosind filament PLA, un schelet ce include partea din față, lateralele și partea superioară \ref{fig:Front-case}, apoi un capac pentru partea inferioară și spate \ref{fig:back-case}. Cele 2 \ac{PCB}-uri sunt montate pe schelet, acesta incluzand și un panou de difuzie printat cu filament translucid PETG.
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics[width=\linewidth]{case-front.png}
-     \caption{Partea frontală a carcasei}
-     \label{fig:Front-case}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics[width=\linewidth]{case-back.png}
-    \caption{Partea din spate a carcasei}
-    \label{fig:back-case}
-  \end{subfigure}
-  
-  \caption{Cele 2 părți ale carcasei}
-  \label{fig:Case}
-
-\end{figure}
-
-\section{Asamblare}
-Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxidabil, tăiate la laser, aceasta fiind produsă odată cu \ac{PCB}-ul, cu aceste șabloane am aplicat o pastă de fludor și am plasat fiecare componentă pe placă, începând cu matricea LED \ref{fig:LED-Matrix-Assembly} care are 220 LED-uri, apoi continuând cu \ac{PCB}-ul principal \ref{fig:Main-PCB-Assembly}, acesta având în jur de 500 de componente, dintre care TODO
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{led-matrix-asembly.png}
-    \caption{Matrice Led în timpul asamblării.}
-    \label{fig:LED-Matrix-Assembly}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{pcb-assembly.jpg}
-    \caption{PCB-ul principal în timpul asambării în timpul asamblării.}
-    \label{fig:Main-PCB-Assembly}
-\end{figure}
 
 
-\section{Testare și depanare}
-
-Toate defectele prezentate în această secțiune au fost identificate în urma testării prototipului și ulterior corectate în proiectul \ac{PCB}. Din considerente de cost, varianta revizuită nu a mai fost trimisă în producție.
-
-După asamblarea plăcii, procesul de testare a evidențiat inițial o problemă majoră: regulatorul de tensiune care convertește 20V la 5V și 3,3V nu pornea. Deoarece acesta asigură și alimentarea regulatorului de 17,5 V utilizat de modulul principal, nici acesta nu devenea operațional.
-
-Cauza problemei a fost identificată ca fiind absența unor condensatoare necesare pentru funcționarea corectă a regulatorului \ac{LDO}, utilizat în faza inițială de pornire a circuitului intern al cipului, până la activarea convertorului DC-DC. Remedierea a constat în adăugarea unui condensator, realizată printr-o conexiune suplimentară între pinul circuitului integrat și un condensator montat ulterior pe placă (Figura \ref{fig:TPS-fix}).
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics[width=\linewidth]{TPS-FIX.jpg}
-    \caption{Firul ce leaga unul dintre LDO-uri de un condensator. TODO BETTER PICTURE}
-    \label{fig:TPS-fix}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.45\linewidth}
-    \includegraphics[width=\linewidth]{USB-FIX.jpg}
-    \caption{Firul USB RX-TX TX-RX. TODO BETTER PICTURE}
-    \label{fig:USB-fix}
-  \end{subfigure}
-  
-  \caption{Cele 2 părți ale carcasei}
-  \label{fig:GG}
-
-\end{figure}
-
-După implementarea acestei corecții, sistemul a pornit corespunzător și a permis încărcarea sistemului de operare. Testele ulterioare au evidențiat însă și alte deficiențe:
-\begin{itemize}
-    \item Un slot \ac{NVMe} nu funcționa, cauza fiind o lipire defectuoasă a unui pin;
-    \item Controlerul Ethernet \textit{Realtek RTL8125} nu pornea, fiind necesară adăugarea unui rezistor de tip pull-up pe unul dintre pini;
-    \item Timpul de inițializare în BIOS era neobișnuit de mare.
-\end{itemize}
-
-Investigațiile au arătat că problema legată de BIOS era cauzată de conectarea incorectă a liniilor USB 3.2 Gen 2 către hub-ul USB. Perechile diferențiale au fost conectate eronat (RX-RX și TX-TX), în loc de configurația corectă RX-TX și TX-RX. Această eroare a apărut din utilizarea unei topologii specifice conexiunilor între cip și port, în locul celei necesare pentru interconectarea a două cipuri. Corecția a fost realizată prin refacerea conexiunilor folosind fire (Figura \ref{fig:USB-fix}).
-
-O altă problemă identificată a fost funcționarea incorectă a LED-ului RGB frontal, utilizat pentru indicarea stării sistemului (roșu – oprit, galben – standby, alb – pornit). LED-ul rămânea aprins în culoarea roșie imediat după alimentare, iar celelalte culori nu funcționau.
-
-Cauza acestei deficiențe a fost utilizarea incorectă a tranzistoarelor MOSFET de tip N într-o configurație de tip high-side switching, în condițiile în care tensiunea de comandă pe poartă era comparabilă sau mai mică decât tensiunea drenă-sursă. În această situație, tranzistorul nu putea comuta corect.
-
-Soluția corectă constă în utilizarea unei configurații de tip low-side switching, în care tensiunea de comandă (3,3 V) este aplicată între poartă și masă, asigurând funcționarea corespunzătoare a tranzistorului și controlul corect al LED-ului.
-
-
-
-
-
-
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.4\linewidth}
-    \includegraphics[width=\linewidth]{Low vs High Side switching.png}
-    \caption{Low Side vs High Side Switch}
-    \label{fig:Low-high}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.55\linewidth}
-    \includegraphics[width=\linewidth]{Low-side-fix.png}
-    \caption{Diagrama reparată folosind low side switch}
-    \label{fig:low-side-fix}
-  \end{subfigure}
-  
-  \caption{fix MOSFETS}
-  \label{fig:2}
-
-\end{figure}
 
 
 %$$

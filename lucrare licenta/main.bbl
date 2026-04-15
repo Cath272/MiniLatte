@@ -49,6 +49,64 @@
       \verb https://www.ti.com/lit/an/slla414a/slla414a.pdf
       \endverb
     \endentry
+    \entry{lattepanda_docs}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=aeccbe14870bf1720795cd9f0253fe63}{%
+           family={LattePandaTeam},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{fullhash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{fullhashraw}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{bibnamehash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{authorbibnamehash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{authornamehash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{authorfullhash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{authorfullhashraw}{aeccbe14870bf1720795cd9f0253fe63}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 24.03.2026)}
+      \field{title}{LattePanda Documentation}
+      \verb{urlraw}
+      \verb https://docs.lattepanda.com/content/mu_edition/introduction/
+      \endverb
+      \verb{url}
+      \verb https://docs.lattepanda.com/content/mu_edition/introduction/
+      \endverb
+      \keyw{latex,knuth}
+    \endentry
+    \entry{lattepanda_github}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=aeccbe14870bf1720795cd9f0253fe63}{%
+           family={LattePandaTeam},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{fullhash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{fullhashraw}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{bibnamehash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{authorbibnamehash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{authornamehash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{authorfullhash}{aeccbe14870bf1720795cd9f0253fe63}
+      \strng{authorfullhashraw}{aeccbe14870bf1720795cd9f0253fe63}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 24.03.2026)}
+      \field{title}{LattePanda-Mu}
+      \verb{urlraw}
+      \verb https://github.com/LattePandaTeam/LattePanda-Mu
+      \endverb
+      \verb{url}
+      \verb https://github.com/LattePandaTeam/LattePanda-Mu
+      \endverb
+      \keyw{latex,knuth}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

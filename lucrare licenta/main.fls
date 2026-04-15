@@ -223,9 +223,12 @@ INPUT 1-introducere.aux
 INPUT .\2-hardware.aux
 INPUT .\2-hardware.aux
 INPUT 2-hardware.aux
-INPUT .\3-concluzii.aux
-INPUT .\3-concluzii.aux
-INPUT 3-concluzii.aux
+INPUT .\3-Asamblare.aux
+INPUT .\3-Asamblare.aux
+INPUT 3-Asamblare.aux
+INPUT .\4-concluzii.aux
+INPUT .\4-concluzii.aux
+INPUT 4-concluzii.aux
 OUTPUT main.aux
 INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\american.lbx
 INPUT C:\Users\Cath\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\american.lbx
@@ -312,12 +315,18 @@ INPUT .\images\pcb-bottom.jpg
 INPUT .\images\pcb-bottom.jpg
 INPUT .\images\MiniLatte_block.png
 INPUT .\images\MiniLatte_block.png
-INPUT .\images\Latime plan curent.png
-INPUT .\images\Latime plan curent.png
 INPUT .\images\Intra-pair-skew.png
 INPUT .\images\Intra-pair-skew.png
 INPUT .\images\Inter-pair-skew.png
 INPUT .\images\Inter-pair-skew.png
+INPUT .\images\Latime plan curent.png
+INPUT .\images\Latime plan curent.png
+INPUT .\3-Asamblare.tex
+INPUT .\3-Asamblare.tex
+OUTPUT 3-Asamblare.aux
+INPUT .\3-Asamblare.tex
+INPUT .\3-Asamblare.tex
+INPUT 3-Asamblare.tex
 INPUT .\images\led-matrix.png
 INPUT .\images\led-matrix.png
 INPUT .\images\case-front.png
@@ -336,12 +345,12 @@ INPUT .\images\Low vs High Side switching.png
 INPUT .\images\Low vs High Side switching.png
 INPUT .\images\Low-side-fix.png
 INPUT .\images\Low-side-fix.png
-INPUT .\3-concluzii.tex
-INPUT .\3-concluzii.tex
-OUTPUT 3-concluzii.aux
-INPUT .\3-concluzii.tex
-INPUT .\3-concluzii.tex
-INPUT 3-concluzii.tex
+INPUT .\4-concluzii.tex
+INPUT .\4-concluzii.tex
+OUTPUT 4-concluzii.aux
+INPUT .\4-concluzii.tex
+INPUT .\4-concluzii.tex
+INPUT 4-concluzii.tex
 INPUT main.aux
 INPUT .\0-title.aux
 INPUT .\0-title.aux
@@ -355,9 +364,12 @@ INPUT 1-introducere.aux
 INPUT .\2-hardware.aux
 INPUT .\2-hardware.aux
 INPUT 2-hardware.aux
-INPUT .\3-concluzii.aux
-INPUT .\3-concluzii.aux
-INPUT 3-concluzii.aux
+INPUT .\3-Asamblare.aux
+INPUT .\3-Asamblare.aux
+INPUT 3-Asamblare.aux
+INPUT .\4-concluzii.aux
+INPUT .\4-concluzii.aux
+INPUT 4-concluzii.aux
 INPUT .\main.out
 INPUT .\main.out
 INPUT main.run.xml
