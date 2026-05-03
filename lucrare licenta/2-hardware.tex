@@ -82,7 +82,7 @@ Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind 
 
 \subsection{Alegerea componentelor}
 Pornind de la diagrama bloc,procesul de selecție a componentelor s-a bazat pe mai multe criterii, precum costul, disponibilitatea pe piață, familiaritatea cu producătorul și calitatea documentației tehnice. O excepție notabilă o reprezintă cipul IT8851FN-128, care, deși este dificil de procurat, a fost ales datorită compatibilității cu firmware-ul furnizat de LattePanda, neexistând alternative viabile. 
-Pentru controllerul de HUB USB a fost ales integratul datorită suportului pentru viteze de până la 10 Gbps și a costului redus. Acesta a fost utilizat împreună cu VIA Labs VL162, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
+Pentru controllerul de HUB USB a fost ales integratul VL822-Q7 datorită suportului pentru viteze de până la 10 Gbps și a costului redus. Acesta a fost utilizat împreună cu VIA Labs VL162, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
 În ceea ce privește conectivitatea Ethernet, a fost selectat controlerul Realtek RTL8125, care oferă suport pentru viteze de până la 2.5 Gbps, menținând totodată un cost competitiv. 
 Pentru conversia tensiunilor au fost utilizate circuite integrate de la Texas Instruments (TPS51275, TPS54561, TPS62590), iar pentru protecția la supracurent au fost alese cipurile TPS2553 și TPS2561. Alegerea acestor componente s-a bazat pe eficiența ridicată, documentația detaliată și disponibilitatea acestora.
 
@@ -90,13 +90,33 @@ Pentru conversia tensiunilor au fost utilizate circuite integrate de la Texas In
 
 Diagrama electrică reprezintă etapa inițială esențială în procesul de proiectare. în cazul sistemului MiniLatte, aceasta este structurată pe 19 pagini și descrie în detaliu toate conexiunile dintre modulul LattePanda Mu, circuite integrate și conectori utilizați. Schema a fost organizată pe blocuri funcționale, precum „USB3”, „HDMI” și „PCIe\_SSD”, pentru a facilita înțelegerea și verificarea conexiunilor.
 
-Pentru realizarea acesteia au fost utilizate în principal fișele de date ale componentelor, specificațiile protocoalelor de comunicație, precum și documentația oficială DFRobot \cite{lattepanda_github} \cite{lattepanda_docs}. Aceasta din urmă a oferit informații esențiale despre modul de interconectare al modulului LattePanda Mu, servind drept referință pentru integrarea componentelor externe.
+Pentru realizarea acesteia au fost utilizate în principal fișele de date ale componentelor, specificațiile protocoalelor de comunicație, precum și documentația oficială DFRobot  \cite{lattepanda_docs} \cite{lattepanda_github}. Aceasta din urmă a oferit informații esențiale despre modul de interconectare al modulului LattePanda Mu, servind drept referință pentru integrarea componentelor externe.
 
 
-\section{Rutare Trasee}
+\section{Rutare trasee}
 Etapa de rutare a traseelor pe \ac{PCB} a avut un rol critic în asigurarea funcționării corecte a sistemului, în special datorită prezenței interfețelor de mare viteză, precum USB 3.2, \ac{PCIe} și HDMI.
-Placa este realizată pe 4 straturi, aspect esențial pentru menținerea impedanței controlate a traseelor. Aceasta este asigurată prin distanța redusă dintre straturile de semnal și planurile de referință, reprezentate de straturi solide de masă (GND).  Din acest motiv, traseele de semnal sunt rutate pe cele două straturi exterioare, în timp ce cele două straturi interioare sunt utilizate ca planuri continue de masă.
-Prima etapă a rutării este plasearea preliminară a componentelor. în acest caz, s-a pornit de la poziționarea slotului pentru modulul LattePanda Mu și a conectorilor externi, în funcție de distribuția pinilor modulului. Având în vedere că primii pini sunt dedicați alimentării, s-a ales poziționarea circuitelor de alimentare în proximitatea conectorului de intrare, definind astfel zona stângă a plăcii ca zonă principală de alimentare. Următoarele semnale sunt cele video, începând cu portul USB-C (care transmite semnal DisplayPort), urmat de cele două porturi HDMI. Ulterior, au fost poziționate porturile USB, conectate la pinii din extremitatea dreaptă a modulului, necesitând spațiu suplimentar pentru integrarea hub-ului USB. În final, a fost amplasat portul Ethernet. Dimensiunile plăcii au fost determinate de amplasarea conectorilor: lățimea este de 190 mm, stabilită de porturile din partea posterioară, iar lungimea de 130 mm, determinată de porturile din partea frontală. 
+Placa este realizată pe 4 straturi, aspect esențial pentru menținerea impedanței controlate a traseelor. Aceasta este asigurată prin distanța redusă dintre straturile de semnal și planurile de referință, reprezentate de straturi solide de masă (GND)   (Figura \ref{fig:stackup}).  Din acest motiv, traseele de semnal sunt rutate pe cele două straturi exterioare, în timp ce cele două straturi interioare sunt utilizate ca planuri continue de masă.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{Stackup.png}
+     \caption{Poziționarea straturilor PCBului}
+     \label{fig:stackup}
+\end{figure}
+
+\subsection{Poziționarea componentelor}
+Prima etapă a rutării este plasarea preliminară a componentelor. În acest caz, s-a pornit de la poziționarea slotului pentru modulul LattePanda Mu și a conectorilor externi, în funcție de distribuția pinilor modulului (Figura \ref{fig:pcb_zones}). Având în vedere că primii pini sunt dedicați alimentării, s-a ales poziționarea circuitelor de alimentare în proximitatea conectorului de intrare, definind astfel zona stângă a plăcii ca zonă principală de alimentare. Următoarele semnale sunt cele video, începând cu portul USB-C (care transmite semnal DisplayPort), urmat de cele două porturi HDMI. Ulterior, au fost poziționate porturile USB, conectate la pinii din extremitatea dreaptă a modulului, necesitând spațiu suplimentar pentru integrarea hub-ului USB. În final, a fost amplasat portul Ethernet. Dimensiunile plăcii au fost determinate de amplasarea conectorilor: lățimea este de 190 mm, stabilită de porturile din partea posterioară, iar lungimea de 130 mm, determinată de porturile din partea frontală. 
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\linewidth]{MiniLatte_zones.png}
+     \caption{Poziționarea componentelor pe placă}
+     \label{fig:pcb_zones}
+\end{figure}
+
+
+
+
 
 
 \subsection{Perechi diferențiale}
@@ -132,14 +152,7 @@ Traseele de alimentare au fost dimensionate corespunzător curenților implicaț
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\linewidth]{Latime plan curent.png}
+    \includegraphics[width=\linewidth]{Latime plan curent.png}
     \caption{Plan de curent cu o lățime de 7,3mm.}
     \label{fig:power-plane}
 \end{figure}
-
-
-
-
-
-
-%$$

@@ -315,6 +315,10 @@ INPUT .\images\pcb-bottom.jpg
 INPUT .\images\pcb-bottom.jpg
 INPUT .\images\MiniLatte_block.png
 INPUT .\images\MiniLatte_block.png
+INPUT .\images\Stackup.png
+INPUT .\images\Stackup.png
+INPUT .\images\MiniLatte_zones.png
+INPUT .\images\MiniLatte_zones.png
 INPUT .\images\Intra-pair-skew.png
 INPUT .\images\Intra-pair-skew.png
 INPUT .\images\Inter-pair-skew.png

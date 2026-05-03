@@ -1,28 +1,28 @@
 # Fdb version 4
-["biber main"] 1776267087.26102 "main.bcf" "main.bbl" "main" 1776267107.48011 0
+["biber main"] 1777801609.68329 "main.bcf" "main.bbl" "main" 1777804466.43211 0
   "bibliography.bib" 1774381090 1271 1a4b082db18e30cf352880fd45eca126 ""
-  "main.bcf" 1776267099 108772 8d0fb9546262490f3bd14cc2bd7ac955 "xelatex"
+  "main.bcf" 1777804458 108772 a4522a90dc8b35d66d4395a203e3b01d "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1776267099.89879 "main.xdv" "main.pdf" "main" 1776267107.48932 0
-  "main.xdv" 1776267099 228752 93bc472bb2c67d53ee77813a3f0a40fb "xelatex"
+["xdvipdfmx"] 1777804459.06967 "main.xdv" "main.pdf" "main" 1777804466.44255 0
+  "main.xdv" 1777804458 235468 e6e8ef82029c6bbd4c86195f2950ff19 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1776267096.96158 "c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex" "main.xdv" "main" 1776267107.48052 0
-  "0-abstract.aux" 1776267098 4342 2f73b430d488ed7ba13f0be964cdca86 "xelatex"
+["xelatex"] 1777804456.482 "c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex" "main.xdv" "main" 1777804466.43257 0
+  "0-abstract.aux" 1777804458 4342 2f73b430d488ed7ba13f0be964cdca86 "xelatex"
   "0-abstract.tex" 1654137342 1453 fcd6948f8919b25539cb2e35a978e8a1 ""
-  "0-title.aux" 1776267098 4180 d9761ac11184bbe198681c8724bb6702 "xelatex"
-  "0-title.tex" 1773390426 1251 bca1e7b97df63b85925806dcd86003f4 ""
-  "1-introducere.aux" 1776267099 4852 32239f7a86cb932ca5927a0f0d76830e "xelatex"
+  "0-title.aux" 1777804458 4180 d9761ac11184bbe198681c8724bb6702 "xelatex"
+  "0-title.tex" 1777801586 1251 bca1e7b97df63b85925806dcd86003f4 ""
+  "1-introducere.aux" 1777804458 4852 32239f7a86cb932ca5927a0f0d76830e "xelatex"
   "1-introducere.tex" 1774383041 607 254a9966492f2fc81d5732f5776fe380 ""
-  "2-hardware.aux" 1776267099 9060 bd2e242a11a5a1afe810db1581c09bed "xelatex"
-  "2-hardware.tex" 1776174106 11610 a1bfd057ee066da3b45a1198bc29d9dc ""
-  "3-Asamblare.aux" 1776267099 8406 a4e43145374da47ca8613c852b8e616f "xelatex"
-  "3-Asamblare.tex" 1776088465 6469 a917d5b657c4b721bd480ff104b74920 ""
-  "4-concluzii.aux" 1776267099 4369 6301fcc3447942ce848ff7eda00b3ef1 "xelatex"
+  "2-hardware.aux" 1777804458 9929 6e32b12e5316435bcbd92052c2183c9f "xelatex"
+  "2-hardware.tex" 1777804453 12075 812dcc86513b6a741962552da107a2db ""
+  "3-Asamblare.aux" 1777804458 8364 116d92464789dfc067de1ba46ec1b8ed "xelatex"
+  "3-Asamblare.tex" 1777801694 6449 b28746bd92a2efcc1ca340f4a8e22be2 ""
+  "4-concluzii.aux" 1777804458 4369 6e3e0ca38e21210b3d0a16349949bb94 "xelatex"
   "4-concluzii.tex" 1773647794 19 ff73a4696f5180074e92cc3776f7379e ""
   "C:/Users/Cath/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1773389472 27176654 88e152cea5d743440aabd377dc8d75ce ""
   "C:/Users/Cath/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136765054 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -135,8 +135,10 @@
   "images/Low vs High Side switching.png" 1775588996 254603 4bd43b10b5eee35b29839b2ff08d4626 ""
   "images/Low-side-fix.png" 1775735375 71820 75476de62769b7312b98820aef41e2d3 ""
   "images/MiniLatte_block.png" 1773653141 1476241 f686fb764006896835c6ad071f94e586 ""
-  "images/TPS-FIX.jpg" 1775587696 2228432 4e07f37a0446e7f14d9d12498f884f11 ""
-  "images/USB-FIX.jpg" 1775587709 2481508 12c819b583e92df1902f99e07750a4a8 ""
+  "images/MiniLatte_zones.png" 1777803681 4016734 9430e23ebdf8b6dd473514c6e550e729 ""
+  "images/Stackup.png" 1777798945 40341 e314aef58fe649fa3cbd47d342b2c1e3 ""
+  "images/TPS-FIX.jpg" 1777801528 809083 dc6fae76643b57901ac9c4e02a79d350 ""
+  "images/USB-FIX.jpg" 1777801492 1085204 ad7d96fc5b96270b0cac98a85f70364e ""
   "images/case-back.png" 1774439191 49370 54edcc8637262cd273f7931a2dfc9cde ""
   "images/case-front.png" 1774439191 138829 67621c4e8d2fd568e760e89a974e98ec ""
   "images/led-matrix-asembly.png" 1775586268 1100544 e6ed34684d6b100aa3c905fac4fd8fb1 ""
@@ -148,13 +150,13 @@
   "images/pcb-top-front.jpg" 1774289286 4925779 95a88b42a68519cb4fa3b441c1bfe438 ""
   "images/ports-back.jpg" 1774290684 853786 b7e39567432339c226e0b0affd98aa64 ""
   "images/ports-front.jpg" 1774290697 590392 ed1c16b0c1354aba1a235fc6b3ab8e30 ""
-  "main.aux" 1776267099 1698 b0fc5c4f3826ce3bb4e04ba272444ffb "xelatex"
-  "main.bbl" 1776267093 4380 0920faac6becf9eeb9bc9104276627ae "biber main"
-  "main.lof" 1776267099 1924 ef5136b26a8b419154a030cd2fd3e857 "xelatex"
-  "main.out" 1776267099 2068 96e425f5ba12af5b5b70f2eb9ea94706 "xelatex"
-  "main.run.xml" 1776267099 2406 136db66cb1590d0aeb159de490b159a3 "xelatex"
+  "main.aux" 1777804458 1698 a4c13b7d432828f96a0dc7d785dd9dee "xelatex"
+  "main.bbl" 1777801611 4380 0920faac6becf9eeb9bc9104276627ae "biber main"
+  "main.lof" 1777804458 2228 8421e1ce7ede49811991b510d5da678e "xelatex"
+  "main.out" 1777804458 2266 f049d571b697dff5f80556c32cfb80c8 "xelatex"
+  "main.run.xml" 1777804458 2406 136db66cb1590d0aeb159de490b159a3 "xelatex"
   "main.tex" 1776267063 3878 35a1b80d9b850ced5499df237c8d07a6 ""
-  "main.toc" 1776267099 1359 25de405db9552b42c24fb081a09dd99d "xelatex"
+  "main.toc" 1777804458 1457 75032b8fe0ff524aad8ef6e46245188a "xelatex"
   "romanian.lbx" 1654137342 34947 6d14c245c5909849980f7031de346cd7 ""
   (generated)
   "0-abstract.aux"
