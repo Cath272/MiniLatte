@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.3.13)  3 MAY 2026 13:34
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.3.13)  4 MAY 2026 17:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1252,7 +1252,7 @@ File: ./images/Inter-pair-skew.png Graphic file (type bmp)
  [13] [14]
 File: ./images/Latime plan curent.png Graphic file (type bmp)
 <./images/Latime plan curent.png>
-) [15] [16]
+) [15]
 \openout2 = `3-Asamblare.aux'.
 
  (3-Asamblare.tex
@@ -1263,7 +1263,7 @@ File: ./images/case-front.png Graphic file (type bmp)
 <./images/case-front.png>
 File: ./images/case-back.png Graphic file (type bmp)
 <./images/case-back.png>
-[17
+[16
 
 
 
@@ -1275,48 +1275,58 @@ File: ./images/pcb-assembly.jpg Graphic file (type bmp)
 <./images/pcb-assembly.jpg>
 Package acronym Info: Label `acro:LDO' newly defined as it shall be overridden
 although it is yet undefined on input line 62.
- [18] [19]
+ [17] [18]
 File: ./images/TPS-FIX.jpg Graphic file (type bmp)
 <./images/TPS-FIX.jpg>
 File: ./images/USB-FIX.jpg Graphic file (type bmp)
 <./images/USB-FIX.jpg>
- [20]
+ [19]
 File: ./images/Low vs High Side switching.png Graphic file (type bmp)
 <./images/Low vs High Side switching.png>
 File: ./images/Low-side-fix.png Graphic file (type bmp)
 <./images/Low-side-fix.png>
-) [21]
+) [20]
 \openout2 = `4-concluzii.aux'.
 
  (4-concluzii.tex
 Capitolul 4.
-) [22
+) [21
 
 
 
 
-] [23
+]
+Overfull \hbox (1.87413pt too wide) in paragraph at lines 171--171
+[]\TU/TimesNewRoman(0)/m/n/12 Texas Instruments, \TU/TimesNewRoman(0)/m/it/12 High-Speed Layout Guidelines for Signal Conditioners and USB Hubs\TU/TimesNewRoman(0)/m/n/12 ,
+ []
+
+
+Overfull \hbox (7.37651pt too wide) in paragraph at lines 171--171
+[]\TU/TimesNewRoman(0)/m/n/12 Via Labs, \TU/TimesNewRoman(0)/m/it/12 VL822-Q7 Datasheet\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/sc/12 url\TU/TimesNewRoman(0)/m/n/12 : [][]$[][][][][] [] [] [] [][][] [] [][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][][] []
+ []
+
+[22
 
 
 
-] (main.aux (0-title.aux) (0-abstract.aux) (1-introducere.aux) (2-hardware.aux) (3-Asamblare.aux) (4-concluzii.aux))
+] [23] (main.aux (0-title.aux) (0-abstract.aux) (1-introducere.aux) (2-hardware.aux) (3-Asamblare.aux) (4-concluzii.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F049D571B697DFF5F80556C32CFB80C8;2266.
+(rerunfilecheck)             Checksum: A59FED66EBC8CDC5BB533AF131D5507A;2384.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29082 strings out of 402983
- 546156 string characters out of 5448689
- 1511151 words of memory out of 5000000
- 57452 multiletter control sequences out of 15000+600000
+ 29107 strings out of 402983
+ 547207 string characters out of 5448689
+ 1517578 words of memory out of 5000000
+ 57477 multiletter control sequences out of 15000+600000
  630123 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,11n,107p,1127b,5769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (23 pages, 235468 bytes).
+Output written on main.xdv (23 pages, 261088 bytes).

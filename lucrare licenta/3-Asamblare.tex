@@ -89,11 +89,8 @@ După implementarea acestei corecții, sistemul a pornit corespunzător și a pe
 \end{itemize}
 
 Investigațiile au arătat că problema legată de BIOS era cauzată de conectarea incorectă a liniilor USB 3.2 Gen 2 către hub-ul USB. Perechile diferențiale au fost conectate eronat (RX-RX și TX-TX), în loc de configurația corectă RX-TX și TX-RX. Această eroare a apărut din utilizarea unei topologii specifice conexiunilor între cip și port, în locul celei necesare pentru interconectarea a două cipuri. Corecția a fost realizată prin refacerea conexiunilor folosind fire (Figura \ref{fig:USB-fix}).
-
-O altă problemă identificată a fost funcționarea incorectă a LED-ului RGB frontal, utilizat pentru indicarea stării sistemului (roșu – oprit, galben – standby, alb – pornit). LED-ul rămânea aprins în culoarea roșie imediat după alimentare, iar celelalte culori nu funcționau.
-
+O altă problemă identificată a fost funcționarea incorectă a LED-ului RGB frontal, utilizat pentru indicarea stării sistemului (roșu - oprit, galben - standby, alb - pornit). LED-ul rămânea aprins în culoarea roșie imediat după alimentare, iar celelalte culori nu funcționau.
 Cauza acestei deficiențe a fost utilizarea incorectă a tranzistoarelor MOSFET de tip N într-o configurație de tip high-side switching, în condițiile în care tensiunea de comandă pe poartă era comparabilă sau mai mică decât tensiunea drenă-sursă. În această situație, tranzistorul nu putea comuta corect.
-
 Soluția corectă constă în utilizarea unei configurații de tip low-side switching, în care tensiunea de comandă (3,3 V) este aplicată între poartă și masă, asigurând funcționarea corespunzătoare a tranzistorului și controlul corect al LED-ului.
 
 
@@ -114,4 +111,8 @@ Soluția corectă constă în utilizarea unei configurații de tip low-side swit
   \label{fig:2}
 
 \end{figure}
+
+\section{Alte defecte}
+
+Un defect care nu a fost reparat pe placă dar care a fost reparat în proiect este pornirea ventilatorului la putere maximă odată cu alimentarea sistemului, pentru a remedia această problemă a fost adăugat un MOSFET care permite alimentarea sistemului doar când acesta este în starea de pornit, folosind același semnal ca LED-ul alb.
 

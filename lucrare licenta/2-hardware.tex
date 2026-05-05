@@ -82,9 +82,9 @@ Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind 
 
 \subsection{Alegerea componentelor}
 Pornind de la diagrama bloc,procesul de selecție a componentelor s-a bazat pe mai multe criterii, precum costul, disponibilitatea pe piață, familiaritatea cu producătorul și calitatea documentației tehnice. O excepție notabilă o reprezintă cipul IT8851FN-128, care, deși este dificil de procurat, a fost ales datorită compatibilității cu firmware-ul furnizat de LattePanda, neexistând alternative viabile. 
-Pentru controllerul de HUB USB a fost ales integratul VL822-Q7 datorită suportului pentru viteze de până la 10 Gbps și a costului redus. Acesta a fost utilizat împreună cu VIA Labs VL162, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
+Pentru controllerul de HUB USB a fost ales integratul VL822-Q7 \cite{VL822-Q7} datorită suportului pentru viteze de până la 10 Gbps și a costului redus. Acesta a fost utilizat împreună cu VIA Labs VL162 \cite{VL162}, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
 În ceea ce privește conectivitatea Ethernet, a fost selectat controlerul Realtek RTL8125, care oferă suport pentru viteze de până la 2.5 Gbps, menținând totodată un cost competitiv. 
-Pentru conversia tensiunilor au fost utilizate circuite integrate de la Texas Instruments (TPS51275, TPS54561, TPS62590), iar pentru protecția la supracurent au fost alese cipurile TPS2553 și TPS2561. Alegerea acestor componente s-a bazat pe eficiența ridicată, documentația detaliată și disponibilitatea acestora.
+Pentru conversia tensiunilor au fost utilizate circuite integrate de la Texas Instruments (TPS51275 \cite{TPS51275}, TPS54561 \cite{TPS54561}, TPS62590 \cite{TPS62590}), iar pentru protecția la supracurent au fost alese cipurile TPS2553 și TPS2561. Alegerea acestor componente s-a bazat pe eficiența ridicată, documentația detaliată și disponibilitatea acestora.
 
 \section{Diagrama electrică}
 
@@ -95,7 +95,8 @@ Pentru realizarea acesteia au fost utilizate în principal fișele de date ale c
 
 \section{Rutare trasee}
 Etapa de rutare a traseelor pe \ac{PCB} a avut un rol critic în asigurarea funcționării corecte a sistemului, în special datorită prezenței interfețelor de mare viteză, precum USB 3.2, \ac{PCIe} și HDMI.
-Placa este realizată pe 4 straturi, aspect esențial pentru menținerea impedanței controlate a traseelor. Aceasta este asigurată prin distanța redusă dintre straturile de semnal și planurile de referință, reprezentate de straturi solide de masă (GND)   (Figura \ref{fig:stackup}).  Din acest motiv, traseele de semnal sunt rutate pe cele două straturi exterioare, în timp ce cele două straturi interioare sunt utilizate ca planuri continue de masă.
+Placa este realizată pe 4 straturi, aspect esențial pentru menținerea impedanței controlate a traseelor. Aceasta este asigurată prin distanța redusă dintre straturile de semnal și planurile de referință, reprezentate de straturi solide de masă (GND)   (Figura \ref{fig:stackup}). 
+În această configurație, traseele de semnal sunt rutate pe cele două straturi exterioare, în timp ce cele două straturi interioare sunt utilizate ca planuri continue de masă. Această arhitectură permite asigurarea unui traseu de retur (return path) continuu și de impedanță redusă pentru curentul de semnal, conform bunelor practici de proiectare recomandate în ghidurile de layout pentru circuite de mare viteză \cite{Layout_Guidelines}. Menținerea unui plan de referință neîntrerupt contribuie la reducerea interferențelor electromagnetice și la îmbunătățirea integrității semnalului.
 
 \begin{figure}
   \centering
@@ -113,10 +114,6 @@ Prima etapă a rutării este plasarea preliminară a componentelor. În acest ca
      \caption{Poziționarea componentelor pe placă}
      \label{fig:pcb_zones}
 \end{figure}
-
-
-
-
 
 
 \subsection{Perechi diferențiale}
@@ -146,9 +143,9 @@ Diferența de lungime dintre cele două trasee (Intra Pair Skew \ref{fig:Intra-P
 
 \section{Consum de curent}
 Datorită numărului mare de interfețe disponibile, un lucru important in acest design a fost proiectarea in jurul consumului de curent, atât a modulului LattePanda Mu dar și componentelor de pe placa și a diverselor dispozitive conectate.
-Modulul este alimentat printr-un port USB Type C utilizând protocolul USB \ac{PD}, a fost utilizat un cip HUSB238, responsabil de negocierea tensiunii cu sursa de alimentare, solicitând un profil de 20 V și 3,25 A (65 W), valoare standard pentru acest protocol.
+Modulul este alimentat printr-un port USB Type C utilizând protocolul USB \ac{PD}, a fost utilizat un cip HUSB238, responsabil de negocierea tensiunii cu sursa de alimentare, solicitând un profil de 20 V și 3,25 A (65 W) \cite{usb_pd_spec}, valoare standard pentru acest protocol.
 Tensiunea este coborâtă la 17,5V pentru modulul LattePanda Mu folosind regulatorul TPS54561, consumul modulului fiind de 10-15W, de asemenea sunt generate tensiuni auxiliare de 3,3V și 5V folosind cipul TPS51275.
-Traseele de alimentare au fost dimensionate corespunzător curenților implicați, având lățimi de până la 7–7,5 mm imediat după regulatoarele de tensiune (Figura \ref{fig:power-plane}), urmând ca acestea să se reducă progresiv după alimentarea consumatorilor principali. Pentru linia de 3,3 V, principalii consumatori sunt cele trei unități SSD, iar pentru linia de 5 V, porturile USB, care pot furniza până la 0,5 A (USB 2.0) și 0,9 A (USB 3.0 și USB Type-C). Protecția la supracurent este asigurată de cipuri TPS2561, care monitorizează fiecare port USB și pot întrerupe alimentarea în cazul depășirii limitelor admise.
+Traseele de alimentare au fost dimensionate corespunzător curenților implicați, având lățimi de până la 7-7,5 mm imediat după regulatoarele de tensiune (Figura \ref{fig:power-plane}), urmând ca acestea să se reducă progresiv după alimentarea consumatorilor principali. Pentru linia de 3,3 V, principalii consumatori sunt cele trei unități SSD, iar pentru linia de 5 V, porturile USB, care pot furniza până la 0,5 A (USB 2.0) \cite{usb_2_spec} și 0,9 A (USB 3.0 și USB Type-C)\cite{usb_3_spec}. Protecția la supracurent este asigurată de cipuri TPS2561, care monitorizează fiecare port USB și pot întrerupe alimentarea în cazul depășirii limitelor admise.
 
 \begin{figure}
     \centering
