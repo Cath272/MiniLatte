@@ -3,22 +3,25 @@
 \xpg@aux {}{romanian}
 \xpg@aux {}{english}
 \xpg@aux {}{romanian}
-\contentsline {chapter}{\numberline {1}Introducere}{6}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Design}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}LattePanda Mu}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Conexiuni - Diagramă Bloc}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Design}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Alegerea componentelor}{11}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Diagrama electrică}{12}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Rutare trasee}{12}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Poziționarea componentelor}{12}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Perechi diferențiale}{13}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Consum de curent}{14}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Asamblare}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Matrice LED}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Carcasa}{16}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Asamblare}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Testare și depanare}{17}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Alte defecte}{20}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Concluzii}{21}{chapter.4}%
-\contentsline {chapter}{Bibliografie}{22}{chapter*.29}%
+\contentsline {chapter}{\numberline {1}Introducere}{7}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Design}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}LattePanda Mu}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Conexiuni - Diagramă Bloc}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Design}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Alegerea componentelor}{13}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Diagrama electrică}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Rutare trasee}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Poziționarea componentelor}{15}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Perechi diferențiale}{16}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Consum de curent}{17}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Asamblare}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Matrice LED}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Carcasa}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Asamblare}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Testare și depanare}{20}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Defect al circuitului de alimentare}{20}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Defecte ale protocoalelor}{21}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Alte defecte nerezolvate}{22}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Testare în sisteme de operare}{23}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {4}Concluzii}{24}{chapter.4}%
+\contentsline {chapter}{Bibliografie}{25}{chapter*.30}%

@@ -81,10 +81,22 @@ Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce co
 Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de circuit imprimat\ac{PCB}.
 
 \subsection{Alegerea componentelor}
-Pornind de la diagrama bloc,procesul de selecție a componentelor s-a bazat pe mai multe criterii, precum costul, disponibilitatea pe piață, familiaritatea cu producătorul și calitatea documentației tehnice. O excepție notabilă o reprezintă cipul IT8851FN-128, care, deși este dificil de procurat, a fost ales datorită compatibilității cu firmware-ul furnizat de LattePanda, neexistând alternative viabile. 
-Pentru controllerul de HUB USB a fost ales integratul VL822-Q7 \cite{VL822-Q7} datorită suportului pentru viteze de până la 10 Gbps și a costului redus. Acesta a fost utilizat împreună cu VIA Labs VL162 \cite{VL162}, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
-În ceea ce privește conectivitatea Ethernet, a fost selectat controlerul Realtek RTL8125, care oferă suport pentru viteze de până la 2.5 Gbps, menținând totodată un cost competitiv. 
-Pentru conversia tensiunilor au fost utilizate circuite integrate de la Texas Instruments (TPS51275 \cite{TPS51275}, TPS54561 \cite{TPS54561}, TPS62590 \cite{TPS62590}), iar pentru protecția la supracurent au fost alese cipurile TPS2553 și TPS2561. Alegerea acestor componente s-a bazat pe eficiența ridicată, documentația detaliată și disponibilitatea acestora.
+Pornind de la diagrama bloc,procesul de selecție a componentelor s-a bazat pe mai multe criterii, precum costul, disponibilitatea pe piață, familiaritatea cu producătorul și calitatea documentației tehnice.
+\begin{itemize}
+    \item O excepție notabilă o reprezintă cipul IT8851FN-128, care, deși este dificil de procurat, a fost ales datorită compatibilității cu firmware-ul furnizat de LattePanda, neexistând alternative viabile. 
+    \item Pentru conectivitatea USB a fost ales integratul VL822-Q7 \cite{VL822-Q7} datorită suportului pentru viteze de până la 10 Gbps, a celor 4 porturi downstream și a costului redus.
+    \item VIA Labs VL162 \cite{VL162}, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
+    \item Realtek RTL8125, care oferă suport pentru viteze de până la 2.5 Gbps, menținând totodată un cost competitiv. 
+    \item Circuite Integrate de la Texas Instruments (TPS51275 \cite{TPS51275}, TPS54561 \cite{TPS54561}, TPS62590 \cite{TPS62590}), iar pentru protecția la supracurent au fost alese cipurile TPS2553 și TPS2561. Alegerea acestor componente s-a bazat pe eficiența ridicată, documentația detaliată și disponibilitatea acestora.
+    \item Memoriile NOR W25Q128JV (folosit pentru stocarea BIOS-ului) respectiv W25Q32JV (folosite pentru stocarea firmware-ului pentru VL822 și GL3224), acesta au fost alese datorită costului redus.
+    \item Genesis Logic GL3224-ONY - controller pentru carduri SD și MicroSD, acesta a fost ales din cauza costului redus și a pentru suportul interfețelor de tip UHS-I care permit viteze până la 104MB/s.
+    \item Hynetek HUSB238 -  USB Type-C PD controller, acesta a fost ales din cauza costului redus și a modului foarte ușor de a programa tensiunile pe care le cere încărcătorului folosind doar doi rezistori, unul pentru curentul maxim și unul pentru tensiune.
+    \item ESP32-C3N4 - Microcontroller cu WiFi și 4Mb de memorie internă, a fost ales datorită prețului, memoriei interne, circuitului intern USB-UART dar și a performanței.
+\end{itemize}
+
+% Pentru controllerul de HUB USB a fost ales integratul VL822-Q7 \cite{VL822-Q7} datorită suportului pentru viteze de până la 10 Gbps și a costului redus. Acesta a fost utilizat împreună cu VIA Labs VL162 \cite{VL162}, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
+% În ceea ce privește conectivitatea Ethernet, a fost selectat controlerul 
+% Pentru conversia tensiunilor au fost utilizate circuite 
 
 \section{Diagrama electrică}
 
@@ -126,13 +138,13 @@ Diferența de lungime dintre cele două trasee (Intra Pair Skew \ref{fig:Intra-P
   \centering
   \begin{subfigure}[b]{0.3\linewidth}
     \includegraphics[width=\linewidth]{Intra-pair-skew.png}
-     \caption{Corecție a Intra Pair Skew pe o Perechi diferețială PCIe}
+     \caption{Corecție a Intra Pair Skew pe o pereche diferețială PCIe}
      \label{fig:Intra-Pair Skew}
   \end{subfigure}
   \hspace{1cm}
   \begin{subfigure}[b]{0.6\linewidth}
     \includegraphics[width=\linewidth]{Inter-pair-skew.png}
-    \caption{Corecție a Inter Pair Skew pe cele 4 Perechi diferețiale ale unui port HDMI}
+    \caption{Corecție a Inter Pair Skew pe cele 4 perechi diferețiale ale unui port HDMI}
     \label{fig:Inter-Pair Skew}
   \end{subfigure}
   

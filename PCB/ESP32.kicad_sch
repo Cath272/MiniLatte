@@ -2345,16 +2345,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TO ADD bigger caps and to separate from main 3.3v rail maybe"
-		(exclude_from_sim no)
-		(at 55.626 75.438 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "23782355-1a72-49bc-9ed9-b1726205adca")
-	)
 	(junction
 		(at 72.39 147.32)
 		(diameter 0)
