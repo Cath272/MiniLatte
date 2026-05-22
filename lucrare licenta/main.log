@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.3.13)  11 MAY 2026 15:59
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.3.13)  22 MAY 2026 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1247,17 +1247,17 @@ File: ./images/pcb-bottom.jpg Graphic file (type bmp)
 <./images/pcb-bottom.jpg>
 File: ./images/MiniLatte_block.png Graphic file (type bmp)
 <./images/MiniLatte_block.png>
-Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
-although it is yet undefined on input line 73.
-Package acronym Info: Label `acro:NVMe' newly defined as it shall be overridden
-although it is yet undefined on input line 73.
 Package acronym Info: Label `acro:SD' newly defined as it shall be overridden
-although it is yet undefined on input line 73.
+although it is yet undefined on input line 71.
  [10] [11] [12]
+Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
+although it is yet undefined on input line 78.
+Package acronym Info: Label `acro:NVMe' newly defined as it shall be overridden
+although it is yet undefined on input line 78.
 Package acronym Info: Label `acro:HDAudio' newly defined as it shall be overridden
-although it is yet undefined on input line 75.
+although it is yet undefined on input line 80.
 Package acronym Info: Label `acro:PCB' newly defined as it shall be overridden
-although it is yet undefined on input line 81.
+although it is yet undefined on input line 86.
  [13] [14]
 File: ./images/Stackup.png Graphic file (type bmp)
 <./images/Stackup.png>
@@ -1340,12 +1340,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29185 strings out of 402983
- 548434 string characters out of 5448689
- 1518403 words of memory out of 5000000
- 57552 multiletter control sequences out of 15000+600000
+ 29186 strings out of 402983
+ 548468 string characters out of 5448689
+ 1518623 words of memory out of 5000000
+ 57553 multiletter control sequences out of 15000+600000
  630123 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,11n,107p,1127b,5769s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,12n,107p,1127b,5769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (26 pages, 291392 bytes).
+Output written on main.xdv (26 pages, 297416 bytes).

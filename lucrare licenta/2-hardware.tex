@@ -43,15 +43,19 @@ Toate conexiunile sunt realizate intern, la nivelul plăcii de bază, pentru a r
   \begin{subfigure}[b]{1\linewidth}
     \includegraphics[width=\linewidth]{ports-front.jpg}
      \caption{Port-urile din partea din față a PCB-ului}
+     \label{fig:front-ports}
   \end{subfigure}
   \begin{subfigure}[b]{1\linewidth}
     \includegraphics[width=\linewidth]{ports-back.jpg}
     \caption{Port-urile din partea din spate a PCB-ului}
+    \label{fig:back-ports}
   \end{subfigure}
-  \begin{subfigure}[b]{0.7\linewidth}
-    \includegraphics[width=\linewidth]{pcb-bottom.jpg}
-    \caption{Port-urile de pe spatele PCB-ului}
-  \end{subfigure}
+    \begin{subfigure}[b]{0.7\linewidth}
+      \includegraphics[width=\linewidth]{pcb-bottom.jpg}
+      \caption{Port-urile de pe spatele PCB-ului}
+      \label{fig:bottom-ports}
+    \end{subfigure}
+    
   \caption{Port-urile PCB-ului}
   \label{fig:ports}
 \end{figure}
@@ -64,13 +68,14 @@ Toate conexiunile sunt realizate intern, la nivelul plăcii de bază, pentru a r
     \label{fig:diagrama-bloc}
 \end{figure}
 
-Pentru extinderea capacităților de conectare a perifericelor, au fost integrate două hub-uri USB care pun la dispoziție 4 porturi USB 3.2 Gen 2. În ceea ce privește conectivitatea la rețea, sistemul oferă două posibilități distincte, ambele bazate pe magistrala \ac{PCIe} Gen 3:
+Pentru extinderea capacităților de conectare a perifericelor, au fost integrate două hub-uri USB care pun la dispoziție 4 porturi USB 3.2 Gen 2 fiecare, acestea sunt atât USB type A cât și USB type C. Suplimentar, la unul dintre hub-urile USB este conectat un cititor de carduri dual \ac{SD}, utilizând lățimea de bandă oferită de interfața USB 3.2 Gen 2. Amplasarea acestora fiind observată în \ref{fig:front-ports} și \ref{fig:back-ports}.
+În ceea ce privește conectivitatea la rețea, sistemul oferă două posibilități distincte, ambele bazate pe magistrala \ac{PCIe} Gen 3:
 \begin{enumerate}
     \item \textbf{Wireless:} prin intermediul unui modul Wi-Fi instalat în slotul dedicat de pe placa de bază;
     \item \textbf{Ethernet:} utilizând controlerul \textit{Realtek RTL8125}, care suportă viteze de transfer de până la 2.5 Gbps via \ac{PCIe} Gen 3.
 \end{enumerate}
 
-Capacitatea de stocare poate fi extinsă considerabil prin cele trei sloturi destinate unităților \ac{SSD} M.2 \ac{NVMe}. Suplimentar, la unul dintre hub-urile USB este conectat un cititor de carduri dual \ac{SD}, utilizând lățimea de bandă oferită de interfața USB 3.2 Gen 2.
+Capacitatea de stocare poate fi extinsă considerabil prin cele trei sloturi destinate unităților \ac{SSD} M.2 \ac{NVMe} poziționate pe partea inferioară a plăcii (vezi \ref{fig:bottom-ports}). .
 
 Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce comunică prin protocolul \textit{\ac{HDAudio}}. Semnalul video este distribuit prin trei porturi digitale: două \ac{HDMI} 2.0 și un DisplayPort 1.4 (via USB-C).
 
@@ -93,6 +98,7 @@ Pornind de la diagrama bloc,procesul de selecție a componentelor s-a bazat pe m
     \item Hynetek HUSB238 -  USB Type-C PD controller, acesta a fost ales din cauza costului redus și a modului foarte ușor de a programa tensiunile pe care le cere încărcătorului folosind doar doi rezistori, unul pentru curentul maxim și unul pentru tensiune.
     \item ESP32-C3N4 - Microcontroller cu WiFi și 4Mb de memorie internă, a fost ales datorită prețului, memoriei interne, circuitului intern USB-UART dar și a performanței.
 \end{itemize}
+
 
 % Pentru controllerul de HUB USB a fost ales integratul VL822-Q7 \cite{VL822-Q7} datorită suportului pentru viteze de până la 10 Gbps și a costului redus. Acesta a fost utilizat împreună cu VIA Labs VL162 \cite{VL162}, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
 % În ceea ce privește conectivitatea Ethernet, a fost selectat controlerul 
@@ -161,7 +167,7 @@ Traseele de alimentare au fost dimensionate corespunzător curenților implicaț
 
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{Latime plan curent.png}
+    \includegraphics[width=0.7\linewidth]{Latime plan curent.png}
     \caption{Plan de curent cu o lățime de 7,3mm.}
     \label{fig:power-plane}
 \end{figure}

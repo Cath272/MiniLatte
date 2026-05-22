@@ -71,12 +71,10 @@ Cauza problemei a fost identificată ca fiind absența unor condensatoare necesa
   \end{subfigure}
   \begin{subfigure}[b]{0.45\linewidth}
     \includegraphics[width=\linewidth]{USB-FIX.jpg}
-    \caption{Firul USB RX-TX TX-RX. TODO BETTER PICTURE}
+    \caption{Repararea liniilor USB prin lipirea unor fire.}
     \label{fig:USB-fix}
   \end{subfigure}
-  
-  \caption{Cele 2 părți ale carcasei}
-  \label{fig:GG}
+  \caption{Două reparații folosind fire subțiri.}
 
 \end{figure}
 
@@ -99,16 +97,12 @@ Soluția corectă constă în utilizarea unei configurații de tip low-side swit
   \centering
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{Low vs High Side switching.png}
-    \caption{Low Side vs High Side Switch}
-    \label{fig:Low-high}
   \end{subfigure}
   \begin{subfigure}[b]{0.55\linewidth}
     \includegraphics[width=\linewidth]{Low-side-fix.png}
-    \caption{Diagrama reparată folosind low side switch}
-    \label{fig:low-side-fix}
   \end{subfigure}
   
-  \caption{fix MOSFETS}
+  \caption{Diagrama din stânga arată configurațiile Low Side și High Side, iar diagrama din dreapta arată schema reparată folosind un low side switch.}
   \label{fig:2}
 
 \end{figure}
@@ -123,8 +117,8 @@ Două defecte care nu a fost reparate pe placă dar care a fost reparate în pro
 
 \subsection{Testare în sisteme de operare}
 Pentru a testa performanța sistemului am folosit atât sistemul de operare Windows 11 cât și Ubuntu 26.04. 
-Am testat timpul de pornire al sistemului în ambele sisteme de operare, viteza de internetului atât pe Wi-Fi cât și pe fir, viteza maximă de transmisiune pe USB dar și viteza maximă a SSD-urile conectate (fiind limitate de conexiunea PCIE x2 respecitv x1).
-
+au fost testate timpul de pornire al sistemului în ambele sisteme de operare, viteza de internetului atât pe Wi-Fi cât și pe fir, viteza maximă de transmisiune pe USB dar și viteza maximă a SSD-urile conectate (fiind limitate de conexiunea PCIE x2 respecitv x1).
+Pentru testarea sistemului au fost folosite 3 SSD-uri SKhynix PC711 care rulează pe o interfață PCIe Gen3 x 4, capabile să satureze interfețele conectate. Iar pentru Wi-Fi a fost ales un modul bazat pe cipul Realtek RTL8852CE care oferă viteze foarte bune și suport pentru Wi-Fi 6E și Bluetooth 5.3 .  
 
 \begin{table}[h]
 \centering
