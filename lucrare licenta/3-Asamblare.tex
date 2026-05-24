@@ -7,10 +7,10 @@ Mini PC-ul vine echipat cu o matrice LED \ref{fig:LED-Matrix} compusă din 220 L
 Acestea sunt controlate de un Microcontroller ESP32-C3 care comunică cu modulul LattePanda prin USB, iar microcontrollerul fiind integrat direct pe \ac{PCB}-ul principal.
 
 \begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{led-matrix.png}
-    \caption{Matrice Led.}
-    \label{fig:LED-Matrix}
+  \centering
+  \includegraphics[width=\linewidth]{led-matrix.png}
+  \caption{Matrice Led.}
+  \label{fig:LED-Matrix}
 \end{figure}
 
 
@@ -21,15 +21,15 @@ Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD,
   \centering
   \begin{subfigure}[b]{0.45\linewidth}
     \includegraphics[width=\linewidth]{case-front.png}
-     \caption{Partea frontală a carcasei}
-     \label{fig:Front-case}
+    \caption{Partea frontală a carcasei}
+    \label{fig:Front-case}
   \end{subfigure}
   \begin{subfigure}[b]{0.45\linewidth}
     \includegraphics[width=\linewidth]{case-back.png}
     \caption{Partea din spate a carcasei}
     \label{fig:back-case}
   \end{subfigure}
-  
+
   \caption{Cele 2 părți ale carcasei}
   \label{fig:Case}
 
@@ -39,17 +39,17 @@ Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD,
 Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxidabil, tăiate la laser, aceasta fiind produsă odată cu \ac{PCB}-ul, cu aceste șabloane am aplicat o pastă de fludor și am plasat fiecare componentă pe placă, începând cu matricea LED \ref{fig:LED-Matrix-Assembly} care are 220 LED-uri, apoi continuând cu \ac{PCB}-ul principal \ref{fig:Main-PCB-Assembly}, acesta având în jur de 500 de componente, dintre care TODO
 
 \begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{led-matrix-asembly.png}
-    \caption{Matrice Led în timpul asamblării.}
-    \label{fig:LED-Matrix-Assembly}
+  \centering
+  \includegraphics[width=\linewidth]{led-matrix-asembly.png}
+  \caption{Matrice Led în timpul asamblării.}
+  \label{fig:LED-Matrix-Assembly}
 \end{figure}
 
 \begin{figure}
-    \centering
-    \includegraphics[width=0.8\linewidth]{pcb-assembly.jpg}
-    \caption{PCB-ul principal în timpul asambării în timpul asamblării.}
-    \label{fig:Main-PCB-Assembly}
+  \centering
+  \includegraphics[width=0.8\linewidth]{pcb-assembly.jpg}
+  \caption{PCB-ul principal în timpul asambării în timpul asamblării.}
+  \label{fig:Main-PCB-Assembly}
 \end{figure}
 
 
@@ -82,9 +82,9 @@ Cauza problemei a fost identificată ca fiind absența unor condensatoare necesa
 
 Sistemul a pornit corespunzător și a permis încărcarea sistemului de operare. Testele ulterioare au evidențiat însă și alte deficiențe:
 \begin{itemize}
-    \item Un slot \ac{NVMe} nu funcționa, cauza fiind o lipire defectuoasă a unui pin;
-    \item Controlerul Ethernet \textit{Realtek RTL8125} nu pornea, fiind necesară adăugarea unui rezistor de tip pull-up pe unul dintre pini;
-    \item Timpul de inițializare în BIOS era neobișnuit de mare.
+  \item Un slot \ac{NVMe} nu funcționa, cauza fiind o lipire defectuoasă a unui pin;
+  \item Controlerul Ethernet \textit{Realtek RTL8125} nu pornea, fiind necesară adăugarea unui rezistor de tip pull-up pe unul dintre pini;
+  \item Timpul de inițializare în BIOS era neobișnuit de mare.
 \end{itemize}
 
 Investigațiile au arătat că problema legată de BIOS era cauzată de conectarea incorectă a liniilor USB 3.2 Gen 2 către hub-ul USB. Perechile diferențiale au fost conectate eronat (RX-RX și TX-TX), în loc de configurația corectă RX-TX și TX-RX. Această eroare a apărut din utilizarea unei topologii specifice conexiunilor între cip și port, în locul celei necesare pentru interconectarea a două cipuri. Corecția a fost realizată prin refacerea conexiunilor folosind fire (Figura \ref{fig:USB-fix}).
@@ -101,7 +101,7 @@ Soluția corectă constă în utilizarea unei configurații de tip low-side swit
   \begin{subfigure}[b]{0.55\linewidth}
     \includegraphics[width=\linewidth]{Low-side-fix.png}
   \end{subfigure}
-  
+
   \caption{Diagrama din stânga arată configurațiile Low Side și High Side, iar diagrama din dreapta arată schema reparată folosind un low side switch.}
   \label{fig:2}
 
@@ -111,26 +111,31 @@ Soluția corectă constă în utilizarea unei configurații de tip low-side swit
 
 Două defecte care nu a fost reparate pe placă dar care a fost reparate în proiect sunt:
 \begin{itemize}
-    \item Ventilatorul pornește la putere maximă odată cu alimentarea sistemului, pentru a remedia această problemă a fost adăugat un MOSFET care permite alimentarea sistemului doar când acesta este în starea de pornit, folosind același semnal ca LED-ul alb.
-    \item Al doilea controller USB nu a fi putut fi reparat pentru a funcționa la viteze usb 3.2, acesta având punctele de lipire mai inaccesibile ca primul
+  \item Ventilatorul pornește la putere maximă odată cu alimentarea sistemului, pentru a remedia această problemă a fost adăugat un MOSFET care permite alimentarea sistemului doar când acesta este în starea de pornit, folosind același semnal ca LED-ul alb.
+  \item Al doilea controller USB nu a fi putut fi reparat pentru a funcționa la viteze usb 3.2, acesta având punctele de lipire mai inaccesibile ca primul
 \end{itemize}
 
 \subsection{Testare în sisteme de operare}
-Pentru a testa performanța sistemului am folosit atât sistemul de operare Windows 11 cât și Ubuntu 26.04. 
-au fost testate timpul de pornire al sistemului în ambele sisteme de operare, viteza de internetului atât pe Wi-Fi cât și pe fir, viteza maximă de transmisiune pe USB dar și viteza maximă a SSD-urile conectate (fiind limitate de conexiunea PCIE x2 respecitv x1).
-Pentru testarea sistemului au fost folosite 3 SSD-uri SKhynix PC711 care rulează pe o interfață PCIe Gen3 x 4, capabile să satureze interfețele conectate. Iar pentru Wi-Fi a fost ales un modul bazat pe cipul Realtek RTL8852CE care oferă viteze foarte bune și suport pentru Wi-Fi 6E și Bluetooth 5.3 .  
+Pentru a testa performanța sistemului am folosit atât sistemul de operare Windows 11 cât și Ubuntu 26.04.
+Au fost testate (Tabelul \ref{Tab:performace}) timpul de pornire al sistemului în ambele sisteme de operare, viteza de internetului atât pe Wi-Fi cât și pe fir, viteza maximă de transmisiune pe USB dar și viteza maximă a SSD-urile conectate (fiind limitate de conexiunea PCIE x2 respecitv x1).
+Pentru testarea sistemului au fost folosite 3 SSD-uri SKhynix PC711 care rulează pe o interfață PCIe Gen3 x 4, capabile să satureze interfețele conectate. Iar pentru Wi-Fi a fost ales un modul bazat pe cipul Realtek RTL8852CE care oferă viteze foarte bune și suport pentru Wi-Fi 6E și Bluetooth 5.3 .
 
 \begin{table}[h]
-\centering
-\begin{tabular}{@{}lll@{}}
-\toprule
-Placeholder!! & Ubuntu  & Windows \\ \midrule
-Timp de pornire & 22s     & 15s     \\
-Viteza LAN      & 2,5Gbps & 2,5Gbps \\
-Viteza Wi-Fi    & 837mbps & 837mbps \\
-Viteza SSD PCIE & 2,5Gbps & 2,5Gbps \\
-Viteza USB      & 10Gbps  & 2,5Gbps \\ \bottomrule
-\end{tabular}
+  \centering 
+  \rowcolors{2}{white}{lightgray!20} 
+  \begin{tabularx}{\textwidth}{X X X}
+    \toprule
+    \rowcolor{gray!30} 
+    \textbf{Test - Placeholder values}   & \textbf{Ubuntu}  & \textbf{Windows} \\ \midrule
+    Timp de pornire & 22s     & 15s     \\ 
+    Viteza LAN      & 2,5Gbps & 2,5Gbps \\ 
+    Viteza Wi-Fi    & 837mbps & 837mbps \\ 
+    Viteza SSD PCIE & 2,5Gbps & 2,5Gbps \\ 
+    Viteza USB      & 10Gbps  & 2,5Gbps \\ \bottomrule
+  \end{tabularx}
+    \caption{Performațele măsurate ale sistemului.}
+    \label{Tab:performace}
+
 \end{table}
 
 
