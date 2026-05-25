@@ -1,29 +1,29 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1779627245.49381 -1
-  "bibliography.bib" 1777906513 3055 e3162f8ed810106e78dae98284f3877a ""
-  "main.bcf" 1779627238 109355 316ce7fed7e2f2400efdb6922c75948d "xelatex"
+["biber main"] 1779721668.36377 "main.bcf" "main.bbl" "main" 1779722252.71641 0
+  "bibliography.bib" 1779721667 3248 21d05b8c8e6397552eac81607b20967c ""
+  "main.bcf" 1779722245 109214 484fe6ca83c9fb427e283497275f17fc "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1779627239.06963 "main.xdv" "main.pdf" "main" 1779627245.50366 0
-  "main.xdv" 1779627238 316724 a1d3cb3f96a3ec55773b6990820016d1 "xelatex"
+["xdvipdfmx"] 1779722246.10885 "main.xdv" "main.pdf" "main" 1779722252.73003 0
+  "main.xdv" 1779722245 354940 f1a38b0bd63c8f4f8f500662c612e25f "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1779627236.28604 "c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex" "main.xdv" "main" 1779627245.49421 0
-  "0-abstract.aux" 1779627238 4342 2ff3f9c8256ba857ceec0d57d273f068 "xelatex"
+["xelatex"] 1779722242.92116 "c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex" "main.xdv" "main" 1779722252.7169 0
+  "0-abstract.aux" 1779722244 4342 2ff3f9c8256ba857ceec0d57d273f068 "xelatex"
   "0-abstract.tex" 1654137342 1453 fcd6948f8919b25539cb2e35a978e8a1 ""
-  "0-title.aux" 1779627238 4180 f773f8196813fc398d291d546ce6a5be "xelatex"
+  "0-title.aux" 1779722244 4180 f773f8196813fc398d291d546ce6a5be "xelatex"
   "0-title.tex" 1777801586 1251 bca1e7b97df63b85925806dcd86003f4 ""
-  "1-introducere.aux" 1779627238 4974 4e13a1aad66e8c5e41254a6ab7167783 "xelatex"
-  "1-introducere.tex" 1779621402 1953 0a0fc577c32715cd78ae4d47c6fc9328 ""
-  "2-hardware.aux" 1779627238 10918 acf47e67ba37e744ca52f4432bc65eeb "xelatex"
-  "2-hardware.tex" 1779627141 15993 1fb549b66baaf950e60d40d93169f6a9 ""
-  "3-Asamblare.aux" 1779627238 9055 e40a091c047e35b20b847aa1793445e0 "xelatex"
-  "3-Asamblare.tex" 1779627232 8385 cb2c9f8b637bde1555a21ad85651cbc6 ""
-  "4-concluzii.aux" 1779627238 4370 a9b42b5096f36ac527740ad8f7ae21b4 "xelatex"
-  "4-concluzii.tex" 1773647794 19 ff73a4696f5180074e92cc3776f7379e ""
+  "1-introducere.aux" 1779722245 4974 4e13a1aad66e8c5e41254a6ab7167783 "xelatex"
+  "1-introducere.tex" 1779700076 2344 dcdd7c328edf3accde3da9836e7fe38f ""
+  "2-hardware.aux" 1779722245 11106 2c4b3aaa9db0179e2ade767cb968ece7 "xelatex"
+  "2-hardware.tex" 1779721542 18804 1f937ca39ad9a09978df5b0eb8edbe1b ""
+  "3-Asamblare.aux" 1779722245 9055 091e5a315fed2fa931f819e43407320e "xelatex"
+  "3-Asamblare.tex" 1779722242 8821 9a6a3ce0d50a309440526c81ec703d72 ""
+  "4-concluzii.aux" 1779722245 4370 9e062125a2d9c797ace463b88670db44 "xelatex"
+  "4-concluzii.tex" 1779710869 1191 4e845b9137ccb3849021eeea7099275a ""
   "C:/Users/Cath/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1779621917 27199476 183601c1f409fd474c8de6846d35a7e8 ""
   "C:/Users/Cath/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136765054 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Users/Cath/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -151,18 +151,18 @@
   "images/logo-fmi.png" 1654137342 31683 502fd345563681a62a486a8dd40b02cb ""
   "images/logo-ub.png" 1654137342 97709 84633e295a8b43ac678d872c0c5b677e ""
   "images/pcb-assembly.jpg" 1779472456 3137669 e449224f258338300b9174d2dbcf1fd6 ""
-  "images/pcb-bottom.jpg" 1774290669 1647370 b0e34c0a1d7f2026eb6978067ef7023c ""
+  "images/pcb-bottom.jpg" 1779701022 1469428 0a280afc991587d6103c91f82eb914aa ""
   "images/pcb-top-front.jpg" 1779472344 1852971 77b5e5e74d22a413714ff6bd07249da3 ""
-  "images/ports-back.jpg" 1774290684 853786 b7e39567432339c226e0b0affd98aa64 ""
+  "images/ports-back.jpg" 1779700995 646708 8ead384e6f528dae076774d6a595de45 ""
   "images/ports-front.jpg" 1774290697 590392 ed1c16b0c1354aba1a235fc6b3ab8e30 ""
-  "main.aux" 1779627238 2833 6ab05d93061d5b90b802d42ecf072174 "xelatex"
-  "main.bbl" 1779622451 14211 d9fd2d939b1348b7257d739bc29aff11 "biber main"
-  "main.lof" 1779627238 2377 5f253bb4fb2de267594b581388a82418 "xelatex"
-  "main.lot" 1779627238 382 33f8663ef5130286e7f3c7b10aae33eb "xelatex"
-  "main.out" 1779627238 3274 f18002c51fc74e6c8fc058f033d5e691 "xelatex"
-  "main.run.xml" 1779627238 2406 136db66cb1590d0aeb159de490b159a3 "xelatex"
+  "main.aux" 1779722245 2615 000a31fc0487eddd7019fd0b09fcdfd5 "xelatex"
+  "main.bbl" 1779721670 12979 40684545555ca615ac273f3eb1da5182 "biber main"
+  "main.lof" 1779722245 2377 50dc06b9cda68633672974799645aa47 "xelatex"
+  "main.lot" 1779722245 382 58149ac1639c66317cdda7f1d720493b "xelatex"
+  "main.out" 1779722245 3764 35258b663f65c64bc6dda661840f21b1 "xelatex"
+  "main.run.xml" 1779722245 2406 136db66cb1590d0aeb159de490b159a3 "xelatex"
   "main.tex" 1779624255 3963 c43c9d985d391cb653d225a80a78900b ""
-  "main.toc" 1779627238 1938 fc180f3c023fe297e0532e9efa3b32d5 "xelatex"
+  "main.toc" 1779722245 2091 22561b55b2bf3021f337e281ce847cb4 "xelatex"
   "romanian.lbx" 1654137342 34947 6d14c245c5909849980f7031de346cd7 ""
   (generated)
   "0-abstract.aux"

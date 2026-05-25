@@ -11,18 +11,19 @@
 \contentsline {section}{\numberline {2.3}Design}{14}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Alegerea componentelor}{14}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Diagrama electrică}{15}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Rutare trasee}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Rutare trasee și Integritatea Semnalului}{15}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Poziționarea componentelor}{16}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Perechi diferențiale}{17}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Consum de curent}{18}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Asamblare}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Matrice LED}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Carcasa}{20}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Asamblare}{21}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Testare și depanare}{21}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Defect al circuitului de alimentare}{21}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Defecte ale protocoalelor}{22}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Alte defecte nerezolvate}{23}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Testare în sisteme de operare}{24}{subsection.3.4.4}%
-\contentsline {chapter}{\numberline {4}Concluzii}{25}{chapter.4}%
-\contentsline {chapter}{Bibliografie}{26}{chapter*.32}%
+\contentsline {section}{\numberline {2.6}Consum de curent}{19}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Dimensionarea planurilor și protecția la supracurent}{20}{subsection.2.6.1}%
+\contentsline {chapter}{\numberline {3}Asamblare}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Matrice LED}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Carcasa}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Asamblare}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Testare și depanare}{22}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Defect al circuitului de alimentare}{22}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Defecte ale protocoalelor}{23}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Alte defecte nerezolvate}{24}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Testare în sisteme de operare}{25}{subsection.3.4.4}%
+\contentsline {chapter}{\numberline {4}Concluzii}{26}{chapter.4}%
+\contentsline {chapter}{Bibliografie}{27}{chapter*.32}%

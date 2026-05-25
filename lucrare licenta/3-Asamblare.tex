@@ -36,7 +36,7 @@ Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD,
 \end{figure}
 
 \section{Asamblare}
-Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxidabil, tăiate la laser, aceasta fiind produsă odată cu \ac{PCB}-ul, cu aceste șabloane am aplicat o pastă de fludor și am plasat fiecare componentă pe placă, începând cu matricea LED \ref{fig:LED-Matrix-Assembly} care are 220 LED-uri, apoi continuând cu \ac{PCB}-ul principal \ref{fig:Main-PCB-Assembly}, acesta având în jur de 500 de componente, dintre care TODO
+Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxidabil, tăiate la laser, aceasta fiind produsă odată cu \ac{PCB}-ul, cu aceste șabloane am aplicat o pastă de fludor și am plasat fiecare componentă pe placă, începând cu matricea LED \ref{fig:LED-Matrix-Assembly} care are 220 LED-uri, apoi continuând cu \ac{PCB}-ul principal \ref{fig:Main-PCB-Assembly}, acesta având în jur de 500 de componente, dintre care 380 de componente pasive SMD de capsulă 0603 și 0402, 32 circuite integrate în capsule QFN, 16 tranzistori in capsula SOT și DFN, 20 de conectori și alte componente active sau pasive.
 
 \begin{figure}
   \centering
@@ -121,20 +121,22 @@ Au fost testate (Tabelul \ref{Tab:performace}) timpul de pornire al sistemului �
 Pentru testarea sistemului au fost folosite 3 SSD-uri SKhynix PC711 care rulează pe o interfață PCIe Gen3 x 4, capabile să satureze interfețele conectate. Iar pentru Wi-Fi a fost ales un modul bazat pe cipul Realtek RTL8852CE care oferă viteze foarte bune și suport pentru Wi-Fi 6E și Bluetooth 5.3 .
 
 \begin{table}[h]
-  \centering 
-  \rowcolors{2}{white}{lightgray!20} 
+  \centering
+  \rowcolors{2}{white}{lightgray!20}
   \begin{tabularx}{\textwidth}{X X X}
     \toprule
-    \rowcolor{gray!30} 
-    \textbf{Test - Placeholder values}   & \textbf{Ubuntu}  & \textbf{Windows} \\ \midrule
-    Timp de pornire & 22s     & 15s     \\ 
-    Viteza LAN      & 2,5Gbps & 2,5Gbps \\ 
-    Viteza Wi-Fi    & 837mbps & 837mbps \\ 
-    Viteza SSD PCIE & 2,5Gbps & 2,5Gbps \\ 
-    Viteza USB      & 10Gbps  & 2,5Gbps \\ \bottomrule
+    \rowcolor{gray!30}
+    \textbf{Test - Placeholder values} & \textbf{Ubuntu} & \textbf{Windows} \\ \midrule
+    Timp de pornire                    & 22s             & 15s              \\
+    Viteza LAN                         & 2,5Gbps         & 2,5Gbps          \\
+    Viteza Wi-Fi                       & 837mbps         & 837mbps          \\
+    Viteza SSD PCIE                    & 2,5Gbps         & 2,5Gbps          \\
+    Viteza USB                         & 10Gbps          & 2,5Gbps          \\
+    Scor Cinebench                     & 10Gbps          & 2,5Gbps          \\ 
+    \bottomrule
   \end{tabularx}
-    \caption{Performațele măsurate ale sistemului.}
-    \label{Tab:performace}
+  \caption{Performațele măsurate ale sistemului.}
+  \label{Tab:performace}
 
 \end{table}
 

@@ -320,14 +320,14 @@ INPUT .\2-hardware.tex
 INPUT 2-hardware.tex
 INPUT .\images\LattePanda Mu1.png
 INPUT .\images\LattePanda Mu1.png
+INPUT .\images\MiniLatte_block.png
+INPUT .\images\MiniLatte_block.png
 INPUT .\images\ports-front.jpg
 INPUT .\images\ports-front.jpg
 INPUT .\images\ports-back.jpg
 INPUT .\images\ports-back.jpg
 INPUT .\images\pcb-bottom.jpg
 INPUT .\images\pcb-bottom.jpg
-INPUT .\images\MiniLatte_block.png
-INPUT .\images\MiniLatte_block.png
 INPUT .\images\Stackup.png
 INPUT .\images\Stackup.png
 INPUT .\images\MiniLatte_zones.png

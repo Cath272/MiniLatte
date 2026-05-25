@@ -2381,10 +2381,8 @@
     <bcf:citekey order="6" intorder="1">lattepanda_docs</bcf:citekey>
     <bcf:citekey order="7" intorder="1">lattepanda_github</bcf:citekey>
     <bcf:citekey order="8" intorder="1">Layout_Guidelines</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Layout_Guidelines</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">usb_pd_spec</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">usb_2_spec</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">usb_3_spec</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">usb_pd_spec</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">IPC-2152</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

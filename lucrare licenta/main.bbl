@@ -140,6 +140,32 @@
       \verb https://www.ti.com/lit/ds/symlink/tps62590.pdf
       \endverb
     \endentry
+    \entry{IPC-2152}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c8660c6d72e7323867ec800d6bb953df}{%
+           family={{IPC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8660c6d72e7323867ec800d6bb953df}
+      \strng{fullhash}{c8660c6d72e7323867ec800d6bb953df}
+      \strng{fullhashraw}{c8660c6d72e7323867ec800d6bb953df}
+      \strng{bibnamehash}{c8660c6d72e7323867ec800d6bb953df}
+      \strng{authorbibnamehash}{c8660c6d72e7323867ec800d6bb953df}
+      \strng{authornamehash}{c8660c6d72e7323867ec800d6bb953df}
+      \strng{authorfullhash}{c8660c6d72e7323867ec800d6bb953df}
+      \strng{authorfullhashraw}{c8660c6d72e7323867ec800d6bb953df}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IPC-2152 : Standard for Determining Current Carrying Capacity in Printed Board Design}
+      \verb{urlraw}
+      \verb https://www.electronics.org/TOC/IPC-2152.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.electronics.org/TOC/IPC-2152.pdf
+      \endverb
+    \endentry
     \entry{VL162}{manual}{}{}
       \name{author}{1}{}{%
         {{hash=aa7e57b4601a8b0930c7abc7dbb412a7}{%
@@ -258,60 +284,6 @@
       \endverb
       \keyw{latex,knuth}
     \endentry
-    \entry{usb_2_spec}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=109f9e5e8d3391c90c982d3dca1ba799}{%
-           family={{USB Implementers Forum}},
-           familyi={U\bibinitperiod}}}%
-      }
-      \strng{namehash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{fullhash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{fullhashraw}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{bibnamehash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{authorbibnamehash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{authornamehash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{authorfullhash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{authorfullhashraw}{109f9e5e8d3391c90c982d3dca1ba799}
-      \field{extraname}{1}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{USB 2.0 Specification}
-      \verb{urlraw}
-      \verb https://www.usb.org/document-library/usb-20-specification
-      \endverb
-      \verb{url}
-      \verb https://www.usb.org/document-library/usb-20-specification
-      \endverb
-    \endentry
-    \entry{usb_3_spec}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=109f9e5e8d3391c90c982d3dca1ba799}{%
-           family={{USB Implementers Forum}},
-           familyi={U\bibinitperiod}}}%
-      }
-      \strng{namehash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{fullhash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{fullhashraw}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{bibnamehash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{authorbibnamehash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{authornamehash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{authorfullhash}{109f9e5e8d3391c90c982d3dca1ba799}
-      \strng{authorfullhashraw}{109f9e5e8d3391c90c982d3dca1ba799}
-      \field{extraname}{2}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{USB 3.2 Revision 1.1}
-      \verb{urlraw}
-      \verb https://www.usb.org/document-library/usb-32-revision-11-june-2022
-      \endverb
-      \verb{url}
-      \verb https://www.usb.org/document-library/usb-32-revision-11-june-2022
-      \endverb
-    \endentry
     \entry{usb_pd_spec}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=109f9e5e8d3391c90c982d3dca1ba799}{%
@@ -326,7 +298,6 @@
       \strng{authornamehash}{109f9e5e8d3391c90c982d3dca1ba799}
       \strng{authorfullhash}{109f9e5e8d3391c90c982d3dca1ba799}
       \strng{authorfullhashraw}{109f9e5e8d3391c90c982d3dca1ba799}
-      \field{extraname}{3}
       \field{sortinit}{U}
       \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
       \field{labelnamesource}{author}
