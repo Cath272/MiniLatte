@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.5.27)  27 MAY 2026 22:17
+This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.5.27)  27 MAY 2026 22:21
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex"
@@ -1790,14 +1790,14 @@ Here is how much of LuaTeX's memory you used:
    avail lists: 1:4,2:1541,3:352,4:222,5:286,6:124,7:5800,8:60,9:1087,10:20,11:8
 67
  53050 multiletter control sequences out of 65536+600000
- 55 fonts using 27236015 bytes
+ 55 fonts using 27235895 bytes
  86i,12n,92p,1243b,3530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/cath/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-r
 egular.otf><c:/users/cath/appdata/local/programs/miktex/fonts/opentype/public/lm
 -math/latinmodern-math.otf><c:/users/cath/appdata/local/programs/miktex/fonts/op
 entype/public/lm-math/latinmodern-math.otf><C:/WINDOWS/Fonts/timesi.ttf><C:/WIND
 OWS/Fonts/times.ttf><C:/WINDOWS/Fonts/timesbd.ttf>
-Output written on main.pdf (27 pages, 18322854 bytes).
+Output written on main.pdf (27 pages, 18322895 bytes).
 
 PDF statistics: 508 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 1048576)
