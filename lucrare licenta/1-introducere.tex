@@ -16,16 +16,29 @@ o prezentare generală a temei, a motivației și a obiectivelor proiectului.
 
 \textit{Capitolul II} intitulat "Design", descrie proiectarea sistemului, detaliind selecția componentelor, procesul de proiectare a PCB-ului, pozitionarea porturilor externe și diversele reguli și bune practici ce au fost luate în vedere în faza de proiectare.
 
-\textit{Capitolul III} intitulat "Asamblare" este dedicat asamblării sistemului, detaliind matricea led integrată în sistem, proiectarea carcasei în care vor fi montate cele 2 plăci, asamblarea plăcii de bază, testarea și depanarea erorilor apărute. 
+\textit{Capitolul III} intitulat "Asamblare" este dedicat asamblării sistemului, detaliind matricea led integrată în sistem, proiectarea carcasei în care vor fi montate cele 2 plăci, asamblarea plăcii de bază, testarea și depanarea erorilor apărute.
 
 Lucrarea se încheie cu o secțiune de concluzii, care evidențiază direcția de dezvoltare a proiectului, inclusiv luând în cosiderare modalitățiile prin care acesta poate fi pregătit pentru a ajunge un produs de serie.
 
 
-\begin{figure}[H]
+
+
+\begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{pcb-top-front.jpg}
-    \caption{Formă finală. PCB-ul asamblat.}
+    \makebox[\textwidth][c]{
+        \begin{subfigure}[b]{0.5\linewidth}
+            \includegraphics[width=\linewidth]{pcb-top-front.jpg}
+            \caption{PCB-ul asamblat.}
+            \label{fig:case_final}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.5\linewidth}
+            \includegraphics[width=\linewidth]{case.jpg}
+            \caption{Sistemul asambalat în carcasă.}
+            \label{fig:pcb_final}
+        \end{subfigure}
+    }
+
+    \caption{Formă finală.}
     \label{fig:forma-finala}
+
 \end{figure}
-
-
