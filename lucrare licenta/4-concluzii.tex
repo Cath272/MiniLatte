@@ -1,11 +1,12 @@
-\chapter{Concluzii}
+\chapter{Concluzii și direcții viitoare}
+\label{ch:concluzii}
 
-Proiectul Mini PC folosind modulul LattePanda Mu fezabilitatea proiectării unui PCB complex și a unui sistem integrat performan cu un grad ridicat de personalizare, capabil să ruleze sisteme de operare și aplicații moderne. Arhitectura hardware oferă o flexibilitate ridicată atât din punct de vedere al modificării PCB-ului existent cu alte funcționalități dar și prin posibilitatea de schimbare a modulului cu unul mai performant. 
+Proiectul sistemului Mini PC bazat pe modulul \textit{LattePanda Mu} demonstrează fezabilitatea proiectării unui \ac{PCB} complex cu 4 straturi și a realizării unui sistem integrat performant. Prototipul a fost validat experimental, demonstrând stabilitate în rularea sistemelor de operare moderne. Arhitectura implementată oferă o flexibilitate ridicată, deschizând calea pentru extinderea funcționalităților plăcii sau pentru upgrade-ul direct al modulului de procesare x86.
+Pentru tranziția de la stadiul de prototip de laborator la un produs de serie, sunt necesare optimizări structurate pe două direcții principale:
 
-\textbf{În viitor}, următoarele modificări trebuie aduse platformei pentru a putea fi produs în masă:
 \begin{itemize}
-  \item Optimizarea carcasei pentru turnare prin injecție, acest lucru oferind un timp foarte scurt de producție pentru elementele de plastic, printarea 3D a acestor durând 6-8 ore pe o imprimantă standard, timp redus la cateva minute pentru turnarea prin injecție. De asemenea piesele rezultate sunt mai rezistente;
-  \item Modificarea prinderilor PCB-ului secundar, pentru montare mai rapidă pep liniile de producție.
+    \item \textbf{Eficientizarea fabricației carcasei:} Reproiectarea geometrică a carcasei pentru a fi compatibilă cu tehnologia de \textit{injection molding} (turnare prin injecție). Această tranziție este critică pentru producția de masă, reducând drastic timpul de execuție per unitate și asigurând o rezistență structurală superioară față de printarea 3D.
+    \item \textbf{Alinierea PCB-ului la normele pentru producție:} Uniformizarea orientării componentelor SMD și optimizarea amprentelor conform standardelor IPC. 
 \end{itemize}
 
-Platforma actuală reprezintă un punct de plecare solid, atât pentru producție în masă cât și pentru dezvoltarea altor proiecte pe baza sa. 
+Prin atingerea tuturor obiectivelor propuse, proiectul se materializează într-o platformă hardware fiabilă și complet funcțională. Validarea interconectării magistralelor de mare viteză și a sistemului complex de alimentare pe un PCB unic confirmă viabilitatea designului, acesta servind drept o bază robustă atât pentru o viitoare comercializare, cât și pentru dezvoltarea de noi sisteme de calcul compacte.

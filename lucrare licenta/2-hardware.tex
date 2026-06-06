@@ -1,18 +1,18 @@
-\chapter{Design}
-\label{ch:Design}
+\chapter{Proiectarea sistemului hardware}
+\label{ch:Proiectarea sistemului hardware}
 
 \section{LattePanda Mu}
 
 LattePanda Mu (vezi Figura \ref{fig:LattePanda-Mu}) este un modul de calcul performant, cu dimensiuni comparabile unui card bancar, proiectat de compania DFRobot. Acesta este conceput pentru integrare în produse hardware personalizate, fiind potrivit atât pentru proiecte de tip hobby, cât și pentru aplicații industriale.
 
-Seria actuală cuprinde modele cu diferite configurații de procesoare și memorie, acestea menținând intercompatibilitatea la nivel de pinout. Modulul este proiectat pentru a fi inserat într-o placă de bază (carrier board) folosind un slot standard SO-DIMM \ac{DDR}4. Această alegere constructivă este justificată de densitatea mare de pini, necesară pentru a expune numeroasele interfețe de comunicare către placa purtătoare.
+Seria actuală cuprinde modele cu diferite configurații de procesoare și memorie, acestea menținând intercompatibilitatea la nivel de pinout. Modulul este proiectat pentru a fi inserat într-o \textit{carrier board} (placă de bază) folosind un slot standard SO-DIMM \ac{DDR}4. Această alegere constructivă este justificată de densitatea mare de pini, necesară pentru a expune numeroasele interfețe de comunicare către placa purtătoare.
 
 Flexibilitatea platformei este sporită de posibilitatea modificării BIOS-ului, permițând utilizatorului să configureze alocarea liniilor de date pentru a prioritiza, după caz, numărul de sloturi \ac{PCIe} sau porturile USB disponibile. Specificațiile tehnice ale unității utilizate în prezenta lucrare sunt următoarele:
 
 \begin{figure}
   \centering
   \includegraphics[width=0.6\linewidth]{LattePanda Mu1.png}
-  \caption{Modulul LattePanda Mu}
+  \caption[Modulul LattePanda Mu]{Modulul LattePanda Mu \cite{lattepanda_docs}.}
   \label{fig:LattePanda-Mu}
 \end{figure}
 
@@ -48,8 +48,8 @@ Toate conexiunile sunt realizate intern, la nivelul plăcii de bază, pentru a r
 
 Pentru extinderea capacităților de conectare a perifericelor, au fost integrate două hub-uri USB care pun la dispoziție 4 porturi USB 3.2 Gen 2 fiecare, acestea sunt atât USB type A cât și USB type C. Suplimentar, la unul dintre hub-urile USB este conectat un cititor de carduri dual \ac{SD}, utilizând lățimea de bandă oferită de interfața USB 3.2 Gen 2. Amplasarea acestora fiind observată în \ref{fig:front-ports} și \ref{fig:back-ports}.
 
-Semnalul video este distribuit prin trei porturi digitale: două \ac{HDMI} 2.0 și un DisplayPort 1.4 (via USB-C), acestea suportând rezoluții de până la 4K 60Hz pentru porturile HDMI respctiv 4K 120Hz pentru portul DisplayPort.
-Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce comunică prin protocolul \textit{\ac{HDAudio}}, acesta fiind conectat la un port de tip TRRS, permițând semnale audio stereo și microfon mono.
+Semnalul video este distribuit prin trei porturi digitale: două \ac{HDMI} 2.0 acestea suportând rezoluții de până la 4K 60Hz, și un DisplayPort 1.4 (via USB-C) care suportă rezoluții până de la 4K 120Hz.
+Pe partea de procesare audio, sistemul utilizează un cip \textit{ALC269Q} ce comunică prin protocolul \textit{\ac{HDAudio}}, acesta fiind conectat la un port de tip TRRS, permițând semnale audio stereo și microfon.
 
 În ceea ce privește conectivitatea la rețea, sistemul oferă două posibilități distincte, ambele bazate pe magistrala \ac{PCIe} Gen 3:
 \begin{enumerate}
@@ -83,24 +83,21 @@ Capacitatea de stocare poate fi extinsă considerabil prin cele trei sloturi des
   \label{fig:ports}
 \end{figure}
 
-\section{Design}
+\section{Arhitectura hardware și selecția componentelor}
 
-Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de circuit imprimat\ac{PCB}.
-
-\subsection{Alegerea componentelor}
+Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de \ac{PCB}.
 Pornind de la diagrama bloc,procesul de selecție a componentelor s-a bazat pe mai multe criterii, precum costul, disponibilitatea pe piață, familiaritatea cu producătorul și calitatea documentației tehnice.
 \begin{itemize}
-  \item O excepție notabilă o reprezintă cipul IT8851FN-128, care, deși este dificil de procurat, a fost ales datorită compatibilității cu firmware-ul furnizat de LattePanda, neexistând alternative viabile.
-  \item Pentru conectivitatea USB a fost ales integratul VL822-Q7 \cite{VL822-Q7} datorită suportului pentru viteze de până la 10 Gbps, a celor 4 porturi downstream și a costului redus.
-  \item VIA Labs VL162 \cite{VL162}, un multiplexor necesar pentru implementarea funcționalității porturilor USB Type-C.
-  \item Realtek RTL8125, care oferă suport pentru viteze de până la 2.5 Gbps, menținând totodată un cost competitiv.
+  \item \textbf{ITE IT8851FN-128:} O excepție notabilă în procesul de achiziție o reprezintă acest cip de management. Deși este un circuit integrat dificil de procurat prin canalele standard de distribuție, utilizarea sa a fost obligatorie din cauza compatibilității exclusive cu firmware-ul proprietar furnizat de LattePanda, neexistând o alternativă viabilă pe piață la momentul proiectării.
+  \item \textbf{VIA Labs VL822-Q7 \cite{VL822-Q7}:} Reprezintă hub-ul USB 3.2 Gen 2 principal al sistemului. A fost selectat datorită capacității de a gestiona 4 porturi din \textit{downstream} cu o lățime de bandă de până la \mbox{10\text{\,}Gbps} per port, oferind un raport excelent între performanța de transmisie și costul de implementare.
+  \item \textbf{VIA Labs VL162 \cite{VL162}:} Acest circuit integrat acționează ca un switch de date/multiplexor de mare viteză pe 4 canale, special conceput pentru configurarea porturilor USB Type-C. Rolul său critic este de a detecta orientarea fizică a conectorului USB-C inserat (prin monitorizarea pinilor CC1/CC2) și de a ruta corect liniile diferențiale de date (\textit{TX/RX}) către hub-ul principal, asigurând conexiunea indiferent de poziția în care utilizatorul conectează cablul.
+  \item \textbf{Realtek RTL8125}, care oferă suport pentru viteze de până la 2.5 Gbps, menținând totodată un cost competitiv.
   \item Circuite Integrate de la Texas Instruments (TPS51275 \cite{TPS51275}, TPS54561 \cite{TPS54561}, TPS62590 \cite{TPS62590}), iar pentru protecția la supracurent au fost alese cipurile TPS2553 și TPS2561. Alegerea acestor componente s-a bazat pe eficiența ridicată, documentația detaliată și disponibilitatea acestora.
-  \item Memoriile NOR W25Q128JV (folosit pentru stocarea BIOS-ului) respectiv W25Q32JV (folosite pentru stocarea firmware-ului pentru VL822 și GL3224), acesta au fost alese datorită costului redus.
-  \item Genesis Logic GL3224-ONY - controller pentru carduri SD și MicroSD, acesta a fost ales din cauza costului redus și a pentru suportul interfețelor de tip UHS-I care permit viteze până la 104MB/s.
-  \item Hynetek HUSB238 -  USB Type-C PD controller, acesta a fost ales din cauza costului redus și a modului foarte ușor de a programa tensiunile pe care le cere încărcătorului folosind doar doi rezistori, unul pentru curentul maxim și unul pentru tensiune.
-  \item ESP32-C3N4 - Microcontroller cu WiFi și 4Mb de memorie internă, a fost ales datorită prețului, memoriei interne, circuitului intern USB-UART dar și a performanței. Microcontrollerul a fost ales în locul locul pinilor GPIO nativi ai modulului LattePanda Mu din cauza faptului că aceștia nu erau funcționali la momentul proiectării sistemului, dar și pentru a degreva procesorul de sarcina de a controla LED-urile.
+  \item \textbf{Memoriile NOR W25Q128JV} (folosit pentru stocarea BIOS-ului) respectiv W25Q32JV (folosite pentru stocarea firmware-ului pentru VL822 și GL3224), acesta au fost alese datorită costului redus.
+  \item \textbf{Genesis Logic GL3224-ONY:} - controller pentru carduri SD și MicroSD, acesta a fost ales din cauza costului redus și a pentru suportul interfețelor de tip UHS-I care permit viteze până la 104MB/s.
+  \item \textbf{Hynetek HUSB238} -  USB Type-C PD controller, acesta a fost ales din cauza costului redus și a modului foarte ușor de a programa tensiunile pe care le cere încărcătorului folosind doar doi rezistori, unul pentru curentul maxim și unul pentru tensiune.
+  \item \textbf{Espressif Systems ESP32-C3FN4:} - Microcontroller cu WiFi și 4Mb de memorie internă, a fost ales datorită prețului, memoriei interne, circuitului intern USB-UART dar și a performanței. Microcontrollerul a fost ales în locul locul pinilor GPIO nativi ai modulului LattePanda Mu din cauza faptului că aceștia nu erau funcționali la momentul proiectării sistemului, dar și pentru a degreva procesorul de sarcina de a controla LED-urile.
 \end{itemize}
-
 
 
 \section{Diagrama electrică}
@@ -111,7 +108,7 @@ Pentru realizarea acesteia au fost utilizate în principal fișele de date ale c
 
 
 \section{Rutare trasee și Integritatea Semnalului}
-Etapa de rutare a traseelor pe \ac{PCB} a avut un rol critic în asigurarea funcționării corecte a sistemului, în special datorită prezenței interfețelor de mare viteză, precum USB 3.2 Gen 2, \ac{PCIe} Gen 3 și HDMI 2.0. Pentru a preveni degradarea semnalului din cauza reflexiilor și a fenomenului de diafonie (crosstalk), placa a fost realizată pe 4 straturi, asigurând o structură de tip \textit{stripline} (traseu rutat pe stratul exterior) și \textit{microstrip}(traseu rutat pe stratul interior) cu impedanță controlată.
+Etapa de rutare a traseelor pe \ac{PCB} a avut un rol critic în asigurarea funcționării corecte a sistemului, în special datorită prezenței interfețelor de mare viteză, precum USB 3.2 Gen 2, \ac{PCIe} Gen 3 și HDMI 2.0. Pentru a preveni degradarea semnalului din cauza reflexiilor și a fenomenului de \textit{crosstalk} (diafonie), placa a fost realizată pe 4 straturi, asigurând o structură de tip \textit{stripline} (traseu rutat pe stratul exterior) și \textit{microstrip} (traseu rutat pe stratul interior) cu impedanță controlată.
 
 
 %În această configurație, traseele de semnal sunt rutate pe cele două straturi exterioare, în timp ce cele două straturi interioare sunt utilizate ca planuri continue de masă. Această arhitectură permite asigurarea unui traseu de retur (return path) continuu și de impedanță redusă pentru curentul de semnal, conform bunelor practici de proiectare recomandate în ghidurile de layout pentru circuite de mare viteză \cite{Layout_Guidelines}. Menținerea unui plan de referință neîntrerupt contribuie la reducerea interferențelor electromagnetice și la îmbunătățirea integrității semnalului.
@@ -122,12 +119,12 @@ Impedanța caracteristică a liniilor de transmisie depinde direct de geometria 
 \begin{itemize}
   \item \textbf{Interfețele USB 3.2 și PCIe Gen 3:} $Z_{diff} = 90\,\Omega \pm 10\%$
   \item \textbf{Interfața HDMI 2.0:} $Z_{diff} = 100\,\Omega \pm 10\%$
-  \item \textbf{Liniile de semnal asimetrice (Single-Ended):} $Z_{0} = 50\,\Omega \pm 10\%$
+  \item \textbf{Liniilor de semnal de tip \textit{single-ended} (asimetrice):} $Z_{0} = 50\,\Omega \pm 10\%$
 \end{itemize}
 
 Determinarea lățimii traseelor ($w$) și a distanței de separare în cadrul perechii ($s$) s-a realizat utilizând calculatorul de impedanță integrat în suita KiCad 9, corelat cu structura geometrică a substratului (vezi Figura \ref{fig:stackup}).
 
-Un aspect fundamental în layout-ul circuitelor de înaltă frecvență îl reprezintă asigurarea unui traseu de retur (\textit{return path}) continuu și de impedanță minimă pentru curentul de înaltă frecvență. Curentul de retur tinde să urmeze calea de sub traseul de semnal, în cel mai apropiat plan de referință solid (GND). În cadrul proiectului, straturile interioare (In1.GND și In2.GND) acționează ca planuri de masă continue.
+Un aspect fundamental în layout-ul circuitelor de înaltă frecvență îl reprezintă asigurarea unui \textit{return path} (traseu de retur) continuu și de impedanță minimă pentru curentul de înaltă frecvență. Curentul de retur tinde să urmeze calea de sub traseul de semnal, în cel mai apropiat plan de referință solid (GND). În cadrul proiectului, straturile interioare (In1.GND și In2.GND) acționează ca planuri de masă continue.
 
 \begin{figure}
   \centering
@@ -150,23 +147,25 @@ Prima etapă a rutării este plasarea preliminară a componentelor. În acest ca
 \subsection{Perechi diferențiale}
 Transmisia diferențiale reprezintă principala metodă de transmitere a datelor la viteze ridicate, fiind folosite în majoritatea protocoalelor de comunicare moderne cum ar fi HDMI, USB și \ac{PCIe}
 În proiectarea \ac{PCB}-urilor, perechile diferențiale reprezintă două trasee paralele, cu lungimi egale și cu o distanță controlată între ele.
-Diferența de lungime dintre cele două trasee (Intra Pair Skew, vezi Figura  \ref{fig:Intra-Pair Skew}) trebuie să se încadreze într-o toleranță strictă — de exemplu, 0,125 mm pentru USB 3.0 \cite{Layout_Guidelines}.
-În cazul protocoalelor care utilizează mai multe perechi diferențiale în paralel (precum HDMI sau DisplayPort), este necesară și egalizarea lungimii între perechi (Inter-Pair Skew), cu o toleranță de 1mm pentru a asigura sincronizarea corectă a fluxurilor de date la frecvențe ridicate. Corecțiile geometrice au fost implementate prin adăugarea de serpentine pentru compensarea lungimii pe stratul exterior (vezi Figura \ref{fig:Inter-Pair Skew}).
+Diferența de lungime dintre cele două trasee, definită ca \textit{Intra Pair Skew} (decalaj în cadrul aceleiași perechi) vezi Figura~\ref{fig:Intra-Pair Skew}, trebuie să se încadreze într-o toleranță strictă, de exemplu, 0,125 mm pentru USB 3.0 \cite{Layout_Guidelines}.
+În cazul protocoalelor care utilizează mai multe perechi diferențiale în paralel (precum HDMI sau DisplayPort), este necesară și gestionarea fenomenului de \textit{Inter-Pair Skew} (decalaj între perechi diferite), fiind impusă o toleranță strictă de maximum \mbox{1\text{\,}mm} pentru a asigura sincronizarea corectă a fluxurilor de date la frecvențe ridicate. Corecțiile geometrice au fost implementate prin adăugarea de serpentine pentru compensarea lungimii pe stratul exterior (vezi Figura \ref{fig:Inter-Pair Skew}).
+
 
 
 \begin{figure}
   \centering
-  \begin{subfigure}[b]{0.3\linewidth}
-    \includegraphics[width=\linewidth]{Intra-pair-skew.png}
-    \caption{Corecție a Intra Pair Skew pe o pereche diferețială PCIe}
-    \label{fig:Intra-Pair Skew}
-  \end{subfigure}
-  \hspace{1cm}
-  \begin{subfigure}[b]{0.6\linewidth}
-    \includegraphics[width=\linewidth]{Inter-pair-skew.png}
-    \caption{Corecție a Inter Pair Skew pe cele 4 perechi diferețiale ale unui port HDMI}
-    \label{fig:Inter-Pair Skew}
-  \end{subfigure}
+  \makebox[\textwidth][c]{
+    \begin{subfigure}[b]{0.31\linewidth}
+      \includegraphics[width=\linewidth]{Intra-pair-skew.png}
+      \caption{Corecție a Intra Pair Skew pe o pereche diferețială PCIe}
+      \label{fig:Intra-Pair Skew}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.66\linewidth}
+      \includegraphics[width=\linewidth]{Inter-pair-skew.png}
+      \caption{Corecție a Inter Pair Skew pe cele 4 perechi diferețiale ale unui port HDMI}
+      \label{fig:Inter-Pair Skew}
+    \end{subfigure}
+  }
 
   \caption{Corecții ale Intra si Inter Pair Skew}
   \label{fig:Skew}
@@ -174,14 +173,14 @@ Diferența de lungime dintre cele două trasee (Intra Pair Skew, vezi Figura  \r
 \end{figure}
 
 
-\section{Consum de curent}
+\section{Proiectarea rețelei de alimentare și a protecțiilor}
 Datorită numărului mare de interfețe disponibile, un lucru important in acest design a fost proiectarea in jurul consumului de curent, atât a modulului LattePanda Mu dar și componentelor de pe placa și a diverselor dispozitive conectate.
 
-Modulul este alimentat printr-un port USB Type C utilizând protocolul USB \ac{PD} versiunea 3.0, controlat de un cip HUSB238, responsabil de negocierea tensiunii cu sursa de alimentare, solicitând un profil de $20\,\text{V}$ și $3,25\,\text{A}$ ($65\,\text{W}$) \cite{usb_pd_spec}, valoare standard pentru acest protocol.
+Modulul este alimentat printr-un port USB Type C utilizând protocolul USB \ac{PD} versiunea 3.0, controlat de un cip HUSB238, responsabil de negocierea tensiunii cu sursa de alimentare, solicitând un profil de \mbox{20\text{\,}V} și \mbox{3,25\text{\,}A} (\mbox{65\text{\,}W}) \cite{usb_pd_spec}, valoare standard pentru acest protocol.
 
-Tensiunea este coborâtă la 17,5V pentru modulul LattePanda Mu folosind regulatorul TPS54561. Consumul modulului fiind de 10-15~W în modul standard și până la 15W în modul Boost, de asemenea sunt generate tensiuni auxiliare de 3,3V și 5V folosind cipul TPS51275.
+Tensiunea este coborâtă la \mbox{17,5\text{\,}V} pentru modulul LattePanda Mu folosind regulatorul TPS54561. Consumul modulului fiind de \mbox{10-15\text{\,}W} în modul standard și până la \mbox{15\text{\,}W} în modul Boost, de asemenea sunt generate tensiuni auxiliare de \mbox{3,3\text{\,}V} și \mbox{5\text{\,}V} folosind cipul TPS51275.
 
-Puterea necesară la intrare ($P_{in}$) a fost dimensionată prin calcularea consumului total al sistemului (Tabelul \ref{Tab:consumption_pwr}). Luând în considerare o eficiență conservatoare de $\eta = 90\%$ a regulatorelor DC-DC, puterea totală necesară la intrare a fost estimată matematic prin ecuația:
+Puterea necesară la intrare ($P_{in}$) a fost dimensionată prin calcularea consumului total al sistemului (Tabelul \ref{Tab:consumption_pwr}). Luând în considerare o eficiență conservatoare de $\eta$ = 90\% a regulatorelor DC-DC, puterea totală necesară la intrare a fost estimată matematic prin ecuația:
 $$P_{in} = \frac{P_{total\_consumatori}}{\eta} = \frac{48,6\,\text{W}}{0.90} \approx 54\,\text{W}$$
 
 
@@ -192,25 +191,24 @@ Profilul de $65\,\text{W}$ a fost ales deorece este primul profil disponibil dea
 \begin{table}[h]
   \centering
   \rowcolors{2}{white}{lightgray!20}
-  \begin{tabularx}{\textwidth}{X X X X}
+  \begin{tabularx}{\textwidth}{X c c c}
     \toprule
     \rowcolor{gray!30}
-    \textbf{Consumator} & \textbf{Nr Unitati} & \textbf{Consum Maxim /Unitate} & \textbf{Consum total} \\ \midrule
-    LattePanda Mu       & 1                   & 15W                            & 15W                   \\
-    USB 2               & 2                   & 0,5W                           & 1W                    \\
-    USB 3               & 6                   & 0,9W                           & 5,4W                  \\
-    RTL8125             & 1                   & 1W                             & 1W                    \\
-    GL3224              & 1                   & 0,5W                           & 0,5W                  \\
-    ESP32-C3            & 1                   & 1.1W                           & 1.1W                  \\
-    WS2812C LEDs        & 3                   & 5                              & 15w                   \\
-    SSD NVMe            & 220                 & 0,025W                         & 5,5W                  \\
-    Modul Wi-Fi         & 1                   & 2.5W                           & 2.5W                  \\
-    VL822-Q7            & 2                   & 0,8W                           & 1,6W                  \\ \midrule
-    Consum total        & 48,6W                                                                          \\ \bottomrule
+    \textbf{Consumator}   & \textbf{Nr. Unități} & \textbf{Consum Maxim / Unitate} & \textbf{Consum Total} \\ \midrule
+    LattePanda Mu         & 1                    & 15\text{\,}W                    & 15\text{\,}W          \\
+    USB 2.0 Periferice    & 2                    & 0,5\text{\,}W                   & 1\text{\,}W           \\
+    USB 3.2 Periferice    & 6                    & 0,9\text{\,}W                   & 5,4\text{\,}W         \\
+    Realtek RTL8125       & 1                    & 1\text{\,}W                     & 1\text{\,}W           \\
+    Genesis Logic GL3224  & 1                    & 0,5\text{\,}W                   & 0,5\text{\,}W         \\
+    ESP32-C3              & 1                    & 1,1\text{\,}W                   & 1,1\text{\,}W         \\
+    LED-uri WS2812C       & 220                  & 0,068\text{\,}W                 & 15\text{\,}W          \\
+    SSD-uri NVMe          & 3                    & 1,83\text{\,}W                  & 5,5\text{\,}W         \\
+    Modul Wi-Fi           & 1                    & 2,5\text{\,}W                   & 2,5\text{\,}W         \\
+    VIA Labs VL822-Q7     & 2                    & 0,8\text{\,}W                   & 1,6\text{\,}W         \\ \midrule
+    \textbf{Consum total} & \multicolumn{2}{c}{} & \textbf{48,6\text{\,}W}                                 \\ \bottomrule
   \end{tabularx}
-  \caption{Consumul de curent al sistemului.}
+  \caption{Bugetul estimat pentru consumul de putere al sistemului.}
   \label{Tab:consumption_pwr}
-
 \end{table}
 
 \begin{figure}
@@ -221,9 +219,7 @@ Profilul de $65\,\text{W}$ a fost ales deorece este primul profil disponibil dea
 \end{figure}
 
 
-\subsection{Dimensionarea planurilor și protecția la supracurent}
-
-Traseele de alimentare au fost dimensionate corespunzător curenților implicați. Conform standardului IPC-2152 \cite{IPC-2152}, lățimea planului principal de alimentare de după regulatorul de $3,3\,\text{V}$ a fost dimensionată la $7.3\,\text{mm}$ (vezi Figura \ref{fig:power-plane}), urmând ca acestea să se reducă progresiv după alimentarea consumatorilor principali. Acest calcul garantează că, la un curent maxim de $10\,\text{A}$, creșterea de temperatură locală a cuprului ($\Delta T$) nu depășește $10^\circ\text{C}$ față de mediul ambiant. 
+Traseele de alimentare au fost dimensionate corespunzător curenților implicați. Conform standardului IPC-2152 \cite{IPC-2152}, lățimea planului principal de alimentare de după regulatorul de $3,3\,\text{V}$ a fost dimensionată la $7.3\,\text{mm}$ (vezi Figura \ref{fig:power-plane}), urmând ca acestea să se reducă progresiv după alimentarea consumatorilor principali. Acest calcul garantează că, la un curent maxim de $10\,\text{A}$, creșterea de temperatură locală a cuprului ($\Delta T$) nu depășește $10^\circ\text{C}$ față de mediul ambiant.
 
 Pe liniile de $3,3\,\text{V}$ și $5\,\text{V}$, unde curentul este distribuit către mai multe periferice expuse extern (porturile USB), s-a implementat o arhitectură de protecție activă. S-au integrat circuitele TPS2553 și TPS2561 de la Texas Instruments, care acționează ca limitatoare de curent reglabile și comutatoare inteligente. Acestea monitorizează în timp real curentul absorbit de porturile USB, limitându-l la $0,5\,\text{A}$ pentru USB 2.0 și respectiv $0,9\,\text{A}$ pentru USB 3.2. În cazul unui scurtcircuit extern, cipul decuplează linia defectă într-un timp de răspuns de ordinul microsecundelor, protejând sursa principală și prevenind resetarea accidentală a întregului sistem Mini PC.
 

@@ -7,21 +7,11 @@
 
 Proiectul propune dezvoltarea unui sistem Mini PC bazat pe modulul LattePanda Mu (vezi Figura \ref{fig:forma-finala}), integrat pe o placă de bază, care include interfețe de mare viteza (USB 3.2, HDMI), stocare NVMe și conectivitate WiFi și Ethernet.
 
-Proiectul prevede proiectarea unei plăci de bază care se integreze modulul, să îl conecteze la interfețele exterioare, direct sau prin anumite cip-uri, și să gestioneze tensiunile și curenții necesari functionării în parametrii optimi.
+Proiectul prevede proiectarea unei plăci de bază (vezi Figura \ref{fig:pcb-front-kicad}) care se integreze modulul, să îl conecteze la interfețele exterioare, direct sau prin anumite cip-uri, și să gestioneze tensiunile și curenții necesari functionării în parametrii optimi.
 
 Acest sistem se adresează atât pasionațiilor de electronica care pot dezvolta pe baza proiectului conceput dar și a tuturor persoanelor care iși doresc un sistem compact cu posibilitea de a schimba modulul cu unul mai performant pe viitor.
 
-\section{Structura lucrării.} Lucrarea este structurată în patru capitole principale, începând cu „Introducerea”, care oferă
-o prezentare generală a temei, a motivației și a obiectivelor proiectului.
-
-\textit{Capitolul II} intitulat "Design", descrie proiectarea sistemului, detaliind selecția componentelor, procesul de proiectare a PCB-ului, pozitionarea porturilor externe și diversele reguli și bune practici ce au fost luate în vedere în faza de proiectare.
-
-\textit{Capitolul III} intitulat "Asamblare" este dedicat asamblării sistemului, detaliind matricea led integrată în sistem, proiectarea carcasei în care vor fi montate cele 2 plăci, asamblarea plăcii de bază, testarea și depanarea erorilor apărute.
-
-Lucrarea se încheie cu o secțiune de concluzii, care evidențiază direcția de dezvoltare a proiectului, inclusiv luând în cosiderare modalitățiile prin care acesta poate fi pregătit pentru a ajunge un produs de serie.
-
-
-
+\section{Obiectivele proiectului și contribuția personală}
 
 \begin{figure}
     \centering
@@ -42,3 +32,33 @@ Lucrarea se încheie cu o secțiune de concluzii, care evidențiază direcția d
     \label{fig:forma-finala}
 
 \end{figure}
+
+Contribuția originală a acestei lucrări constă în proiectarea integrală, realizarea fizică și validarea experimentală a unei plăci de bază complexe de la stadiul de schemă electrică de principiu până la prototipul funcțional. Obiectivele tehnice specifice îndeplinite pe parcursul proiectului au fost:
+
+\begin{itemize}
+    \item \textbf{Proiectarea schemei electrice:} Integrarea modulului x86 cu diverse circuite integrate auxiliare (hub-uri USB 3.2, controlere Ethernet 2.5 Gbps și circuite de management al curentului).
+    \item \textbf{Dezvoltarea layout-ului PCB complex:} Rutarea unui circuit imprimat cu 4 straturi, cu respectarea constrângerilor stricte de integritate a semnalului (\textit{Signal Integrity}) și control al impedanței diferențiale pentru linii de mare viteză (USB 3.2 Gen 2, PCIe Gen 3 și HDMI 2.0).
+    \item \textbf{Managementul alimentării și protecției:} Dimensionarea geometrică a planurilor de cupru pentru curenți mari (până la 10 A) conform standardului IPC-2152 și implementarea de protecții active la supracurent pentru porturile periferice.
+    \item \textbf{Dezvoltarea carcasei și asamblarea prototipului:} Proiectarea asistată de calculator (folosind AutoCAD) a unei carcase dedicate optimizate pentru printare 3D și asamblarea fizică a componentelor SMD.
+\end{itemize}
+
+Acest sistem se adresează atât pasionaților de electronică, oferind o platformă hardware deschisă și modulară, cât și aplicațiilor comerciale care necesită densitate mare de calcul într-un volum redus, cu avantajul major de a permite upgrade-ul ulterior al modulului de procesare fără modificarea plăcii de bază.
+
+\section{Structura lucrării.} Lucrarea este structurată în patru capitole principale, începând cu „Introducerea”, care oferă
+o prezentare generală a temei, a motivației și a obiectivelor proiectului.
+
+\textit{Capitolul II} intitulat "Design", descrie proiectarea sistemului, detaliind selecția componentelor, procesul de proiectare a \ac{PCB}-ului, pozitionarea porturilor externe și diversele reguli și bune practici ce au fost luate în vedere în faza de proiectare.
+
+\textit{Capitolul III} intitulat "Asamblare" este dedicat asamblării sistemului, detaliind matricea led integrată în sistem, proiectarea carcasei în care vor fi montate cele 2 plăci, asamblarea plăcii de bază, testarea și depanarea erorilor apărute.
+
+Lucrarea se încheie cu o secțiune de concluzii, care evidențiază direcția de dezvoltare a proiectului, inclusiv luând în cosiderare modalitățiile prin care acesta poate fi pregătit pentru a ajunge un produs de serie.
+
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{pcb_kicad_front.png}
+  \caption{Vedere frontală a PCB-ului in programul Kicad}
+  \label{fig:pcb-front-kicad}
+\end{figure}
+

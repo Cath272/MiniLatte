@@ -1,4 +1,4 @@
-\chapter{Asamblare}
+\chapter{Implementarea fizică}
 
 
 \section{Matrice LED}
@@ -58,7 +58,7 @@ Pentru a asambla componentele pe \ac{PCB} am folosit șabloane din oțel inoxida
 Toate defectele prezentate în această secțiune au fost identificate în urma testării prototipului și ulterior corectate în proiectul \ac{PCB}. Din considerente de cost, varianta revizuită nu a mai fost trimisă în producție.
 
 \subsection{Defect al circuitului de alimentare}
-După asamblarea plăcii, procesul de testare a evidențiat inițial o problemă majoră: regulatorul de tensiune care convertește 20V la 5V și 3,3V nu pornea. Deoarece acesta asigură și alimentarea regulatorului de 17,5 V utilizat de modulul principal, nici acesta nu devenea operațional.
+După asamblarea plăcii, procesul de testare a evidențiat inițial o problemă majoră: regulatorul de tensiune care coboară tensiunea de 20V la 5V și 3,3V nu pornea. Deoarece acesta asigură și alimentarea regulatorului de 17,5 V utilizat de modulul principal, nici acesta nu devenea operațional.
 
 Cauza problemei a fost identificată ca fiind absența unor condensatoare necesare pentru funcționarea corectă a regulatorului \ac{LDO}, utilizat în faza inițială de pornire a circuitului intern al cipului, până la activarea convertorului DC-DC. Remedierea a constat în adăugarea unui condensator, realizată printr-o conexiune suplimentară între pinul circuitului integrat și un condensator montat ulterior pe placă (Figura \ref{fig:TPS-fix}).
 
@@ -78,7 +78,7 @@ Cauza problemei a fost identificată ca fiind absența unor condensatoare necesa
 
 \end{figure}
 
-\subsection{Defecte ale protocoalelor}
+\subsection{Defecte legate de protocoale}
 
 Sistemul a pornit corespunzător și a permis încărcarea sistemului de operare. Testele ulterioare au evidențiat însă și alte deficiențe:
 \begin{itemize}
@@ -88,9 +88,9 @@ Sistemul a pornit corespunzător și a permis încărcarea sistemului de operare
 \end{itemize}
 
 Investigațiile au arătat că problema legată de BIOS era cauzată de conectarea incorectă a liniilor USB 3.2 Gen 2 către hub-ul USB. Perechile diferențiale au fost conectate eronat (RX-RX și TX-TX), în loc de configurația corectă RX-TX și TX-RX. Această eroare a apărut din utilizarea unei topologii specifice conexiunilor între cip și port, în locul celei necesare pentru interconectarea a două cipuri. Corecția a fost realizată prin refacerea conexiunilor folosind fire (Figura \ref{fig:USB-fix}).
-O altă problemă identificată a fost funcționarea incorectă a LED-ului RGB frontal, utilizat pentru indicarea stării sistemului (roșu - oprit, galben - standby, alb - pornit). LED-ul rămânea aprins în culoarea roșie imediat după alimentare, iar celelalte culori nu funcționau.
+O altă problemă identificată a fost funcționarea incorectă a LED-ului RGB frontal, utilizat pentru indicarea stării sistemului: \textit{power off} (roșu - oprit), \textit{standby} (galben) și \textit{power on} (alb - pornit). LED-ul rămânea aprins în culoarea roșie imediat după alimentare, iar celelalte culori nu funcționau.
 Cauza acestei deficiențe a fost utilizarea incorectă a tranzistoarelor MOSFET de tip N într-o configurație de tip high-side switching, în condițiile în care tensiunea de comandă pe poartă era comparabilă sau mai mică decât tensiunea drenă-sursă. În această situație, tranzistorul nu putea comuta corect.
-Soluția corectă constă în utilizarea unei configurații de tip low-side switching, în care tensiunea de comandă (3,3 V) este aplicată între poartă și masă, asigurând funcționarea corespunzătoare a tranzistorului și controlul corect al LED-ului.
+Soluția corectă constă în utilizarea unei configurații de tip low-side switching (vezi Figura \ref{fig:mosfets-switching}), în care tensiunea de comandă (3,3 V) este aplicată între poartă și masă, asigurând funcționarea corespunzătoare a tranzistorului și controlul corect al LED-ului.
 
 
 \begin{figure}
@@ -103,7 +103,7 @@ Soluția corectă constă în utilizarea unei configurații de tip low-side swit
   \end{subfigure}
 
   \caption{Diagrama din stânga arată configurațiile Low Side și High Side, iar diagrama din dreapta arată schema reparată folosind un low side switch.}
-  \label{fig:2}
+  \label{fig:mosfets-switching}
 
 \end{figure}
 
@@ -116,28 +116,25 @@ Două defecte care nu a fost reparate pe placă dar care a fost reparate în pro
 \end{itemize}
 
 \subsection{Testare în sisteme de operare}
-Pentru a testa performanța sistemului am folosit atât sistemul de operare Windows 11 cât și Ubuntu 26.04.
-Au fost testate (Tabelul \ref{Tab:performace}) timpul de pornire al sistemului în ambele sisteme de operare, viteza de internetului atât pe Wi-Fi cât și pe fir, viteza maximă de transmisiune pe USB dar și viteza maximă a SSD-urile conectate (fiind limitate de conexiunea PCIE x2 respecitv x1).
-Pentru testarea sistemului au fost folosite 3 SSD-uri SKhynix PC711 care rulează pe o interfață PCIe Gen3 x 4, capabile să satureze interfețele conectate. Iar pentru Wi-Fi a fost ales un modul bazat pe cipul Realtek RTL8852CE care oferă viteze foarte bune și suport pentru Wi-Fi 6E și Bluetooth 5.3 .
+Pentru a testa performanța sistemului am folosit sistemul de operare Windows 11.
+Au fost testate (Tabelul \ref{Tab:performace}) timpul de pornire al sistemului în ambele sisteme de operare, viteza de internetului atât pe Wi-Fi cât și pe fir, viteza maximă de transmisiune pe USB dar și viteza maximă a SSD-urile conectate (fiind limitate de conexiunea PCIe x2).
+Pentru testarea sistemului au fost folosite 3 SSD-uri SKhynix PC711 care rulează pe o interfață PCIe Gen3 x 4, capabile să satureze interfețele conectate. 
 
 \begin{table}[h]
   \centering
   \rowcolors{2}{white}{lightgray!20}
-  \begin{tabularx}{\textwidth}{X X X}
+  \begin{tabularx}{\textwidth}{X c}
     \toprule
     \rowcolor{gray!30}
-    \textbf{Test - Placeholder values} & \textbf{Ubuntu} & \textbf{Windows} \\ \midrule
-    Timp de pornire                    & 22s             & 15s              \\
-    Viteza LAN                         & 2,5Gbps         & 2,5Gbps          \\
-    Viteza Wi-Fi                       & 837mbps         & 837mbps          \\
-    Viteza SSD PCIE                    & 2,5Gbps         & 2,5Gbps          \\
-    Viteza USB                         & 10Gbps          & 2,5Gbps          \\
-    Scor Cinebench                     & 10Gbps          & 2,5Gbps          \\ 
-    \bottomrule
+    \textbf{Parametru Testat} & \textbf{Rezultat Măsurat (Windows)} \\ \midrule
+    Timp de pornire           & 48\text{\,}s                               \\
+    Viteza LAN                & 2,26\text{\,}Gbps                          \\
+    Viteza SSD PCIe           & 1771\text{\,}MB/s (Read), 1673\text{\,}MB/s (Write) \\
+    Viteza USB                & 2,5\text{\,}Gbps                           \\
+    Scor Cinebench MultiCore  & 2750                                       \\ \bottomrule
   \end{tabularx}
-  \caption{Performațele măsurate ale sistemului.}
+  \caption{Performanțele măsurate ale sistemului în mediul de operare Windows.}
   \label{Tab:performace}
-
 \end{table}
 
 

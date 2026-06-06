@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.5.27)  27 MAY 2026 22:21
+This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.5.27)  6 JUN 2026 21:45
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex"
@@ -1478,12 +1478,12 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./images/logo-ub.png, id=99, 145.2627pt x 179.35005pt>
+<./images/logo-ub.png, id=95, 145.2627pt x 179.35005pt>
 File: ./images/logo-ub.png Graphic file (type png)
 <use ./images/logo-ub.png>
 Package luatex.def Info: ./images/logo-ub.png  used on input line 9.
 (luatex.def)             Requested size: 96.73788pt x 119.44142pt.
-<./images/logo-fmi.png, id=100, 97.5645pt x 113.004pt>
+<./images/logo-fmi.png, id=96, 97.5645pt x 113.004pt>
 File: ./images/logo-fmi.png Graphic file (type png)
 <use ./images/logo-fmi.png>
 Package luatex.def Info: ./images/logo-fmi.png  used on input line 26.
@@ -1564,22 +1564,29 @@ b.png><./images/logo-fmi.png>])
 \openout2 = 1-introducere.aux
  (./1-introducere.tex
 Capitolul 1.
+<./images/pcb-top-front.jpg, id=242, 3546.24875pt x 2528.44624pt>
+File: ./images/pcb-top-front.jpg Graphic file (type jpg)
+<use ./images/pcb-top-front.jpg>
+Package luatex.def Info: ./images/pcb-top-front.jpg  used on input line 29.
+(luatex.def)             Requested size: 227.62206pt x 162.27141pt.
+<./images/case.jpg, id=243, 3042.36626pt x 2168.1pt>
+File: ./images/case.jpg Graphic file (type jpg)
+<use ./images/case.jpg>
+Package luatex.def Info: ./images/case.jpg  used on input line 29.
+(luatex.def)             Requested size: 227.62206pt x 162.20349pt.
 [8
 
 
 
-]
-<./images/pcb-top-front.jpg, id=249, 3546.24875pt x 2528.44624pt>
-File: ./images/pcb-top-front.jpg Graphic file (type jpg)
-<use ./images/pcb-top-front.jpg>
-Package luatex.def Info: ./images/pcb-top-front.jpg  used on input line 39.
-(luatex.def)             Requested size: 227.62206pt x 162.27141pt.
-<./images/case.jpg, id=250, 3042.36626pt x 2168.1pt>
-File: ./images/case.jpg Graphic file (type jpg)
-<use ./images/case.jpg>
-Package luatex.def Info: ./images/case.jpg  used on input line 39.
-(luatex.def)             Requested size: 227.62206pt x 162.20349pt.
-) [9<./images/pcb-top-front.jpg><./images/case.jpg>]
+] [9<./images/pcb-top-front.jpg><./images/case.jpg>]
+Package acronym Info: Label `acro:PCB' newly defined as it shall be overridden
+although it is yet undefined on input line 50.
+<./images/pcb_kicad_front.png, id=254, 1364.84906pt x 905.63344pt>
+File: ./images/pcb_kicad_front.png Graphic file (type png)
+<use ./images/pcb_kicad_front.png>
+Package luatex.def Info: ./images/pcb_kicad_front.png  used on input line 60.
+(luatex.def)             Requested size: 455.24411pt x 302.06592pt.
+) [10<./images/pcb_kicad_front.png>]
 \openout2 = 2-hardware.aux
  (./2-hardware.tex
 Capitolul 2.
@@ -1588,24 +1595,24 @@ although it is yet undefined on input line 8.
 Package acronym Info: Label `acro:PCIe' newly defined as it shall be overridden
 
 although it is yet undefined on input line 10.
-<./images/LattePanda Mu1.png, id=258, 704.6325pt x 616.3025pt>
+<./images/LattePanda Mu1.png, id=264, 704.6325pt x 616.3025pt>
 File: ./images/LattePanda Mu1.png Graphic file (type png)
 <use ./images/LattePanda Mu1.png>
 Package luatex.def Info: ./images/LattePanda Mu1.png  used on input line 14.
 (luatex.def)             Requested size: 273.14923pt x 238.90878pt.
 Package acronym Info: Label `acro:PD' newly defined as it shall be overridden
 although it is yet undefined on input line 32.
-[10
+[11
 
 
 
 
 ]
-<./images/MiniLatte_block.png, id=267, 752.3307pt x 774.0117pt>
+<./images/MiniLatte_block.png, id=276, 2891.5227pt x 2958.0111pt>
 File: ./images/MiniLatte_block.png Graphic file (type png)
 <use ./images/MiniLatte_block.png>
 Package luatex.def Info: ./images/MiniLatte_block.png  used on input line 44.
-(luatex.def)             Requested size: 523.52794pt x 538.61568pt.
+(luatex.def)             Requested size: 523.52794pt x 535.53339pt.
 Package acronym Info: Label `acro:SD' newly defined as it shall be overridden
 although it is yet undefined on input line 49.
 Package acronym Info: Label `acro:HDMI' newly defined as it shall be overridden
@@ -1614,157 +1621,151 @@ although it is yet undefined on input line 51.
 Package acronym Info: Label `acro:HDAudio' newly defined as it shall be overrid
 den
 although it is yet undefined on input line 52.
- [11<./images/LattePanda Mu1.png>] [12<./images/MiniLatte_block.png>]
+ [12<./images/LattePanda Mu1.png>] [13<./images/MiniLatte_block.png>]
 Package acronym Info: Label `acro:SSD' newly defined as it shall be overridden
 although it is yet undefined on input line 60.
 Package acronym Info: Label `acro:NVMe' newly defined as it shall be overridden
 
 although it is yet undefined on input line 60.
-<./images/ports-front.jpg, id=290, 4641.34pt x 597.23125pt>
+<./images/ports-front.jpg, id=299, 4641.34pt x 597.23125pt>
 File: ./images/ports-front.jpg Graphic file (type jpg)
 <use ./images/ports-front.jpg>
 Package luatex.def Info: ./images/ports-front.jpg  used on input line 67.
 (luatex.def)             Requested size: 455.24411pt x 58.57838pt.
-<./images/ports-back.jpg, id=291, 4539.96124pt x 747.79375pt>
+<./images/ports-back.jpg, id=300, 4539.96124pt x 747.79375pt>
 File: ./images/ports-back.jpg Graphic file (type jpg)
 <use ./images/ports-back.jpg>
 Package luatex.def Info: ./images/ports-back.jpg  used on input line 72.
 (luatex.def)             Requested size: 455.24411pt x 74.97772pt.
-<./images/pcb-bottom.jpg, id=292, 3387.65625pt x 1880.02374pt>
+<./images/pcb-bottom.jpg, id=301, 3387.65625pt x 1880.02374pt>
 File: ./images/pcb-bottom.jpg Graphic file (type jpg)
 <use ./images/pcb-bottom.jpg>
 Package luatex.def Info: ./images/pcb-bottom.jpg  used on input line 77.
 (luatex.def)             Requested size: 318.66948pt x 176.82553pt.
-Package acronym Info: Label `acro:PCB' newly defined as it shall be overridden
-although it is yet undefined on input line 88.
 
-[13<./images/ports-front.jpg><./images/ports-back.jpg><./images/pcb-bottom.jpg>] [14] [15]
-<./images/Stackup.png, id=328, 460.6008pt x 246.1998pt>
+[14<./images/ports-front.jpg><./images/ports-back.jpg><./images/pcb-bottom.jpg>] [15] [16]
+<./images/Stackup.png, id=336, 460.6008pt x 246.1998pt>
 File: ./images/Stackup.png Graphic file (type png)
 <use ./images/Stackup.png>
-Package luatex.def Info: ./images/Stackup.png  used on input line 134.
+Package luatex.def Info: ./images/Stackup.png  used on input line 131.
 (luatex.def)             Requested size: 455.24411pt x 243.33658pt.
- [16]
-<./images/MiniLatte_zones.png, id=337, 2037.6125pt x 1159.33125pt>
+ [17]
+<./images/MiniLatte_zones.png, id=346, 2037.6125pt x 1159.33125pt>
 File: ./images/MiniLatte_zones.png Graphic file (type png)
 <use ./images/MiniLatte_zones.png>
-Package luatex.def Info: ./images/MiniLatte_zones.png  used on input line 144.
+Package luatex.def Info: ./images/MiniLatte_zones.png  used on input line 141.
 (luatex.def)             Requested size: 455.24411pt x 259.0162pt.
-<./images/Intra-pair-skew.png, id=343, 280.04625pt x 277.78781pt>
+ [18<./images/Stackup.png>]
+<./images/Intra-pair-skew.png, id=358, 280.04625pt x 277.78781pt>
 File: ./images/Intra-pair-skew.png Graphic file (type png)
 <use ./images/Intra-pair-skew.png>
-Package luatex.def Info: ./images/Intra-pair-skew.png  used on input line 160.
-(luatex.def)             Requested size: 136.57462pt x 135.47716pt.
-<./images/Inter-pair-skew.png, id=344, 737.75626pt x 343.2825pt>
+Package luatex.def Info: ./images/Intra-pair-skew.png  used on input line 168.
+(luatex.def)             Requested size: 141.12456pt x 139.99136pt.
+<./images/Inter-pair-skew.png, id=359, 737.75626pt x 343.2825pt>
 File: ./images/Inter-pair-skew.png Graphic file (type png)
 <use ./images/Inter-pair-skew.png>
-Package luatex.def Info: ./images/Inter-pair-skew.png  used on input line 166.
-(luatex.def)             Requested size: 273.14923pt x 127.09633pt.
- [17<./images/Stackup.png>] [18<./images/MiniLatte_zones.png><./images/Intra-pai
-r-skew.png><./images/Inter-pair-skew.png>]
-Overfull \hbox (18.04982pt too wide) in paragraph at lines 182--183
-[]\TU/TimesNewRoman(0)/m/n/12 Ten-siu-nea es-te co-bo-râ-tă la 17,5V pen-tru 
-mo-du-lul Lat-te-Pan-da Mu fo-lo-sind re-gu-la-to-rul TPS54561.
+Package luatex.def Info: ./images/Inter-pair-skew.png  used on input line 168.
+(luatex.def)             Requested size: 300.46277pt x 139.80388pt.
+ [19<./images/MiniLatte_zones.png><./images/Intra-pair-skew.png><./images/Inter-
+pair-skew.png>]
+Overfull \hbox (20.26804pt too wide) in paragraph at lines 181--182
+[]\TU/TimesNewRoman(0)/m/n/12 Ten-siu-nea es-te co-bo-râ-tă la [] pen-tru mo-d
+u-lul Lat-te-Pan-da Mu fo-lo-sind re-gu-la-to-rul TPS54561.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-[]|\TU/TimesNewRoman(0)/b/n/12 Con-sum Ma-xim
- []
-
-<./images/Latime plan curent.png, id=361, 1051.67906pt x 834.11626pt>
+<./images/Latime plan curent.png, id=371, 1051.67906pt x 834.11626pt>
 File: ./images/Latime plan curent.png Graphic file (type png)
 <use ./images/Latime plan curent.png>
 Package luatex.def Info: ./images/Latime plan curent.png  used on input line 21
-8.
+6.
 (luatex.def)             Requested size: 318.66948pt x 252.74414pt.
-[19]) [20<./images/Latime plan curent.png>]
+[20]) [21<./images/Latime plan curent.png>]
 \openout2 = 3-Asamblare.aux
  (./3-Asamblare.tex
 Capitolul 3.
-<./images/led-matrix.png, id=379, 999.735pt x 149.8097pt>
+<./images/led-matrix.png, id=390, 999.735pt x 149.8097pt>
 File: ./images/led-matrix.png Graphic file (type png)
 <use ./images/led-matrix.png>
 Package luatex.def Info: ./images/led-matrix.png  used on input line 11.
 (luatex.def)             Requested size: 455.24411pt x 68.21837pt.
-<./images/case-front.png, id=384, 836.26714pt x 441.7934pt>
+<./images/case-front.png, id=395, 836.26714pt x 441.7934pt>
 File: ./images/case-front.png Graphic file (type png)
 <use ./images/case-front.png>
 Package luatex.def Info: ./images/case-front.png  used on input line 23.
 (luatex.def)             Requested size: 204.85846pt x 108.22346pt.
-<./images/case-back.png, id=385, 907.67679pt x 477.92839pt>
+<./images/case-back.png, id=396, 907.67679pt x 477.92839pt>
 File: ./images/case-back.png Graphic file (type png)
 <use ./images/case-back.png>
 Package luatex.def Info: ./images/case-back.png  used on input line 28.
 (luatex.def)             Requested size: 204.85846pt x 107.8647pt.
-[21
+[22
 
 
 
 
 <./images/led-matrix.png>]
-<./images/led-matrix-asembly.png, id=398, 1397.97281pt x 233.37187pt>
+<./images/led-matrix-asembly.png, id=408, 1397.97281pt x 233.37187pt>
 File: ./images/led-matrix-asembly.png Graphic file (type png)
 <use ./images/led-matrix-asembly.png>
 Package luatex.def Info: ./images/led-matrix-asembly.png  used on input line 43
 .
 (luatex.def)             Requested size: 455.24411pt x 75.9945pt.
-<./images/pcb-assembly.jpg, id=399, 4641.34pt x 2920.9125pt>
+<./images/pcb-assembly.jpg, id=409, 4641.34pt x 2920.9125pt>
 File: ./images/pcb-assembly.jpg Graphic file (type jpg)
 <use ./images/pcb-assembly.jpg>
 Package luatex.def Info: ./images/pcb-assembly.jpg  used on input line 50.
 (luatex.def)             Requested size: 364.19667pt x 229.17625pt.
- [22<./images/case-front.png><./images/case-back.png><./images/led-matrix-asembl
+ [23<./images/case-front.png><./images/case-back.png><./images/led-matrix-asembl
 y.png>]
 Package acronym Info: Label `acro:LDO' newly defined as it shall be overridden
 although it is yet undefined on input line 63.
-<./images/TPS-FIX.jpg, id=411, 453.8556pt x 453.8556pt>
+<./images/TPS-FIX.jpg, id=421, 453.8556pt x 453.8556pt>
 File: ./images/TPS-FIX.jpg Graphic file (type jpg)
 <use ./images/TPS-FIX.jpg>
 Package luatex.def Info: ./images/TPS-FIX.jpg  used on input line 68.
 (luatex.def)             Requested size: 204.85846pt x 204.8564pt.
-<./images/USB-FIX.jpg, id=412, 489.5088pt x 489.5088pt>
+<./images/USB-FIX.jpg, id=422, 489.5088pt x 489.5088pt>
 File: ./images/USB-FIX.jpg Graphic file (type jpg)
 <use ./images/USB-FIX.jpg>
 Package luatex.def Info: ./images/USB-FIX.jpg  used on input line 73.
 (luatex.def)             Requested size: 204.85846pt x 204.86029pt.
- [23<./images/pcb-assembly.jpg>]
-<./images/Low vs High Side switching.png, id=420, 749.80125pt x 545.03625pt>
+ [24<./images/pcb-assembly.jpg>]
+<./images/Low vs High Side switching.png, id=431, 749.80125pt x 545.03625pt>
 File: ./images/Low vs High Side switching.png Graphic file (type png)
 <use ./images/Low vs High Side switching.png>
 Package luatex.def Info: ./images/Low vs High Side switching.png  used on input
  line 99.
 (luatex.def)             Requested size: 182.09486pt x 132.36656pt.
-<./images/Low-side-fix.png, id=421, 1248.91594pt x 680.5425pt>
+<./images/Low-side-fix.png, id=432, 1248.91594pt x 680.5425pt>
 File: ./images/Low-side-fix.png Graphic file (type png)
 <use ./images/Low-side-fix.png>
 Package luatex.def Info: ./images/Low-side-fix.png  used on input line 102.
 (luatex.def)             Requested size: 250.38564pt x 136.428pt.
- [24<./images/TPS-FIX.jpg><./images/USB-FIX.jpg>]) [25<./images/Low vs High Side
+ [25<./images/TPS-FIX.jpg><./images/USB-FIX.jpg>]) [26<./images/Low vs High Side
  switching.png><./images/Low-side-fix.png>]
 \openout2 = 4-concluzii.aux
  (./4-concluzii.tex
 Capitolul 4.
-) [26
+) [27
 
 
 
 
 ]
-Overfull \hbox (1.87413pt too wide) in paragraph at lines 175--175
+Overfull \hbox (1.87413pt too wide) in paragraph at lines 185--185
 []\TU/TimesNewRoman(0)/m/n/12 Te-xas In-stru-ments, \TU/TimesNewRoman(0)/m/it/1
 2 High-Speed La-yo-ut Gu-i-de-li-nes for Sig-nal Con-di-tio-ners and USB Hubs\T
 U/TimesNewRoman(0)/m/n/12 ,
  []
 
 
-Overfull \hbox (7.37651pt too wide) in paragraph at lines 175--175
+Overfull \hbox (7.37651pt too wide) in paragraph at lines 185--185
 []\TU/TimesNewRoman(0)/m/n/12 Via Labs, \TU/TimesNewRoman(0)/m/it/12 VL822-Q7 Da
 -ta-she-et\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/sc/12 󰋫󰋨
 󰋢\TU/TimesNewRoman(0)/m/n/12 : [][]$\TU/lmtt/m/n/12 https : / / www . lcsc . com / datasheet / C42419379 .
  []
 
-[27
+[28
 
 
 
@@ -1775,31 +1776,32 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 35258B663F65C64BC6DDA661840F21B1;3764.
+(rerunfilecheck)             Checksum: 22BF988DBB443B374DFEE4E14699202B;4306.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 31183 strings out of 475892
+ 31199 strings out of 475892
  125081,1648299 words of node,token memory allocated
  698 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 17 attribute, 74 glue_spec
 , 17 attribute_list, 1 write, 10 pdf_action nodes
-   avail lists: 1:4,2:1541,3:352,4:222,5:286,6:124,7:5800,8:60,9:1087,10:20,11:8
-67
- 53050 multiletter control sequences out of 65536+600000
- 55 fonts using 27235895 bytes
+   avail lists: 1:4,2:1271,3:352,4:226,5:431,6:59,7:5847,8:60,9:816,10:28,11:866
+
+ 53062 multiletter control sequences out of 65536+600000
+ 56 fonts using 27817607 bytes
  86i,12n,92p,1243b,3530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/cath/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-r
-egular.otf><c:/users/cath/appdata/local/programs/miktex/fonts/opentype/public/lm
--math/latinmodern-math.otf><c:/users/cath/appdata/local/programs/miktex/fonts/op
-entype/public/lm-math/latinmodern-math.otf><C:/WINDOWS/Fonts/timesi.ttf><C:/WIND
-OWS/Fonts/times.ttf><C:/WINDOWS/Fonts/timesbd.ttf>
-Output written on main.pdf (27 pages, 18322895 bytes).
+egular.otf><C:/WINDOWS/Fonts/timesbi.ttf><c:/users/cath/appdata/local/programs/m
+iktex/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/users/cath/appdata/
+local/programs/miktex/fonts/opentype/public/lm-math/latinmodern-math.otf><C:/WIN
+DOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/times.ttf><C:/WINDOWS/Fonts/timesbd.ttf>
 
-PDF statistics: 508 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 1048576)
- 193 words of extra memory for PDF output out of 10000 (max. 100000000)
+Output written on main.pdf (28 pages, 18901485 bytes).
+
+PDF statistics: 527 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 1048576)
+ 185 words of extra memory for PDF output out of 10000 (max. 100000000)
 
