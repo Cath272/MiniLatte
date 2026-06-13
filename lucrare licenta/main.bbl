@@ -166,6 +166,32 @@
       \verb https://www.electronics.org/TOC/IPC-2152.pdf
       \endverb
     \endentry
+    \entry{kicad}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=65a497b7130fb0033c9aa6850ba3aedb}{%
+           family={KiCad},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{65a497b7130fb0033c9aa6850ba3aedb}
+      \strng{fullhash}{65a497b7130fb0033c9aa6850ba3aedb}
+      \strng{fullhashraw}{65a497b7130fb0033c9aa6850ba3aedb}
+      \strng{bibnamehash}{65a497b7130fb0033c9aa6850ba3aedb}
+      \strng{authorbibnamehash}{65a497b7130fb0033c9aa6850ba3aedb}
+      \strng{authornamehash}{65a497b7130fb0033c9aa6850ba3aedb}
+      \strng{authorfullhash}{65a497b7130fb0033c9aa6850ba3aedb}
+      \strng{authorfullhashraw}{65a497b7130fb0033c9aa6850ba3aedb}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{KiCad - Schematic Capture \{{\&}\} PCB Design Software}
+      \verb{urlraw}
+      \verb https://www.kicad.org/
+      \endverb
+      \verb{url}
+      \verb https://www.kicad.org/
+      \endverb
+    \endentry
     \entry{VL162}{manual}{}{}
       \name{author}{1}{}{%
         {{hash=aa7e57b4601a8b0930c7abc7dbb412a7}{%

@@ -9,7 +9,7 @@ Acestea sunt controlate de un Microcontroller ESP32-C3 care comunică cu modulul
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{led-matrix.png}
-  \caption{Matrice Led.}
+  \caption{Matricea LED RGB asamblată.}
   \label{fig:LED-Matrix}
 \end{figure}
 
@@ -21,16 +21,16 @@ Pentru a monta cele două \ac{PCB}-uri am proiectat o carcasă folosind AutoCAD,
   \centering
   \begin{subfigure}[b]{0.45\linewidth}
     \includegraphics[width=\linewidth]{case-front.png}
-    \caption{Partea frontală a carcasei}
+    \caption{Partea frontală a carcasei.}
     \label{fig:Front-case}
   \end{subfigure}
   \begin{subfigure}[b]{0.45\linewidth}
     \includegraphics[width=\linewidth]{case-back.png}
-    \caption{Partea din spate a carcasei}
+    \caption{Partea din spate a carcasei.}
     \label{fig:back-case}
   \end{subfigure}
 
-  \caption{Cele 2 părți ale carcasei}
+  \caption{Cele 2 părți ale carcasei.}
   \label{fig:Case}
 
 \end{figure}
@@ -71,7 +71,7 @@ Cauza problemei a fost identificată ca fiind absența unor condensatoare necesa
   \end{subfigure}
   \begin{subfigure}[b]{0.45\linewidth}
     \includegraphics[width=\linewidth]{USB-FIX.jpg}
-    \caption{Repararea liniilor USB prin lipirea unor fire.}
+    \caption{Repararea liniilor USB prin lipirea unor fire foarte subțiri.}
     \label{fig:USB-fix}
   \end{subfigure}
   \caption{Două reparații folosind fire subțiri.}
@@ -90,20 +90,23 @@ Sistemul a pornit corespunzător și a permis încărcarea sistemului de operare
 Investigațiile au arătat că problema legată de BIOS era cauzată de conectarea incorectă a liniilor USB 3.2 Gen 2 către hub-ul USB. Perechile diferențiale au fost conectate eronat (RX-RX și TX-TX), în loc de configurația corectă RX-TX și TX-RX. Această eroare a apărut din utilizarea unei topologii specifice conexiunilor între cip și port, în locul celei necesare pentru interconectarea a două cipuri. Corecția a fost realizată prin refacerea conexiunilor folosind fire (Figura \ref{fig:USB-fix}).
 O altă problemă identificată a fost funcționarea incorectă a LED-ului RGB frontal, utilizat pentru indicarea stării sistemului: \textit{power off} (roșu - oprit), \textit{standby} (galben) și \textit{power on} (alb - pornit). LED-ul rămânea aprins în culoarea roșie imediat după alimentare, iar celelalte culori nu funcționau.
 Cauza acestei deficiențe a fost utilizarea incorectă a tranzistoarelor MOSFET de tip N într-o configurație de tip high-side switching, în condițiile în care tensiunea de comandă pe poartă era comparabilă sau mai mică decât tensiunea drenă-sursă. În această situație, tranzistorul nu putea comuta corect.
-Soluția corectă constă în utilizarea unei configurații de tip low-side switching (vezi Figura \ref{fig:mosfets-switching}), în care tensiunea de comandă (3,3 V) este aplicată între poartă și masă, asigurând funcționarea corespunzătoare a tranzistorului și controlul corect al LED-ului.
+Soluția corectă constă în utilizarea unei configurații de tip low-side switching (vezi Figura \ref{fig:low-fix} și Figura \ref{fig:low-high-conf}), în care tensiunea de comandă (3,3 V) este aplicată între poartă și masă, asigurând funcționarea corespunzătoare a tranzistorului și controlul corect al LED-ului.
+
 
 
 \begin{figure}
   \centering
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{Low vs High Side switching.png}
+    \caption{Configurațiile de tip Low Side și High Side}
+    \label{fig:low-high-conf}
   \end{subfigure}
   \begin{subfigure}[b]{0.55\linewidth}
     \includegraphics[width=\linewidth]{Low-side-fix.png}
+    \caption{Diagrama electrică reparată folosind un low side switch.}
+    \label{fig:low-fix}
   \end{subfigure}
 
-  \caption{Diagrama din stânga arată configurațiile Low Side și High Side, iar diagrama din dreapta arată schema reparată folosind un low side switch.}
-  \label{fig:mosfets-switching}
 
 \end{figure}
 
@@ -126,7 +129,7 @@ Pentru testarea sistemului au fost folosite 3 SSD-uri SKhynix PC711 care ruleaz�
   \begin{tabularx}{\textwidth}{X c}
     \toprule
     \rowcolor{gray!30}
-    \textbf{Parametru Testat} & \textbf{Rezultat Măsurat (Windows)} \\ \midrule
+    \textbf{Parametru Testat} & \textbf{Rezultat Măsurat (Windows 11)} \\ \midrule
     Timp de pornire           & 48\text{\,}s                               \\
     Viteza LAN                & 2,26\text{\,}Gbps                          \\
     Viteza SSD PCIe           & 1771\text{\,}MB/s (Read), 1673\text{\,}MB/s (Write) \\

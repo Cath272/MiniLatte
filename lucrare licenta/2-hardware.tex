@@ -85,7 +85,7 @@ Capacitatea de stocare poate fi extinsă considerabil prin cele trei sloturi des
 
 \section{Arhitectura hardware și selecția componentelor}
 
-Placa de bază pentru acest modul a fost proiectată folosind Kicad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de \ac{PCB}.
+Placa de bază pentru acest modul a fost proiectată folosind KiCad 9, folosind ca bază documentația dată de creatorii modulului, dar și țindând cont de regulile de proiectare atât pe partea de diagrame electrice dar și pe partea de design de \ac{PCB}.
 Pornind de la diagrama bloc,procesul de selecție a componentelor s-a bazat pe mai multe criterii, precum costul, disponibilitatea pe piață, familiaritatea cu producătorul și calitatea documentației tehnice.
 \begin{itemize}
   \item \textbf{ITE IT8851FN-128:} O excepție notabilă în procesul de achiziție o reprezintă acest cip de management. Deși este un circuit integrat dificil de procurat prin canalele standard de distribuție, utilizarea sa a fost obligatorie din cauza compatibilității exclusive cu firmware-ul proprietar furnizat de LattePanda, neexistând o alternativă viabilă pe piață la momentul proiectării.
@@ -129,7 +129,7 @@ Un aspect fundamental în layout-ul circuitelor de înaltă frecvență îl repr
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{Stackup.png}
-  \caption{Poziționarea straturilor PCBului}
+  \caption{Poziționarea straturilor PCBului.}
   \label{fig:stackup}
 \end{figure}
 
@@ -139,7 +139,7 @@ Prima etapă a rutării este plasarea preliminară a componentelor. În acest ca
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{MiniLatte_zones.png}
-  \caption{Poziționarea componentelor pe placă}
+  \caption{Poziționarea componentelor pe placă.}
   \label{fig:pcb_zones}
 \end{figure}
 
@@ -157,12 +157,12 @@ Diferența de lungime dintre cele două trasee, definită ca \textit{Intra Pair 
   \makebox[\textwidth][c]{
     \begin{subfigure}[b]{0.31\linewidth}
       \includegraphics[width=\linewidth]{Intra-pair-skew.png}
-      \caption{Corecție a Intra Pair Skew pe o pereche diferețială PCIe}
+      \caption{Corecție a Intra Pair Skew pe o pereche diferețială PCIe.}
       \label{fig:Intra-Pair Skew}
     \end{subfigure}
     \begin{subfigure}[b]{0.66\linewidth}
       \includegraphics[width=\linewidth]{Inter-pair-skew.png}
-      \caption{Corecție a Inter Pair Skew pe cele 4 perechi diferețiale ale unui port HDMI}
+      \caption{Corecție a Inter Pair Skew pe cele 4 perechi diferețiale ale unui port HDMI.}
       \label{fig:Inter-Pair Skew}
     \end{subfigure}
   }
