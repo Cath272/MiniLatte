@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.5.27)  13 JUN 2026 23:10
+This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.5.27)  14 JUN 2026 19:46
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/Cath/Desktop/PCB Projects/MiniLatte/lucrare licenta/main.tex"
@@ -1752,14 +1752,14 @@ Capitolul 4.
 
 
 ]
-Overfull \hbox (1.87413pt too wide) in paragraph at lines 185--185
+Overfull \hbox (1.87413pt too wide) in paragraph at lines 187--187
 []\TU/TimesNewRoman(0)/m/n/12 Te-xas In-stru-ments, \TU/TimesNewRoman(0)/m/it/1
 2 High-Speed La-yo-ut Gu-i-de-li-nes for Sig-nal Con-di-tio-ners and USB Hubs\T
 U/TimesNewRoman(0)/m/n/12 ,
  []
 
 
-Overfull \hbox (7.37651pt too wide) in paragraph at lines 185--185
+Overfull \hbox (7.37651pt too wide) in paragraph at lines 187--187
 []\TU/TimesNewRoman(0)/m/n/12 Via Labs, \TU/TimesNewRoman(0)/m/it/12 VL822-Q7 Da
 -ta-she-et\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/sc/12 󰋫󰋨
 󰋢\TU/TimesNewRoman(0)/m/n/12 : [][]$\TU/lmtt/m/n/12 https : / / www . lcsc . com / datasheet / C42419379 .
@@ -1783,14 +1783,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31207 strings out of 475892
+ 31208 strings out of 475892
  125081,1648299 words of node,token memory allocated
  698 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 17 attribute, 74 glue_spec
 , 17 attribute_list, 1 write, 10 pdf_action nodes
    avail lists: 1:4,2:1269,3:355,4:226,5:433,6:59,7:5848,8:60,9:816,10:29,11:866
 
- 53068 multiletter control sequences out of 65536+600000
+ 53069 multiletter control sequences out of 65536+600000
  56 fonts using 27817607 bytes
  86i,12n,92p,1243b,3530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/cath/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono12-r
@@ -1799,7 +1799,7 @@ iktex/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/users/cath/appdata/
 local/programs/miktex/fonts/opentype/public/lm-math/latinmodern-math.otf><C:/WIN
 DOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/times.ttf><C:/WINDOWS/Fonts/timesbd.ttf>
 
-Output written on main.pdf (29 pages, 18904558 bytes).
+Output written on main.pdf (29 pages, 18904497 bytes).
 
 PDF statistics: 538 PDF objects out of 1000 (max. 8388607)
  108 named destinations out of 1000 (max. 1048576)
