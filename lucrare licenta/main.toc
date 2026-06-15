@@ -5,7 +5,7 @@
 \xpg@aux {}{romanian}
 \contentsline {chapter}{\numberline {1}Introducere}{8}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Obiectivele proiectului și contribuția personală}{8}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Structura lucrării.}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Structura lucrării}{10}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Proiectarea sistemului hardware}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}LattePanda Mu}{11}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Conexiuni - Diagramă Bloc}{12}{section.2.2}%

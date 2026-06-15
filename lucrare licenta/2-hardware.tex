@@ -181,8 +181,9 @@ Modulul este alimentat printr-un port USB Type C utilizând protocolul USB \ac{P
 Tensiunea este coborâtă la \mbox{17,5\text{\,}V} pentru modulul LattePanda Mu folosind regulatorul TPS54561. Consumul modulului fiind de \mbox{10-15\text{\,}W} în modul standard și până la \mbox{15\text{\,}W} în modul Boost, de asemenea sunt generate tensiuni auxiliare de \mbox{3,3\text{\,}V} și \mbox{5\text{\,}V} folosind cipul TPS51275.
 
 Puterea necesară la intrare ($P_{in}$) a fost dimensionată prin calcularea consumului total al sistemului (Tabelul \ref{Tab:consumption_pwr}). Luând în considerare o eficiență conservatoare de $\eta$ = 90\% a regulatorelor DC-DC, puterea totală necesară la intrare a fost estimată matematic prin ecuația:
-$$P_{in} = \frac{P_{total\_consumatori}}{\eta} = \frac{48,6\,\text{W}}{0.90} \approx 54\,\text{W}$$
-
+\begin{equation}
+    P_{\text{in}} = \frac{P_{\text{total\_consumatori}}}{\eta} = \frac{48,6\,\text{W}}{0,90} \approx 54\,\text{W}
+\end{equation}
 
 Profilul de $65\,\text{W}$ a fost ales deorece este primul profil disponibil deasupra puterii calculate de $54\,\text{W}$, acest lucru oferind o marjă de siguranță critică pentru a absorbi eventualele vârfuri tranzitorii de curent.
 
